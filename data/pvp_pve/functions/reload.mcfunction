@@ -68,3 +68,4 @@ team modify Enemy color light_purple
 team modify Enemy nametagVisibility always
 
 #tags
+tellraw @a {"text":"test"}
