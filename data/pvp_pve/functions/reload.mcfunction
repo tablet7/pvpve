@@ -1,4 +1,4 @@
-#> test:reload
+#> pvp_pve:reload
 
 #function
 
