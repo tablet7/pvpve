@@ -16,10 +16,14 @@ scoreboard objectives add skill1_recast dummy
 scoreboard objectives add skill2_recast dummy
 scoreboard objectives add skill3_recast dummy
 scoreboard objectives add skill4_recast dummy
+scoreboard objectives add skill5_recast dummy
+scoreboard objectives add skill6_recast dummy
 scoreboard players set @a skill1_recast 0
 scoreboard players set @a skill2_recast 0
 scoreboard players set @a skill3_recast 0
 scoreboard players set @a skill4_recast 0
+scoreboard players set @a skill5_recast 0
+scoreboard players set @a skill6_recast 0
 ###Team_Display
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team

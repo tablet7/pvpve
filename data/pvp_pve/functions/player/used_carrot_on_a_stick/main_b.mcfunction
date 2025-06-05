@@ -6,8 +6,8 @@ execute if predicate pvp_pve:selecteditem/tester_skill/01test_skill run function
 execute if predicate pvp_pve:selecteditem/tester_skill/02test_skill run function pvp_pve:player/skill/tester/skill_check/02skill_check
 execute if predicate pvp_pve:selecteditem/tester_skill/03test_skill run function pvp_pve:player/skill/tester/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/tester_skill/04test_skill run function pvp_pve:player/skill/tester/skill_check/04skill_check
-execute if predicate pvp_pve:selecteditem/tester_skill/05test_skill run function pvp_pve:player/skill/tester/05test_skill
-execute if predicate pvp_pve:selecteditem/tester_skill/06test_skill run function pvp_pve:player/skill/tester/06test_skill
+execute if predicate pvp_pve:selecteditem/tester_skill/05test_skill run function pvp_pve:player/skill/tester/skill_check/05skill_check
+execute if predicate pvp_pve:selecteditem/tester_skill/06test_skill run function pvp_pve:player/skill/tester/skill_check/06skill_check
 
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick
