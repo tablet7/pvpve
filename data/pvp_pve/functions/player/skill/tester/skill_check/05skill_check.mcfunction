@@ -1,4 +1,4 @@
-#> pvp_pve:player/skill/tester/04test_skill
+#> pvp_pve:player/skill/tester/skill_check/05skill_check
 
 #recast>=1ならrecast表示
 execute if score @s skill5_recast matches 1.. run title @s actionbar {"score":{"name":"@s","objective":"skill5_recast"}}

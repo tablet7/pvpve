@@ -2,6 +2,11 @@
 
 say 05
 
+#summon系(演出)
+summon minecraft:armor_stand ^ ^ ^ {Marker:true,Invisible:true,Tags:["test_05"]}
+execute as @e[tag=test_05] at @s rotated as @p run tp @s ~ ~ ~ ~ 0
+scoreboard players set @e[tag=test_05] test_stand_05 0
+
 #recast設定
 scoreboard players set @s skill5_recast 2
 

@@ -24,6 +24,8 @@ scoreboard players set @a skill3_recast 0
 scoreboard players set @a skill4_recast 0
 scoreboard players set @a skill5_recast 0
 scoreboard players set @a skill6_recast 0
+###tester_skill
+scoreboard objectives add test_stand_05 dummy
 ###Team_Display
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team
@@ -76,8 +78,9 @@ team add Enemy
 team modify Enemy color light_purple
 team modify Enemy nametagVisibility always
 
-##Enemy_0,Red_1,Blue_2,Yellow_3,Green_4,Gray_5,Black_6
+##Enemy_7,Red_1,Blue_2,Yellow_3,Green_4,Gray_5,Black_6
 scoreboard objectives add team_set dummy
 function pvp_pve:system/team/team_set_set
 
 #tags
+
