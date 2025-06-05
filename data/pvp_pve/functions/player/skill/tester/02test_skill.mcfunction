@@ -6,4 +6,4 @@ effect give @s resistance 10 0 true
 #summon snowball ~ ~ ~
 
 #recast設定
-scoreboard players set @p skill2_recast 5
+scoreboard players set @s skill2_recast 5

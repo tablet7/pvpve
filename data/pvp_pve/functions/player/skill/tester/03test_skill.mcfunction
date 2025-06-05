@@ -11,7 +11,7 @@ execute if score @s team_set matches 5 run function pvp_pve:player/skill/tester/
 execute if score @s team_set matches 6 run function pvp_pve:player/skill/tester/mc_03test_skill {Team:Black}
 
 #recast設定
-scoreboard players set @p skill3_recast 3
+scoreboard players set @s skill3_recast 3
 
 #give @p acacia_fence{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:10,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12372,21689,155459,-43378]}]} 1
 #give @p acacia_boat{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:5,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12372,21689,155459,-43378]}]} 1
