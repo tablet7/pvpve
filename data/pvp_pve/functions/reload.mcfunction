@@ -43,15 +43,15 @@ team modify Blue color blue
 team modify Blue friendlyFire false
 team modify Blue nametagVisibility always
 
-team add Green
-team modify Green color green
-team modify Green friendlyFire false
-team modify Green nametagVisibility always
-
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow friendlyFire false
 team modify Yellow nametagVisibility always
+
+team add Green
+team modify Green color green
+team modify Green friendlyFire false
+team modify Green nametagVisibility always
 
 team add Gray
 team modify Gray color gray
@@ -67,5 +67,8 @@ team add Enemy
 team modify Enemy color light_purple
 team modify Enemy nametagVisibility always
 
+##Enemy_0,Red_1,Blue_2,Yellow_3,Green_4,Gray_5,Black_6
+scoreboard objectives add team_set dummy
+function pvp_pve:system/team/team_set_set
+
 #tags
-tellraw @a {"text":"test"}
