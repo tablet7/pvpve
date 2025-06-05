@@ -11,4 +11,10 @@
 #execute store result storage team TM int 1 run scoreboard players get @s team_set
 #function pvp_pve:debug/mc_test with storage team
 
+#自分のチーム以外
 execute if score @s team_set matches 1 run function pvp_pve:debug/mc_test {Team:Red}
+execute if score @s team_set matches 2 run function pvp_pve:debug/mc_test {Team:Blue}
+execute if score @s team_set matches 3 run function pvp_pve:debug/mc_test {Team:Yellow}
+execute if score @s team_set matches 4 run function pvp_pve:debug/mc_test {Team:Green}
+execute if score @s team_set matches 5 run function pvp_pve:debug/mc_test {Team:Gray}
+execute if score @s team_set matches 6 run function pvp_pve:debug/mc_test {Team:Black}
