@@ -7,6 +7,9 @@ clear @p
 loot give @p loot pvp_pve:item/tester/01test_skill
 loot give @p loot pvp_pve:item/tester/02test_skill
 loot give @p loot pvp_pve:item/tester/03test_skill
+loot give @p loot pvp_pve:item/tester/04test_skill
+loot give @p loot pvp_pve:item/tester/05test_skill
+loot give @p loot pvp_pve:item/tester/06test_skill
 
 #tag
 function pvp_pve:player/job_item_get/tag_remove
