@@ -1,0 +1,22 @@
+#(1)skillアイテムの追加
+pvp_pve/loot_tables/item/(職業) に (スキル名)_skill.jsonを追加
+{nbtは使われていないのを使う}
+data\pvp_pve\functions\player\job_item_get\(職業)_item_get.mcfunction に アイテム追加
+
+#(2)skill判別追加
+pvp_pve\predicates\selecteditem\(職業)_skill に(スキル名)_skill.jsonを追加
+
+#(3)skillの本処理追加
+pvp_pve\functions\player\skill\(職業)\skill_check\(スキル名)_check.mcfunction にリキャスト処理追加
+｛職業の中で使われていないリキャストを使う｝
+pvp_pve\functions\player\skill\(職業)\(スキル名)_skill.mcfunction にスキルの処理追加
+{関数を使う場合はmc_(スキル名)_skill.mcfunctionに追加、複数個使う場合は\(スキル名)_skillフォルダにまとめる}
+
+#(4)skillの発動処理追加
+pvp_pve\functions\player\used_carrot_on_a_stick\main_b.mcfunction に判別処理追加
+
+
+
+例:職業(tester)にスキル名(test07)を追加したい場合
+#(1)skillアイテムの追加
+pvp_pve/loot_tables/item/tester に test07_skill.jsonを追加
