@@ -1,6 +1,7 @@
 #> pvp_pve:reload
 
 #function
+effect clear @a
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -26,6 +27,17 @@ scoreboard players set @a skill5_recast 0
 scoreboard players set @a skill6_recast 0
 ###tester_skill
 scoreboard objectives add test_stand_05 dummy
+###passive
+scoreboard objectives add kill_count totalKillCount
+scoreboard players set @a kill_count 0
+####tester_passive
+scoreboard objectives add tester_passive01 dummy
+scoreboard players set @a[tag=tester] tester_passive01 0
+###level
+scoreboard objectives add level_bonus dummy
+scoreboard players set @a level_bonus 0
+xp set @a 0 levels
+xp set @a 0 points
 ###Team_Display
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team

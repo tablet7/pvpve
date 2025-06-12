@@ -14,3 +14,9 @@ loot give @p loot pvp_pve:item/tester/06test_skill
 #tag
 function pvp_pve:player/job_item_get/tag_remove
 tag @p add tester
+
+#passive
+scoreboard players set @p[tag=tester] kill_count 0
+scoreboard players set @p[tag=tester] tester_passive01 0
+##attribute
+attribute @p minecraft:generic.max_health base set 20

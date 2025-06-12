@@ -3,7 +3,7 @@
 $summon zombie $(x) $(y) $(z) {CustomName:'"05skill"',\
                                 CustomNameVisible:false,\
                                 Silent:true,\
-                                Tags:["05_skill_zombie","skill_enemy"],\
+                                Tags:["05_skill_zombie","skill_e"],\
                                 NoAI:true,\
                                 Fire:1000,\
                                 Health:5f,Attributes:[{Name:generic.max_health,Base:5}],\
