@@ -21,3 +21,5 @@ execute at @s[tag=tester] run function pvp_pve:player/level/tester_level
 #レベルリセット
 xp set @s 0 levels
 xp set @s 0 points
+
+#attribute

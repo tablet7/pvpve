@@ -2,6 +2,8 @@
 
 say 06
 
+
+
 #recast設定
 scoreboard players set @s skill6_recast 2
 
