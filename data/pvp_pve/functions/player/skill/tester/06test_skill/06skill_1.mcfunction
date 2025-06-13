@@ -68,4 +68,4 @@ playsound minecraft:entity.firework_rocket.blast master @a[distance=..15] ~ ~ ~
 kill @e[tag=test_06,limit=1,sort=nearest]
 kill @e[tag=test_06_damage,limit=1,sort=nearest]
 
-scoreboard players set @s test_stand_06 1
+scoreboard players set @s test_stand_06 0

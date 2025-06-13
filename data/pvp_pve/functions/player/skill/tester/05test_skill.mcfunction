@@ -18,7 +18,7 @@ execute if score @s team_set matches 5 run scoreboard players set @e[tag=test_05
 execute if score @s team_set matches 6 run scoreboard players set @e[tag=test_05,limit=1,sort=nearest] team_set 6
 
 #recast設定
-scoreboard players set @s skill5_recast 1
+scoreboard players set @s skill5_recast 3
 
 #give @p acacia_fence{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:10,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12372,21689,155459,-43378]}]} 1
 #give @p acacia_boat{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:5,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12372,21689,155459,-43378]}]} 1

@@ -2,6 +2,7 @@
 
 #function
 effect clear @a
+kill @e[tag=skill_e]
 
 #scoreboard
 scoreboard objectives add tem dummy
