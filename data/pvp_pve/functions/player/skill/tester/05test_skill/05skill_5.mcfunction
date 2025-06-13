@@ -31,5 +31,10 @@ execute if score @s team_set matches 4 run function pvp_pve:player/skill/tester/
 execute if score @s team_set matches 5 run function pvp_pve:player/skill/tester/05test_skill/mc_05skill_6 {Team:Gray}
 execute if score @s team_set matches 6 run function pvp_pve:player/skill/tester/05test_skill/mc_05skill_6 {Team:Black}
 
+playsound minecraft:entity.player.death master @a[distance=..15] ~ ~ ~
+
 kill @e[tag=test_05,limit=1,sort=nearest]
 kill @e[tag=test_05_damage,limit=1,sort=nearest]
+
+scoreboard players set @s test_stand_05 0
+
