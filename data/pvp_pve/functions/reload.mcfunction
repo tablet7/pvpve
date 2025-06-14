@@ -29,6 +29,8 @@ scoreboard players set @a skill6_recast 0
 ###tester_skill
 scoreboard objectives add test_stand_05 dummy
 scoreboard objectives add test_stand_06 dummy
+###shadow_skill
+scoreboard objectives add shadow_shadow_cnt dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
