@@ -9,3 +9,4 @@ execute if score @s test_stand_05 matches 1 run execute if score @e[limit=1,tag=
 
 ##test_skill06
 execute if score @s test_stand_06 matches 1 run execute if score @e[limit=1,tag=test_06] test_stand_06 matches 20 run execute at @e[limit=1,tag=test_06] run function pvp_pve:player/skill/tester/06test_skill/06skill_1
+

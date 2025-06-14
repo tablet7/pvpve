@@ -1,7 +1,7 @@
 #> pvp_pve:player/passive/shadow_passive/main
 
-particle dust 0 0 0 3.0 ^ ^1.5 ^
-particle dust 0 0 0 3.0 ^ ^0.5 ^
+particle dust 0 0 0 5.0 ^ ^1.5 ^
+particle dust 0 0 0 5.0 ^ ^0.5 ^
 
 execute if score @s team_set matches 1 run function pvp_pve:player/passive/shadow_passive/mc_damage_heal {Team:Red}
 execute if score @s team_set matches 2 run function pvp_pve:player/passive/shadow_passive/mc_damage_heal {Team:Blue}
