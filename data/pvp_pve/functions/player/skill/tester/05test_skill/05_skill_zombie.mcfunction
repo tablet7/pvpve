@@ -6,6 +6,6 @@ $summon zombie $(x) $(y) $(z) {CustomName:'"05skill"',\
                                 Tags:["05_skill_zombie","skill_e"],\
                                 NoAI:true,\
                                 Fire:1000,\
-                                Health:5f,Attributes:[{Name:generic.max_health,Base:5}],\
+                                Health:2f,Attributes:[{Name:generic.max_health,Base:2}],\
                                 active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:100,show_particles:0b}],\
                                 DeathLootTable:"minecraft:empty"}

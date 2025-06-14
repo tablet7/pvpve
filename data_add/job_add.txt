@@ -1,0 +1,16 @@
+#> pvp_pve:player/job_item_get/
+itemとタグを作る
+
+#> pvp_pve:player/job_item_get/tag_remove
+tag追加
+
+#> pvp_pve:player/level/level_select
+tag追加
+level_bonus追加
+
+スキル追加
+
+#> pvp_pve:player/used_carrot_on_a_stick/main_b
+スキル判別追加
+スキルチェック追加
+
