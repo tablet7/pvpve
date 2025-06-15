@@ -24,4 +24,4 @@ execute if score @s team_set matches 5 run scoreboard players set @e[tag=shadow_
 execute if score @s team_set matches 6 run scoreboard players set @e[tag=shadow_shadow,team=Black] team_set 6
 
 #recast設定
-scoreboard players set @s skill4_recast 2
+scoreboard players set @s skill4_recast 70

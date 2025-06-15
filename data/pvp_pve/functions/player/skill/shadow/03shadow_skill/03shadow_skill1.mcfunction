@@ -1,6 +1,6 @@
 #> pvp_pve:player/skill/shadow/02shadow_skill/03shadow_skill1
 
-playsound minecraft:entity.ender_dragon.hurt master @a[distance=..7] ~ ~ ~
+playsound minecraft:entity.ender_dragon.hurt master @a[distance=..10] ~ ~ ~
 
 #真ん中
 particle dust 0 0 0 3.0 ^ ^ ^4

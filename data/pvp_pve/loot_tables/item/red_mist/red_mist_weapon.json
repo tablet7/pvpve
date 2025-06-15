@@ -6,14 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name":"minecraft:carrot_on_a_stick",
+          "name":"minecraft:netherite_axe",
           "functions": [
             {
                 "function": "minecraft:set_name",
                 "entity": "this",
                 "name": [
                     {
-                        "text": "「影」",
+                        "text": "ミミクリー",
                         "color": "white",
                         "italic": false
                     }
@@ -24,30 +24,40 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:2体の影を召喚する",
-                        "color": "yellow",
-                        "italic": false
-                    },
-                    {
-                        "text": "影に自分が触れると回復できる。敵が触れるとダメージと鈍足を受ける。影は10秒で消える",
+                        "text": "試作品のE.G.O装備。",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "敵が触れるとダメージと鈍足を受ける。影は10秒で消える",
+                        "text": "攻撃速度は遅いが強力な攻撃ができる",
                         "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム5秒",
-                        "color": "green",
                         "italic": false
                     }
                 ]
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:11}"
+                "tag": "{CustomModelData:27}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -3.5,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 12,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ],
+              "conditions": []
             }
           ]
         }

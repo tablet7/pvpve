@@ -7,3 +7,6 @@ tag @p remove tester
 scoreboard players set @p[tag=tester] tester_passive01 0
 ##shadow
 tag @p remove shadow
+##red_mist
+tag @p remove red_mist
+tag @p remove red_mist_EGO

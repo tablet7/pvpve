@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "影破",
-                        "color": "white",
+                        "text": "大切断「横」",
+                        "color": "#5c0000",
                         "italic": false
                     }
                 ]
@@ -24,25 +24,25 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:影が爆発する",
-                        "color": "yellow",
+                        "text": "右クリック:前方を全力で切る",
+                        "color": "red",
                         "italic": false
                     },
                     {
-                        "text": "敵が爆発に触れるとダメージと暗闇を受ける",
+                        "text": "前方広範囲に大ダメージ。",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "持っている大切断「縦」、大切断「横」を消去",
                         "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム8秒",
-                        "color": "green",
                         "italic": false
                     }
                 ]
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:13}"
+                "tag": "{CustomModelData:26}"
             }
           ]
         }

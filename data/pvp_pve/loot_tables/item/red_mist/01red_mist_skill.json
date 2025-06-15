@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "影破",
+                        "text": "気合い",
                         "color": "white",
                         "italic": false
                     }
@@ -24,17 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:影が爆発する",
+                        "text": "右クリック:気合いを入れることでバフを獲得",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "敵が爆発に触れるとダメージと暗闇を受ける",
+                        "text": "５秒間移動速度低下、攻撃力上昇、耐性、最大体力上昇を獲得",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム8秒",
+                        "text": "クールタイム10秒",
                         "color": "green",
                         "italic": false
                     }
@@ -42,7 +42,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:13}"
+                "tag": "{CustomModelData:21}"
             }
           ]
         }
