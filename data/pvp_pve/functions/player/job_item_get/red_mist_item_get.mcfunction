@@ -15,6 +15,8 @@ loot give @p loot pvp_pve:item/red_mist/06red_mist_skill
 #tag
 function pvp_pve:player/job_item_get/tag_remove
 tag @p add red_mist
+scoreboard players set @p red_mist_EGO 0
+
 
 #passive
 

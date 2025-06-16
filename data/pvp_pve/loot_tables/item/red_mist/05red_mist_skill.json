@@ -29,7 +29,7 @@
                         "italic": false
                     },
                     {
-                        "text": "前方にいる敵１体に特大ダメージ。",
+                        "text": "前方小範囲に特大ダメージ。",
                         "color": "red",
                         "italic": false
                     },

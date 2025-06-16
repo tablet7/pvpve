@@ -13,3 +13,6 @@ execute as @a at @s run execute if score @s skill6_recast matches 1.. run scoreb
 
 #shadow_passive
 execute as @e[tag=shadow_shadow] at @s run function pvp_pve:player/passive/shadow_passive/main
+
+#red_mist_skill
+execute as @a[tag=red_mist] at @s run execute if score @s red_mist_EGO matches 1.. run scoreboard players remove @s red_mist_EGO 1
