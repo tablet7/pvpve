@@ -19,4 +19,3 @@ tag @p add tester
 scoreboard players set @p[tag=tester] kill_count 0
 scoreboard players set @p[tag=tester] tester_passive01 0
 ##attribute
-attribute @p minecraft:generic.max_health base set 20

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:entity/rare_item"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:entity/legendary_item",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

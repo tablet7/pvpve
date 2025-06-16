@@ -17,4 +17,3 @@ tag @p add shadow
 
 
 ##attribute
-attribute @p minecraft:generic.max_health base set 20

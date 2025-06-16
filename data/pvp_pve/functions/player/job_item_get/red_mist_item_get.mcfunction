@@ -20,4 +20,3 @@ tag @p add red_mist
 
 
 ##attribute
-attribute @p minecraft:generic.max_health base set 25

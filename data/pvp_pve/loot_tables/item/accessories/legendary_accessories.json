@@ -1,0 +1,173 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:wooden_shovel",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "アクセサリー[レジェンダリー]",
+                        "color": "#ffbb00",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "オフハンドに持つことで効果が発揮させる",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "エメラルドをアクセサリーにしたもの。効果はかなり強い。",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:105}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.max_health",
+                  "name": "",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 4,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "",
+                  "amount": 0.04,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_knockback",
+                  "name": "",
+                  "amount": 0.4,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.knockback_resistance",
+                  "name": "",
+                  "amount": 0.4,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "name": "",
+                  "amount": 2.5,
+                  "operation": "addition",
+                  "slot": "offhand"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

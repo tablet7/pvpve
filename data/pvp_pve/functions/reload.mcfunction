@@ -42,6 +42,7 @@ scoreboard objectives add level_bonus dummy
 scoreboard players set @a level_bonus 0
 xp set @a 0 levels
 xp set @a 0 points
+attribute @p minecraft:generic.max_health base set 30
 ###Team_Display
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team

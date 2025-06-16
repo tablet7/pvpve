@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/potion_random",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/common_accessories",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/uncommon_accessories",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/rare_accessories",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/common_boots",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/uncommon_boots",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/rare_boots",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

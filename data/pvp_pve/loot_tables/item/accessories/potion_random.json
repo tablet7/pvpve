@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"strong_regeneration\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"strong_healing\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"strong_strength\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"swiftness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"swiftness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"harming\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"slowness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"poison\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/acacia_planks"
+}
