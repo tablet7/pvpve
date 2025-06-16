@@ -4,7 +4,7 @@
 ##player
 execute as @a at @s run function pvp_pve:player/main
 ##skill
-execute as @a at @s run function pvp_pve:player/skill/main
+function pvp_pve:player/skill/main
 ##system
 function pvp_pve:system/main
 

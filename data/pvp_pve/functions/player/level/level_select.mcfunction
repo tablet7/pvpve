@@ -17,9 +17,10 @@ execute if score @s level_bonus matches 15 run attribute @s generic.max_health b
 
 #tester
 execute at @s[tag=tester] run function pvp_pve:player/level/tester_level
-
-#tester
+#shadow
 execute at @s[tag=shadow] run function pvp_pve:player/level/shadow_level
+#red_mist
+execute at @s[tag=red_mist] run function pvp_pve:player/level/red_mist_level
 
 #レベルリセット
 xp set @s 0 levels

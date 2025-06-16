@@ -15,5 +15,13 @@ execute if predicate pvp_pve:selecteditem/shadow_skill/02shadow_skill run functi
 execute if predicate pvp_pve:selecteditem/shadow_skill/03shadow_skill run function pvp_pve:player/skill/shadow/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/shadow_skill/04shadow_skill run function pvp_pve:player/skill/shadow/skill_check/04skill_check
 
+##red_mist
+execute if predicate pvp_pve:selecteditem/red_mist_skill/01red_mist_skill run function pvp_pve:player/skill/red_mist/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/red_mist_skill/02red_mist_skill run function pvp_pve:player/skill/red_mist/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/red_mist_skill/03red_mist_skill run function pvp_pve:player/skill/red_mist/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/red_mist_skill/04red_mist_skill run function pvp_pve:player/skill/red_mist/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/red_mist_skill/05red_mist_skill run function pvp_pve:player/skill/red_mist/skill_check/05skill_check
+execute if predicate pvp_pve:selecteditem/red_mist_skill/06red_mist_skill run function pvp_pve:player/skill/red_mist/skill_check/06skill_check
+
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

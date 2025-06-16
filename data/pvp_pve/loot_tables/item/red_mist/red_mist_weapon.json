@@ -37,7 +37,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:27}"
+                "tag": "{CustomModelData:27,Unbreakable:true}"
             },
             {
               "function": "minecraft:set_attributes",

@@ -29,7 +29,12 @@
                         "italic": false
                     },
                     {
-                        "text": "５秒間移動速度低下、攻撃力上昇、耐性、最大体力上昇を獲得",
+                        "text": "５秒間移動速度低下、攻撃力上昇、耐性、",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "衝撃吸収、再生能力を獲得",
                         "color": "white",
                         "italic": false
                     },
