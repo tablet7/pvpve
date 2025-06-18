@@ -9,5 +9,5 @@ effect give @s strength 5
 effect give @s resistance 5
 
 #recast設定
-execute if score @s red_mist_EGO matches 1.. run scoreboard players set @s skill1_recast 3
-execute if score @s red_mist_EGO matches 0 run scoreboard players set @s skill1_recast 6
+execute if score @s red_mist_EGO matches 1.. run scoreboard players set @s skill1_recast 6
+execute if score @s red_mist_EGO matches 0 run scoreboard players set @s skill1_recast 12

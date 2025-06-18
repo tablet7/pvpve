@@ -2,5 +2,8 @@
 
 say 23
 
+
+
 #recast設定
-scoreboard players set @s skill3_recast 6
+execute if score @s red_mist_EGO matches 1.. run scoreboard players set @s skill1_recast 2
+execute if score @s red_mist_EGO matches 0 run scoreboard players set @s skill1_recast 4

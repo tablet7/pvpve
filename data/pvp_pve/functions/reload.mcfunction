@@ -3,6 +3,7 @@
 #function
 effect clear @a
 kill @e[tag=skill_e]
+kill @e[type=item]
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -34,6 +35,7 @@ scoreboard objectives add shadow_shadow_cnt dummy
 ###red_mist_skill
 scoreboard objectives add red_mist_EGO dummy
 scoreboard objectives add particle_cnt dummy
+scoreboard objectives add red_mist_skill2 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

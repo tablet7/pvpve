@@ -23,4 +23,4 @@ scoreboard players set @s red_mist_EGO 20
 
 
 #recast設定
-scoreboard players set @s skill4_recast 6
+scoreboard players set @s skill4_recast 110
