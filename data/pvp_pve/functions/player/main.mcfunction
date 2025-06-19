@@ -8,7 +8,7 @@ execute as @s[level=4..] run function pvp_pve:player/level/level_select
 
 #skill
 ##red_mist_ego_particle
-execute if score @s red_mist_EGO matches 1.. run particle dust 1 0 0 2 ^0 ^0.8 ^0 0 0.2 0 1 5
+execute if score @s[tag=red_mist] red_mist_EGO matches 1.. run particle dust 1 0 0 2 ^0 ^0.8 ^0 0 0.2 0 1 5
 
 
 #passive

@@ -15,5 +15,25 @@ execute as @e[tag=ad_skill3,team=Red] at @s run effect give @a[team=Red,distance
 execute as @e[tag=ad_skill3,team=Red] at @s run effect give @a[team=Red,distance=..3] regeneration 2
 execute as @e[tag=ad_skill3,team=Red] at @s run effect give @a[team=Red,distance=..3] strength 2
 
+execute as @e[tag=ad_skill3,team=Blue] at @s run effect give @a[team=Blue,distance=..3] resistance 2
+execute as @e[tag=ad_skill3,team=Blue] at @s run effect give @a[team=Blue,distance=..3] regeneration 2
+execute as @e[tag=ad_skill3,team=Blue] at @s run effect give @a[team=Blue,distance=..3] strength 2
+
+execute as @e[tag=ad_skill3,team=Yellow] at @s run effect give @a[team=Yellow,distance=..3] resistance 2
+execute as @e[tag=ad_skill3,team=Yellow] at @s run effect give @a[team=Yellow,distance=..3] regeneration 2
+execute as @e[tag=ad_skill3,team=Yellow] at @s run effect give @a[team=Yellow,distance=..3] strength 2
+
+execute as @e[tag=ad_skill3,team=Green] at @s run effect give @a[team=Green,distance=..3] resistance 2
+execute as @e[tag=ad_skill3,team=Green] at @s run effect give @a[team=Green,distance=..3] regeneration 2
+execute as @e[tag=ad_skill3,team=Green] at @s run effect give @a[team=Green,distance=..3] strength 2
+
+execute as @e[tag=ad_skill3,team=Gray] at @s run effect give @a[team=Gray,distance=..3] resistance 2
+execute as @e[tag=ad_skill3,team=Gray] at @s run effect give @a[team=Gray,distance=..3] regeneration 2
+execute as @e[tag=ad_skill3,team=Gray] at @s run effect give @a[team=Gray,distance=..3] strength 2
+
+execute as @e[tag=ad_skill3,team=Black] at @s run effect give @a[team=Black,distance=..3] resistance 2
+execute as @e[tag=ad_skill3,team=Black] at @s run effect give @a[team=Black,distance=..3] regeneration 2
+execute as @e[tag=ad_skill3,team=Black] at @s run effect give @a[team=Black,distance=..3] strength 2
+
 kill @e[nbt={Item:{id:"minecraft:saddle",Count:1b}}]
 kill @e[nbt={Item:{id:"minecraft:diamond_horse_armor",Count:1b}}]
