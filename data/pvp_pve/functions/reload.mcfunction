@@ -36,6 +36,7 @@ scoreboard objectives add shadow_shadow_cnt dummy
 scoreboard objectives add red_mist_EGO dummy
 scoreboard objectives add particle_cnt dummy
 scoreboard objectives add red_mist_skill2 dummy
+scoreboard objectives add red_mist_skill3 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

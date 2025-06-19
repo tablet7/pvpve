@@ -10,5 +10,5 @@ $scoreboard players set @e[tag=red_mist_skill2,limit=1,sort=nearest,team=$(Team)
 $scoreboard players set @e[tag=red_mist_skill2,limit=1,sort=nearest,team=$(Team)] team_set $(team_set)
 
 #recast設定
-execute if score @s red_mist_EGO matches 1.. run scoreboard players set @s skill1_recast 3
-execute if score @s red_mist_EGO matches 0 run scoreboard players set @s skill1_recast 6
+execute if score @s red_mist_EGO matches 1.. run scoreboard players set @s skill2_recast 3
+execute if score @s red_mist_EGO matches 0 run scoreboard players set @s skill2_recast 6

@@ -20,3 +20,15 @@ execute as @e[tag=red_mist_skill2,team=Yellow] at @s run tp @p[tag=red_mist,team
 execute as @e[tag=red_mist_skill2,team=Green] at @s run tp @p[tag=red_mist,team=Green] @s
 execute as @e[tag=red_mist_skill2,team=Gray] at @s run tp @p[tag=red_mist,team=Gray] @s
 execute as @e[tag=red_mist_skill2,team=Black] at @s run tp @p[tag=red_mist,team=Black] @s
+
+#skill3
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1..}] at @s run scoreboard players remove @s red_mist_skill3 1
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=0}] at @s run kill @s
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1},team=Red] at @s run function pvp_pve:player/skill/red_mist/03enshutu2 {Team:Red}
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1},team=Blue] at @s run function pvp_pve:player/skill/red_mist/03enshutu2 {Team:Blue}
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1},team=Yellow] at @s run function pvp_pve:player/skill/red_mist/03enshutu2 {Team:Yellow}
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1},team=Green] at @s run function pvp_pve:player/skill/red_mist/03enshutu2 {Team:Green}
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1},team=Gray] at @s run function pvp_pve:player/skill/red_mist/03enshutu2 {Team:Gray}
+execute as @e[tag=red_mist_skill3,limit=1,scores={red_mist_skill3=1},team=Black] at @s run function pvp_pve:player/skill/red_mist/03enshutu2 {Team:Black}
+
+
