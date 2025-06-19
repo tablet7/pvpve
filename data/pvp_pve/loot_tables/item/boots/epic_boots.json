@@ -37,7 +37,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{display:{color:50175}}"
+                "tag": "{display:{color:50175},Unbreakable:true}"
             },
             {
               "function": "minecraft:set_attributes",

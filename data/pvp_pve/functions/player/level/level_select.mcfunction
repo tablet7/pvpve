@@ -21,6 +21,8 @@ execute at @s[tag=tester] run function pvp_pve:player/level/tester_level
 execute at @s[tag=shadow] run function pvp_pve:player/level/shadow_level
 #red_mist
 execute at @s[tag=red_mist] run function pvp_pve:player/level/red_mist_level
+#red_mist
+execute at @s[tag=adventurer] run function pvp_pve:player/level/adventurer_level
 
 #レベルリセット
 xp set @s 0 levels

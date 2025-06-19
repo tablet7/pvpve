@@ -1,8 +1,9 @@
 #> pvp_pve:player/skill/red_mist/02red_mist_skill_main
 
-execute if score @e[tag=red_mist_skill2,limit=1] red_mist_skill2 matches 1.. run scoreboard players remove @e[tag=red_mist_skill2,limit=1] red_mist_skill2 1
-execute if score @e[tag=red_mist,limit=1] red_mist_skill2 matches 1.. run scoreboard players remove @e[tag=red_mist,limit=1] red_mist_skill2 1
-execute as @e[tag=red_mist_skill2,scores={red_mist_skill2=0}] at @s run kill @s
+execute as @e[tag=red_mist_skill2,scores={red_mist_skill2=1..}] at @s run scoreboard players remove @s red_mist_skill2 1
+execute as @e[tag=red_mist_skill2,scores={red_mist_skill2=..0}] at @s run kill @s 
+execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run scoreboard players remove @s red_mist_skill2 1
+
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run particle cloud ~ ~ ~
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run particle cloud ~ ~0.5 ~
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..},team=Red] at @s run execute as @e[team=!Red,distance=..2] at @s run damage @s 4
