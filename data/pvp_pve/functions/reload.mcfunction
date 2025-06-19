@@ -3,6 +3,7 @@
 #function
 effect clear @a
 kill @e[tag=skill_e]
+kill @e[type=item]
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -31,6 +32,14 @@ scoreboard objectives add test_stand_05 dummy
 scoreboard objectives add test_stand_06 dummy
 ###shadow_skill
 scoreboard objectives add shadow_shadow_cnt dummy
+###red_mist_skill
+scoreboard objectives add red_mist_EGO dummy
+scoreboard objectives add particle_cnt dummy
+scoreboard objectives add red_mist_skill2 dummy
+scoreboard objectives add red_mist_skill3 dummy
+###adventurer_skill
+scoreboard objectives add ad_skill1 dummy
+scoreboard objectives add ad_skill3 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
@@ -42,6 +51,8 @@ scoreboard objectives add level_bonus dummy
 scoreboard players set @a level_bonus 0
 xp set @a 0 levels
 xp set @a 0 points
+execute as @a run attribute @s minecraft:generic.max_health base set 30
+effect give @a instant_health 1 10
 ###Team_Display
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team
@@ -64,31 +75,37 @@ team add Red
 team modify Red color red
 team modify Red friendlyFire false
 team modify Red nametagVisibility always
+team modify Red seeFriendlyInvisibles false
 
 team add Blue
 team modify Blue color blue
 team modify Blue friendlyFire false
 team modify Blue nametagVisibility always
+team modify Blue seeFriendlyInvisibles false
 
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow friendlyFire false
 team modify Yellow nametagVisibility always
+team modify Yellow seeFriendlyInvisibles false
 
 team add Green
 team modify Green color green
 team modify Green friendlyFire false
 team modify Green nametagVisibility always
+team modify Green seeFriendlyInvisibles false
 
 team add Gray
 team modify Gray color gray
 team modify Gray friendlyFire false
 team modify Gray nametagVisibility always
+team modify Gray seeFriendlyInvisibles false
 
 team add Black
 team modify Black color black
 team modify Black friendlyFire false
 team modify Black nametagVisibility always
+team modify Black seeFriendlyInvisibles false
 
 team add Enemy
 team modify Enemy color light_purple

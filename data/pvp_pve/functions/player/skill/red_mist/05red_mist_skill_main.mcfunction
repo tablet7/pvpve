@@ -1,0 +1,23 @@
+#> pvp_pve:player/skill/red_mist/05red_mist_skill_main
+
+execute as @e[tag=red_mist_skill5,scores={particle_cnt=1..}] at @s run scoreboard players remove @s particle_cnt 1
+execute as @e[tag=red_mist_skill5,scores={particle_cnt=..0}] at @s run kill @s 
+
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^4
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^3.8
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^3.6
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^3.4
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^3.2
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^3
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^2.8
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^2.6
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^2.4
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^2.2
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^2
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^1.8
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^1.6
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^1.4
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^1.2
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^1.0
+execute as @e[tag=red_mist_skill5] at @s run particle dust 0.573 0 0 2 ^ ^ ^0.8
+execute as @e[tag=red_mist_skill5] at @s run tp @s ~ ~ ~ ~ ~25

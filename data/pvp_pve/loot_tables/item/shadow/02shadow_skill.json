@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "02shadow_skill",
+                        "text": "影の剣",
                         "color": "white",
                         "italic": false
                     }
@@ -24,13 +24,18 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:作成した魔法を発動",
+                        "text": "右クリック:影を敵に向かって移動させる",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "スニーク+右クリック:魔法の確認",
+                        "text": "攻撃力は低いが攻撃速度が速い",
                         "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム1秒",
+                        "color": "green",
                         "italic": false
                     }
                 ]
@@ -38,6 +43,26 @@
             {
                 "function": "set_nbt",
                 "tag": "{CustomModelData:12}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 3,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ],
+              "conditions": []
             }
           ]
         }

@@ -10,6 +10,7 @@ loot give @p loot pvp_pve:item/tester/03test_skill
 loot give @p loot pvp_pve:item/tester/04test_skill
 loot give @p loot pvp_pve:item/tester/05test_skill
 loot give @p loot pvp_pve:item/tester/06test_skill
+give @p elytra{Unbreakable:1b} 1
 
 #tag
 function pvp_pve:player/job_item_get/tag_remove
@@ -19,4 +20,4 @@ tag @p add tester
 scoreboard players set @p[tag=tester] kill_count 0
 scoreboard players set @p[tag=tester] tester_passive01 0
 ##attribute
-attribute @p minecraft:generic.max_health base set 20
+

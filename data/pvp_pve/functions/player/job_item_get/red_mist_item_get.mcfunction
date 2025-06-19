@@ -1,0 +1,23 @@
+#> pvp_pve:player/job_item_get/red_mist_item_get
+
+#item_delete
+clear @p
+
+#skill_item
+loot give @p loot pvp_pve:item/red_mist/red_mist_weapon
+loot give @p loot pvp_pve:item/red_mist/01red_mist_skill
+loot give @p loot pvp_pve:item/red_mist/02red_mist_skill
+loot give @p loot pvp_pve:item/red_mist/03red_mist_skill
+loot give @p loot pvp_pve:item/red_mist/04red_mist_skill
+give @p elytra{Unbreakable:1b} 1
+
+#tag
+function pvp_pve:player/job_item_get/tag_remove
+tag @p add red_mist
+scoreboard players set @p red_mist_EGO 0
+
+
+#passive
+
+
+##attribute

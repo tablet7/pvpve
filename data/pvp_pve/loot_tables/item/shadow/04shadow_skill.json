@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "04shadow_skill",
-                        "color": "white",
+                        "text": "絶影",
+                        "color": "black",
                         "italic": false
                     }
                 ]
@@ -24,13 +24,18 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:作成した魔法を発動",
+                        "text": "右クリック:近くの敵１体に大ダメージを与え、影を６体召喚する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "スニーク+右クリック:魔法の確認",
+                        "text": "ダメージを受けた敵は鈍足と弱体化とウィザーを受ける",
                         "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム70秒",
+                        "color": "green",
                         "italic": false
                     }
                 ]

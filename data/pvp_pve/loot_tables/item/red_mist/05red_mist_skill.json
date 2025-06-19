@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "大切断「縦」",
+                        "color": "#5c0000",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方を全力で切る",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "前方小範囲に特大ダメージ。",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "持っている大切断「縦」、大切断「横」を消去",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:25}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

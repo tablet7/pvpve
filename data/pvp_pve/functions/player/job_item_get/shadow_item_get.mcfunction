@@ -8,6 +8,7 @@ loot give @p loot pvp_pve:item/shadow/01shadow_skill
 loot give @p loot pvp_pve:item/shadow/02shadow_skill
 loot give @p loot pvp_pve:item/shadow/03shadow_skill
 loot give @p loot pvp_pve:item/shadow/04shadow_skill
+give @p elytra{Unbreakable:1b} 1
 
 #tag
 function pvp_pve:player/job_item_get/tag_remove
@@ -17,4 +18,3 @@ tag @p add shadow
 
 
 ##attribute
-attribute @p minecraft:generic.max_health base set 20

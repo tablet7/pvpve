@@ -16,9 +16,6 @@ execute if score @s team_set matches 4 run function pvp_pve:player/skill/shadow/
 execute if score @s team_set matches 5 run function pvp_pve:player/skill/shadow/mc_shadow_shadow_summon {x:"^-1",y:"^",z:"^",Team:"Gray"}
 execute if score @s team_set matches 6 run function pvp_pve:player/skill/shadow/mc_shadow_shadow_summon {x:"^-1",y:"^",z:"^",Team:"Black"}
 
-execute as @e[tag=shadow_shadow,limit=2,sort=nearest] at @s rotated as @p run tp @s ~ ~ ~ ~ 0
-scoreboard players set @e[tag=shadow_shadow,limit=2,sort=nearest] shadow_shadow_cnt 0
-
 execute if score @s team_set matches 1 run scoreboard players set @e[tag=shadow_shadow,team=Red] team_set 1
 execute if score @s team_set matches 2 run scoreboard players set @e[tag=shadow_shadow,team=Blue] team_set 2
 execute if score @s team_set matches 3 run scoreboard players set @e[tag=shadow_shadow,team=Yellow] team_set 3
@@ -27,6 +24,6 @@ execute if score @s team_set matches 5 run scoreboard players set @e[tag=shadow_
 execute if score @s team_set matches 6 run scoreboard players set @e[tag=shadow_shadow,team=Black] team_set 6
 
 #recast設定
-scoreboard players set @s skill1_recast 3
+scoreboard players set @s skill1_recast 5
 
 

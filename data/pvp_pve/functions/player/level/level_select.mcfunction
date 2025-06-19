@@ -3,23 +3,26 @@
 #レベルボーナス＋
 scoreboard players add @s level_bonus 1
 
-#基本ボーナス
-execute if score @s level_bonus matches 1 run effect give @s health_boost infinite
-execute if score @s level_bonus matches 3 run effect give @s haste infinite
-execute if score @s level_bonus matches 5 run effect give @s resistance infinite
-execute if score @s level_bonus matches 7 run effect give @s strength infinite
-execute if score @s level_bonus matches 9 run effect give @s health_boost infinite 1
-execute if score @s level_bonus matches 11 run effect give @s haste infinite 1
-execute if score @s level_bonus matches 13 run effect give @s resistance infinite 1
-execute if score @s level_bonus matches 15 run effect give @s health_boost infinite 2
-
 effect give @s instant_health
+
+##level_bonus
+execute if score @s level_bonus matches 1 run attribute @s generic.max_health base set 32
+execute if score @s level_bonus matches 3 run attribute @s generic.max_health base set 34
+execute if score @s level_bonus matches 5 run attribute @s generic.max_health base set 36
+execute if score @s level_bonus matches 7 run attribute @s generic.max_health base set 38
+execute if score @s level_bonus matches 9 run attribute @s generic.max_health base set 40
+execute if score @s level_bonus matches 11 run attribute @s generic.max_health base set 42
+execute if score @s level_bonus matches 13 run attribute @s generic.max_health base set 44
+execute if score @s level_bonus matches 15 run attribute @s generic.max_health base set 46
 
 #tester
 execute at @s[tag=tester] run function pvp_pve:player/level/tester_level
-
-#tester
+#shadow
 execute at @s[tag=shadow] run function pvp_pve:player/level/shadow_level
+#red_mist
+execute at @s[tag=red_mist] run function pvp_pve:player/level/red_mist_level
+#red_mist
+execute at @s[tag=adventurer] run function pvp_pve:player/level/adventurer_level
 
 #レベルリセット
 xp set @s 0 levels

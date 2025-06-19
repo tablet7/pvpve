@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "乱切り",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方を切り裂く",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "前方を切り裂き1秒後に範囲ダメージ",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム4秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:23}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

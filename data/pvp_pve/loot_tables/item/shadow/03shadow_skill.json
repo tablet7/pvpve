@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "03shadow_skill",
+                        "text": "影破",
                         "color": "white",
                         "italic": false
                     }
@@ -24,13 +24,18 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:作成した魔法を発動",
+                        "text": "右クリック:影が爆発する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "スニーク+右クリック:魔法の確認",
+                        "text": "敵が爆発に触れるとダメージと暗闇を受ける",
                         "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム8秒",
+                        "color": "green",
                         "italic": false
                     }
                 ]

@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "開花E.G.O「赤い霧」",
+                        "color": "#5c0000",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:20秒間強化状態に入る",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "攻撃力上昇、耐性、最大体力上昇、攻撃速度上昇、移動速度上昇を獲得",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "すべてのスキルのクールタイムが半分になる。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "大切断「縦」、大切断「横」がどちらか1度だけ使用可能になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム110秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

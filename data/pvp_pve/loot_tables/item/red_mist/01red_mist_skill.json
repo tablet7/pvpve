@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "気合い",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:気合いを入れることでバフを獲得",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "５秒間移動速度低下、攻撃力上昇、耐性、",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "衝撃吸収、再生能力を獲得",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム12秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:21}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
