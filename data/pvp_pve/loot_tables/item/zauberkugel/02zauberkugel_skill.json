@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "魔弾",
+                        "color": "#0400ff",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:魔弾を装填する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "7回しか使用できない。装填するたびに効果が変わる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "1発目:通常の魔弾を放つ。小範囲にダメージ",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "2発目:炎の魔弾を放つ。横広範囲にダメージ。当たった敵を燃やし、バフを解除",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "3発目:追跡の魔弾を放つ。近くの敵3体に大ダメージ",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "4発目:毒の魔弾を放つ。小範囲にダメージ。7つの状態異常を10秒つけ、バフを解除",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "5発目:解放の魔弾を放つ。広範囲に大ダメージ。自身に7つのバフを10秒つける",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "6発目:消失の魔弾を放つ。前方広範囲に大ダメージ。設置型のスキルを消す",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "7発目:必殺の魔弾を放つ。前方広範囲に特大ダメージ。ゴッデスとプレイヤー以外のモブを殺す",
+                        "color": "#0400ff",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:42}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

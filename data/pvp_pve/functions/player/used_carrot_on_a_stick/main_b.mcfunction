@@ -29,5 +29,9 @@ execute if predicate pvp_pve:selecteditem/adventurer_skill/02adventurer_skill ru
 execute if predicate pvp_pve:selecteditem/adventurer_skill/03adventurer_skill run function pvp_pve:player/skill/adventurer/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/adventurer_skill/04adventurer_skill run function pvp_pve:player/skill/adventurer/skill_check/04skill_check
 
+##zauberkugel
+execute if predicate pvp_pve:selecteditem/zauberkugel_skill/01zauberkugel_skill run function pvp_pve:player/skill/zauberkugel/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/zauberkugel_skill/02zauberkugel_skill run function pvp_pve:player/skill/zauberkugel/skill_check/02skill_check
+
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

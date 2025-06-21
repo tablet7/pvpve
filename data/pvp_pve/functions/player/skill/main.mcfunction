@@ -8,3 +8,7 @@ function pvp_pve:player/skill/red_mist/05red_mist_skill_main
 
 #adventurer_skill
 function pvp_pve:player/skill/adventurer/adventurer_main
+
+#zauberkugel_skill
+function pvp_pve:player/skill/zauberkugel/zauberkugel_main
+

@@ -34,12 +34,23 @@ scoreboard objectives add test_stand_06 dummy
 scoreboard objectives add shadow_shadow_cnt dummy
 ###red_mist_skill
 scoreboard objectives add red_mist_EGO dummy
+scoreboard players set @a[tag=red_mist] red_mist_EGO 0
 scoreboard objectives add particle_cnt dummy
+scoreboard players set @a[tag=red_mist] particle_cnt 0
 scoreboard objectives add red_mist_skill2 dummy
 scoreboard objectives add red_mist_skill3 dummy
 ###adventurer_skill
 scoreboard objectives add ad_skill1 dummy
 scoreboard objectives add ad_skill3 dummy
+##zauberkugel_skill
+scoreboard objectives add ma_cnt dummy
+scoreboard players set @a[tag=zauberkugel] ma_cnt 0
+scoreboard objectives add ma_cnt2 dummy
+scoreboard players set @a[tag=zauberkugel] ma_cnt2 6
+scoreboard objectives add ma_take dummy
+scoreboard players set @a[tag=zauberkugel] ma_take 0
+scoreboard objectives add ma_effect dummy
+scoreboard objectives add circle_par dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
