@@ -7,6 +7,9 @@ execute as @a at @s run function pvp_pve:player/main
 function pvp_pve:player/skill/main
 ##system
 function pvp_pve:system/main
+##enemy
+###enemy_group
+function pvp_pve:enemy/summon_group/eg_main
 
 #scoreboard
 ##skill

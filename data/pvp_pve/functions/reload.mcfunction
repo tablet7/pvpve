@@ -64,6 +64,7 @@ xp set @a 0 levels
 xp set @a 0 points
 execute as @a run attribute @s minecraft:generic.max_health base set 30
 effect give @a instant_health 1 10
+effect give @a saturation infinite 1 true
 ###Team_Display
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team

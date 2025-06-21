@@ -18,3 +18,5 @@ tag @p remove red_mist
 scoreboard players set @p red_mist_EGO 0
 ##adventurer
 tag @p remove adventurer
+##zauberkugel
+tag @p remove zauberkugel
