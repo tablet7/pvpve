@@ -2,6 +2,8 @@
 
 say 34
 
+execute as @a[distance=..15] at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~
+
 effect give @s instant_health 1 50
 
 $execute as @e[team=!$(Team),distance=..7] at @s run damage @s 6

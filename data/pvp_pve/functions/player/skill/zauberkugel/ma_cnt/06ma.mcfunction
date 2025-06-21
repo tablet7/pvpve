@@ -2,6 +2,8 @@
 
 say 6
 
+execute as @a[distance=..15] at @s run playsound entity.allay.death master @s ~ ~ ~
+
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["ma_6","skill_e"],Team:"$(Team)"}
 $execute as @e[tag=ma_6,limit=1,sort=nearest,team=$(Team)] at @s rotated as @p run tp @s ~ ~ ~ ~ 0
 

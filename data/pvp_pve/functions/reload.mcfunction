@@ -46,7 +46,7 @@ scoreboard objectives add ad_skill3 dummy
 scoreboard objectives add ma_cnt dummy
 scoreboard players set @a[tag=zauberkugel] ma_cnt 0
 scoreboard objectives add ma_cnt2 dummy
-scoreboard players set @a[tag=zauberkugel] ma_cnt2 6
+scoreboard players set @a[tag=zauberkugel] ma_cnt2 0
 scoreboard objectives add ma_take dummy
 scoreboard players set @a[tag=zauberkugel] ma_take 0
 scoreboard objectives add ma_effect dummy

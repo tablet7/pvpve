@@ -2,6 +2,8 @@
 
 say 7
 
+execute as @a[distance=..20] at @s run playsound entity.warden.death master @s ~ ~ ~ 3
+
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["ma_effect2","skill_e","ma_7"],Team:"$(Team)"}
 $execute as @e[tag=ma_effect2,limit=1,sort=nearest,team=$(Team)] at @s rotated as @p run tp @s ~ ~ ~ ~ 0
 $execute as @e[tag=ma_effect2,limit=1,sort=nearest,team=$(Team)] at @s run scoreboard players add @s circle_par 41

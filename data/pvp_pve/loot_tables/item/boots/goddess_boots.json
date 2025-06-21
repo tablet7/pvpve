@@ -129,7 +129,7 @@
                 {
                   "attribute": "minecraft:generic.knockback_resistance",
                   "name": "",
-                  "amount": 0.4,
+                  "amount": 0.04,
                   "operation": "addition",
                   "slot": "feet"
                 }
