@@ -54,5 +54,6 @@ particle dust 0.455 0.043 0.043 2 ^2.1 ^0.9 ^0.5
 
 playsound minecraft:entity.firework_rocket.blast master @a[distance=..10] ~ ~ ~
 
+execute as @s positioned ^ ^1.5 ^2.5 run execute as @e[distance=..3,team=Enemy] at @s run damage @s 8
 $execute as @s positioned ^ ^1.5 ^2.5 run execute as @e[distance=..3,team=!$(Team)] at @s run damage @s 4
 

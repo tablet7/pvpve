@@ -9,7 +9,6 @@ loot give @p loot pvp_pve:item/red_mist/01red_mist_skill
 loot give @p loot pvp_pve:item/red_mist/02red_mist_skill
 loot give @p loot pvp_pve:item/red_mist/03red_mist_skill
 loot give @p loot pvp_pve:item/red_mist/04red_mist_skill
-give @p elytra{Unbreakable:1b} 1
 
 #tag
 function pvp_pve:player/job_item_get/tag_remove

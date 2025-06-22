@@ -15,6 +15,7 @@ effect clear @s bad_omen
 effect clear @s unluck
 
 effect give @s health_boost 10 2
+effect give @s instant_health 1 1
 
 #recast設定
 scoreboard players set @s skill2_recast 10

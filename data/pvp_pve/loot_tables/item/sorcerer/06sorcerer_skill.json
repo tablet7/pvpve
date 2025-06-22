@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "ブラックホール",
+                        "color": "#1f1e57",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方にブラックホールを召喚",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "周囲にいる敵を吸い込み、大ダメージ",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "必要魔力10",
+                        "color": "green",
+                        "italic": false                        
+                    },
+                    {
+                        "text": "クールタイム80秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:56}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

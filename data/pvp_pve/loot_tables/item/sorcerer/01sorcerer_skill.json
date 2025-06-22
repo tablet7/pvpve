@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "探求",
+                        "color": "#68dcff",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:魔力を貯める(最大:15)",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "体力を回復し、魔力を獲得、少しの間動けなくなる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム5秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:51,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

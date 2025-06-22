@@ -2,6 +2,7 @@
 
 $summon armor_stand ~ ~ ~ {CustomName:"'$(Name1)'",\
                            Invisible:true,\
+                           Marker:true,\
                            Tags:["ds1","skill_e"],\
                            Team:"$(Team)"}
 
@@ -9,6 +10,7 @@ $execute as @e[tag=ds1,limit=1,sort=nearest,team=$(Team),name=$(Name1)] at @s ro
 
 $summon armor_stand ~ ~ ~ {CustomName:"'$(Name1)'",\
                            Invisible:true,\
+                           Marker:true,\
                            Tags:["ds2","skill_e"],\
                            Team:"$(Team)"}
 
@@ -16,6 +18,7 @@ $execute as @e[tag=ds2,limit=1,sort=nearest,team=$(Team),name=$(Name1)] at @s ro
 
 $summon armor_stand ~ ~ ~ {CustomName:"'$(Name2)'",\
                            Invisible:true,\
+                           Marker:true,\
                            Tags:["ds3","skill_e"],\
                            Team:"$(Team)"}
 
@@ -23,6 +26,7 @@ $execute as @e[tag=ds3,limit=1,sort=nearest,team=$(Team),name=$(Name2)] at @s ro
 
 $summon armor_stand ~ ~ ~ {CustomName:"'$(Name2)'",\
                            Invisible:true,\
+                           Marker:true,\
                            Tags:["ds4","skill_e"],\
                            Team:"$(Team)"}
 

@@ -6,6 +6,7 @@ execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run scoreboard pl
 
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run particle cloud ~ ~ ~
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run particle cloud ~ ~0.5 ~
+execute as @e[tag=red_mist,scores={red_mist_skill2=1..}] at @s run execute as @e[team=Enemy,distance=..2] at @s run damage @s 8
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..},team=Red] at @s run execute as @e[team=!Red,distance=..2] at @s run damage @s 4
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..},team=Blue] at @s run execute as @e[team=!Blue,distance=..2] at @s run damage @s 4
 execute as @e[tag=red_mist,scores={red_mist_skill2=1..},team=Yellow] at @s run execute as @e[team=!Yellow,distance=..2] at @s run damage @s 4

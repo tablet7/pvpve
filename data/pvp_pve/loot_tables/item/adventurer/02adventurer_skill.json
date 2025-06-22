@@ -43,26 +43,6 @@
             {
                 "function": "set_nbt",
                 "tag": "{CustomModelData:32}"
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 3,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ],
-              "conditions": []
             }
           ]
         }
