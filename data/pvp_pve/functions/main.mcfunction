@@ -11,6 +11,10 @@ function pvp_pve:system/main
 ###enemy_group
 function pvp_pve:enemy/summon_group/eg_main
 
+##glass_bin
+execute as @e[nbt={Item:{id:"minecraft:glass_bottle",Count:1b}}] at @s run effect give @p instant_health
+execute as @e[nbt={Item:{id:"minecraft:glass_bottle",Count:1b}}] at @s run kill @s
+
 #scoreboard
 ##skill
 ###tester

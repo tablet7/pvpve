@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "エンチャントブースト",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:自分にバフと魔力7を付与。周囲の敵にデバフを付与",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "移動速度上昇、攻撃力上昇を獲得。敵には移動速度低下、弱体化付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "必要魔力5",
+                        "color": "green",
+                        "italic": false                        
+                    },
+                    {
+                        "text": "クールタイム20秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:55}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

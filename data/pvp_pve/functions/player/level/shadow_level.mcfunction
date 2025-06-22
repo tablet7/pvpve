@@ -1,5 +1,5 @@
 #> pvp_pve:player/level/tester_level
 
 
-give @s acacia_button
+give @s ender_pearl 3
 

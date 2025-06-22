@@ -7,9 +7,6 @@ clear @p
 loot give @p loot pvp_pve:item/zauberkugel/01zauberkugel_skill
 loot give @p loot pvp_pve:item/zauberkugel/02zauberkugel_skill
 
-#elytra
-give @p elytra{Unbreakable:1b} 1
-
 #tag
 function pvp_pve:player/job_item_get/tag_remove
 tag @p add zauberkugel

@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "ライトニング",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に雷を召喚する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "前方にいる敵に雷を落とす",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "必要魔力4",
+                        "color": "green",
+                        "italic": false                        
+                    },
+                    {
+                        "text": "クールタイム2秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:54}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

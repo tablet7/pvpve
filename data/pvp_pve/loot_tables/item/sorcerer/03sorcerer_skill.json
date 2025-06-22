@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "アイスストーム",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:氷の嵐を召喚する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "自分を中心に範囲ダメージ。敵に鈍足を与える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "必要魔力3",
+                        "color": "green",
+                        "italic": false                        
+                    },
+                    {
+                        "text": "クールタイム2秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:53}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

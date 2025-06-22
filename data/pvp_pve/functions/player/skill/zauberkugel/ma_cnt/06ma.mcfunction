@@ -18,6 +18,7 @@ $execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=1,sort=nea
 $execute as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run particle minecraft:end_rod ~ ~ ~ 5 5 5 1 1000
 
 $execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run kill @e[distance=..12,tag=skill_e,team=!$(Team)]
+$execute as @e[tag=ma_6,limit=1,sort=nearest,team=$(Team)] at @s run kill @s
 
 
 scoreboard players set @s ma_cnt2 6

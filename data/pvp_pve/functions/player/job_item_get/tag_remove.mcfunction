@@ -20,3 +20,9 @@ scoreboard players set @p red_mist_EGO 0
 tag @p remove adventurer
 ##zauberkugel
 tag @p remove zauberkugel
+##sorcerer
+tag @p remove sorcerer
+
+#共通アイテム
+give @p leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true} 1
+give @p elytra{Unbreakable:1b} 1

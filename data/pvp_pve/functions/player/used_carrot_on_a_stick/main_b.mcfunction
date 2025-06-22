@@ -33,5 +33,13 @@ execute if predicate pvp_pve:selecteditem/adventurer_skill/04adventurer_skill ru
 execute if predicate pvp_pve:selecteditem/zauberkugel_skill/01zauberkugel_skill run function pvp_pve:player/skill/zauberkugel/skill_check/01skill_check
 execute if predicate pvp_pve:selecteditem/zauberkugel_skill/02zauberkugel_skill run function pvp_pve:player/skill/zauberkugel/skill_check/02skill_check
 
+##sorcerer
+execute if predicate pvp_pve:selecteditem/sorcerer_skill/01sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/sorcerer_skill/02sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/sorcerer_skill/03sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/sorcerer_skill/04sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/sorcerer_skill/05sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/05skill_check
+execute if predicate pvp_pve:selecteditem/sorcerer_skill/06sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/06skill_check
+
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

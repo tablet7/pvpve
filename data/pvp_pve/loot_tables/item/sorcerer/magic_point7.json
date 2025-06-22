@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:diamond",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "魔力",
+                        "color": "#68dcff",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "スキルに使用する魔力。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "可視化できるようにしただけなので捨てても問題ない",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:57,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

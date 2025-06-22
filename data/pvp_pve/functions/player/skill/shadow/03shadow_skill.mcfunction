@@ -31,4 +31,4 @@ execute if score @s team_set matches 5 run execute as @e[tag=shadow_shadow,dista
 execute if score @s team_set matches 6 run execute as @e[tag=shadow_shadow,distance=..20,scores={team_set=6}] at @s run function pvp_pve:player/skill/shadow/03shadow_skill/03shadow_skill1
 
 #recast設定
-scoreboard players set @s skill3_recast 8
+scoreboard players set @s skill3_recast 6

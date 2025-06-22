@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "ファイアボム",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に爆発する火の玉を放つ",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "敵か建造物に当たると爆発し、範囲ダメージ。周囲の敵を燃やす",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "必要魔力2",
+                        "color": "green",
+                        "italic": false                        
+                    },
+                    {
+                        "text": "クールタイム2秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:52}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

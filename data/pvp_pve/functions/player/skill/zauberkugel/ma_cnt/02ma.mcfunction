@@ -88,7 +88,7 @@ $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel21,team=$(Team)] 
         rotated as @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest] positioned ^ ^ ^4 \
         rotated as @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest] positioned ^ ^ ^2 \
         rotated as @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest] positioned ^ ^ ^1 \
-        run data merge entity @e[limit=1,distance=..1.5,team=!$(Team)] {Fire:200}
+        run execute as @e[limit=1,distance=..1.5,team=!$(Team)] at @s run function pvp_pve:player/skill/zauberkugel/fire_inv
 
 $kill @e[type=armor_stand,name=zauberkugel21,limit=2,sort=nearest,team=$(Team)]
 $kill @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest,team=$(Team)]
