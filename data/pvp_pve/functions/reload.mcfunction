@@ -7,7 +7,7 @@ kill @e[type=item]
 
 #scoreboard
 scoreboard objectives add tem dummy
-scoreboard objectives add random dummy
+scoreboard objectives add random_rand dummy
 scoreboard objectives add tick dummy
 scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy

@@ -5,11 +5,11 @@ setblock ~ ~ ~ minecraft:chest{LootTable:"pvp_pve:chest/legendary_chest"}
 
 function pvp_pve:enemy/summon/legendary_e/sankaku {x:1,y:1,z:1}
 
-function pvp_pve:enemy/summon/common_e/skeleton {x:3,y:1,z:3}
-function pvp_pve:enemy/summon/common_e/skeleton {x:-3,y:1,z:-3}
+function pvp_pve:enemy/summon/common_e/random_common_enemy {x:3,y:1,z:3}
+function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:-3}
 
-function pvp_pve:enemy/summon/common_e/zombie {x:-3,y:1,z:3}
-function pvp_pve:enemy/summon/common_e/zombie {x:3,y:1,z:-3}
+function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:3}
+function pvp_pve:enemy/summon/common_e/random_common_enemy {x:3,y:1,z:-3}
 
 kill @s
 
