@@ -2,6 +2,6 @@
 
 $summon creeper ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/common_item",\
                                    Team:Enemy,\
-                                   Health:30f,Attributes:[{Name:generic.max_health,Base:30}],\
+                                   Health:25f,Attributes:[{Name:generic.max_health,Base:25}],\
                                    Tags:["common_e"],\
                                    CustomName:'{"text":"クリーパー"}'}

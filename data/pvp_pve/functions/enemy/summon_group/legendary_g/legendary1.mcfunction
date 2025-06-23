@@ -12,6 +12,8 @@ function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:-3}
 function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:3}
 function pvp_pve:enemy/summon/common_e/random_common_enemy {x:3,y:1,z:-3}
 
+kill @e[type=item,distance=..10]
+
 kill @s
 
 #summon armor_stand $(x) $(y) $(z) {Marker:true,Invisible:true,Tags:["eg_set","eg_legendary1"],CustomName:'"legendary1"'}
