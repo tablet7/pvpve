@@ -25,17 +25,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:experience_bottle",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 3
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
           "weight": 2,
           "functions": [
             {

@@ -11,7 +11,7 @@ setblock ~ ~-9 ~1 minecraft:chest[facing=west,type=right]{LootTable:"pvp_pve:che
 setblock ~ ~-9 ~ minecraft:chest[facing=west,type=right]{LootTable:"pvp_pve:chest/rare_chest"}
 
 
-function pvp_pve:enemy/summon/legendary_e/sankaku {x:1,y:1,z:1}
+function pvp_pve:enemy/summon/legendary_e/random_legendary_enemy {x:1,y:1,z:1}
 
 function pvp_pve:enemy/summon/common_e/random_common_enemy {x:3,y:1,z:3}
 function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:-3}

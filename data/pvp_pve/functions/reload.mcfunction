@@ -3,6 +3,7 @@
 #function
 effect clear @a
 kill @e[tag=skill_e]
+kill @e[team=Enemy]
 kill @e[type=item]
 
 #scoreboard
@@ -75,7 +76,18 @@ effect give @a saturation infinite 1 true
 scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team
 scoreboard players set @a Team 0
-
+###enemy
+####devour
+scoreboard objectives add devour_summon_cnt dummy
+scoreboard objectives add devour_skill dummy
+scoreboard objectives add devour_skill1 dummy
+scoreboard objectives add devour_skill2 dummy
+scoreboard objectives add devour_skill3 dummy
+####dragon
+scoreboard objectives add enemy_skill_cnt dummy
+scoreboard objectives add enemy_skill1 dummy
+scoreboard objectives add enemy_skill2 dummy
+scoreboard objectives add enemy_skill3 dummy
 #timer
 kill @e[tag=timer]
 summon minecraft:armor_stand 0.0 0.0 0.0 {CustomName:'"timer"',Marker:true,Invisible:true,Tags:["timer"]}
