@@ -4,13 +4,13 @@ setblock ~ ~ ~ air
 setblock ~ ~ ~ minecraft:chest{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~1 ~ ~1 minecraft:chest{LootTable:"pvp_pve:chest/rare_chest"}
 
-function pvp_pve:enemy/summon/legendary_e/sankaku {x:1,y:1,z:1}
+function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:0,y:0,z:0}
 
-function pvp_pve:enemy/summon/common_e/random_common_enemy {x:3,y:1,z:3}
-function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:-3}
+function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:4,y:1,z:4}
+function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:-4,y:1,z:-4}
 
-function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-3,y:1,z:3}
-function pvp_pve:enemy/summon/common_e/random_common_enemy {x:3,y:1,z:-3}
+function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:-4,y:1,z:4}
+function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:4,y:1,z:-4}
 
 kill @e[type=item,distance=..10]
 

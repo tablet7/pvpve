@@ -9,3 +9,5 @@ $summon skeleton ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/common_item",
                                     ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],\
                                     HandItems:[{id:"minecraft:bow",Count:1b},{}],\
                                     HandDropChances:[0.000F,0.085F]}
+
+                                    

@@ -41,5 +41,30 @@ execute if predicate pvp_pve:selecteditem/sorcerer_skill/04sorcerer_skill run fu
 execute if predicate pvp_pve:selecteditem/sorcerer_skill/05sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/05skill_check
 execute if predicate pvp_pve:selecteditem/sorcerer_skill/06sorcerer_skill run function pvp_pve:player/skill/sorcerer/skill_check/06skill_check
 
+##berserker
+execute if predicate pvp_pve:selecteditem/berserker_skill/01berserker_skill run function pvp_pve:player/skill/berserker/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/berserker_skill/02berserker_skill run function pvp_pve:player/skill/berserker/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/berserker_skill/03berserker_skill run function pvp_pve:player/skill/berserker/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/berserker_skill/04berserker_skill run function pvp_pve:player/skill/berserker/skill_check/04skill_check
+
+##guardian
+execute if predicate pvp_pve:selecteditem/guardian_skill/01guardian_skill run function pvp_pve:player/skill/guardian/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/guardian_skill/02guardian_skill run function pvp_pve:player/skill/guardian/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/guardian_skill/03guardian_skill run function pvp_pve:player/skill/guardian/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/guardian_skill/04guardian_skill run function pvp_pve:player/skill/guardian/skill_check/04skill_check
+
+##hunter
+execute if predicate pvp_pve:selecteditem/hunter_skill/01hunter_skill run function pvp_pve:player/skill/hunter/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/hunter_skill/02hunter_skill run function pvp_pve:player/skill/hunter/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/hunter_skill/03hunter_skill run function pvp_pve:player/skill/hunter/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/hunter_skill/04hunter_skill run function pvp_pve:player/skill/hunter/skill_check/04skill_check
+
+##summoner
+execute if predicate pvp_pve:selecteditem/summoner_skill/01summoner_skill run function pvp_pve:player/skill/summoner/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/summoner_skill/02summoner_skill run function pvp_pve:player/skill/summoner/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/summoner_skill/03summoner_skill run function pvp_pve:player/skill/summoner/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/summoner_skill/04summoner_skill run function pvp_pve:player/skill/summoner/skill_check/04skill_check
+
+
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

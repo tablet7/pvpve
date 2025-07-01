@@ -15,6 +15,17 @@ function pvp_pve:player/skill/adventurer/adventurer_main
 #zauberkugel_skill
 function pvp_pve:player/skill/zauberkugel/zauberkugel_main
 
-#zauberkugel_skill
+#sorcerer_skill
 function pvp_pve:player/skill/sorcerer/sorcerer_main
 
+#berserker_skill
+function pvp_pve:player/skill/berserker/berserker_main
+
+#guardian_skill
+function pvp_pve:player/skill/guardian/guardian_main
+
+#hunter_skill
+function pvp_pve:player/skill/hunter/hunter_main
+
+#summoner_skill
+function pvp_pve:player/skill/summoner/summoner_main

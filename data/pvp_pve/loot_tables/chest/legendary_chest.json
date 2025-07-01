@@ -33,22 +33,6 @@
           "name": "pvp_pve:item/accessories/potion_random"
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 1
-            }
-          ]
-        }
-      ]
     }
   ]
 }

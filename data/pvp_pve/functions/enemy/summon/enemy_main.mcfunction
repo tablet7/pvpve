@@ -15,7 +15,7 @@ execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run particle item_sl
 execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run kill @s
 
 #ライダー
-execute as @e[tag=bow_skeleton] at @s run execute if entity @p[distance=..4] run data merge entity @s {HandItems:[{id:iron_sword,Count:1b,tag:{Enchantments:[{id:"minecraft:sharpness",lvl:3s}]}},{}],Tags:["legendary_e","sword_skeleton"]}
+execute as @e[tag=bow_skeleton] at @s run execute if entity @p[distance=..4] run data merge entity @s {HandItems:[{id:iron_sword,Count:1b},{}],Tags:["legendary_e","sword_skeleton"]}
 execute as @e[tag=sword_skeleton] at @s run execute if entity @p[distance=5..] run data merge entity @s {HandItems:[{id:bow,Count:1b},{}],Tags:["legendary_e","bow_skeleton"]}
 execute as @e[type=arrow,nbt={inGround:true},tag=!player_arrow] at @s run kill @s
 
@@ -35,7 +35,7 @@ execute as @e[tag=devour_summon,scores={devour_summon_cnt=1}] at @s run function
 execute as @e[tag=devour_summon,scores={devour_summon_cnt=1}] at @s run execute as @a[distance=..20] at @s run playsound entity.wither.death master @s ~ ~ ~ 1 2
 ##devour_skill
 execute as @e[tag=devour2,scores={devour_skill=1..}] at @s run scoreboard players remove @s devour_skill 1
-execute as @e[tag=devour2,scores={devour_skill=..0}] at @s run scoreboard players set @s devour_skill 200
+execute as @e[tag=devour2,scores={devour_skill=..0}] at @s run scoreboard players set @s devour_skill 140
 
 execute as @e[tag=devour2,scores={devour_skill=2}] at @s run function pvp_pve:enemy/summon/goddes_e/devour_skill
 
@@ -62,7 +62,7 @@ execute as @e[tag=devour_skill3] at @s run execute if entity @a[distance=..1.5] 
 
 ##dragon_skill
 execute as @e[scores={enemy_skill_cnt=1..}] at @s run scoreboard players remove @s enemy_skill_cnt 1
-execute as @e[scores={enemy_skill_cnt=..0}] at @s run scoreboard players set @s enemy_skill_cnt 200
+execute as @e[scores={enemy_skill_cnt=..0}] at @s run scoreboard players set @s enemy_skill_cnt 140
 
 execute as @e[tag=dragon_desc,scores={enemy_skill_cnt=2}] at @s run function pvp_pve:enemy/summon/goddes_e/dragon_skill
 
@@ -72,3 +72,13 @@ execute as @e[tag=dragon_skill1] at @s run execute as @a[distance=..2] at @s run
 execute as @e[tag=dragon_skill1] at @s run effect give @a[distance=..2] slowness 5 2
 execute as @e[tag=dragon_skill1] at @s run particle dust 0 0 0.392 2 ~ ~ ~ 0.1 0.1 0.1 1 10
 execute as @e[tag=dragon_skill1] at @s run tp ^0.4 ^-0.2 ^
+
+execute as @e[tag=dragon_skill2,scores={enemy_skill2=1..}] at @s run scoreboard players remove @s enemy_skill2 1
+execute as @e[tag=dragon_skill2,scores={enemy_skill2=..0}] at @s run kill @s 
+execute as @e[tag=dragon_skill2] at @s run tp @s ^ ^ ^0.3
+execute as @e[tag=dragon_skill2] at @s run particle soul_fire_flame ~ ~ ~ 0.3 0.3 0.3 0.05 10
+execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run particle soul_fire_flame ~ ~ ~ 0.3 0.3 0.3 0.5 50
+execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run execute as @a[distance=..3] at @s run damage @s 4
+execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run execute as @a[distance=..3] at @s run function pvp_pve:player/skill/zauberkugel/fire_inv
+execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run kill @s
+
