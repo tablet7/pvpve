@@ -8,6 +8,8 @@ function pvp_pve:player/skill/main
 ##system
 function pvp_pve:system/main
 ##enemy
+###enemy_main
+function pvp_pve:enemy/summon/enemy_main
 ###enemy_group
 function pvp_pve:enemy/summon_group/eg_main
 

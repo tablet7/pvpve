@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「世界を綴るもの」",
+                        "color": "#00ff88",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:自身を上空にテレポートする",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "周りの敵にダメージを与え、体力を全回復し、自身を100m上空にテレポートする",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム120秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:64}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

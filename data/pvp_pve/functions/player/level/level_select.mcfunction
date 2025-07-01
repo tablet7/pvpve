@@ -25,6 +25,16 @@ execute at @s[tag=red_mist] run function pvp_pve:player/level/red_mist_level
 execute at @s[tag=adventurer] run function pvp_pve:player/level/adventurer_level
 #zauberkugel
 execute at @s[tag=zauberkugel] run function pvp_pve:player/level/zauberkugel_level
+#sorcerer
+execute at @s[tag=sorcerer] run function pvp_pve:player/level/sorcerer_level
+#summoner
+execute at @s[tag=summoner] run function pvp_pve:player/level/summoner_level
+#hunter
+execute at @s[tag=hunter] run function pvp_pve:player/level/hunter_level
+#guardian
+execute at @s[tag=guardian] run function pvp_pve:player/level/guardian_level
+#berserker
+execute at @s[tag=berserker] run function pvp_pve:player/level/berserker_level
 
 #レベルリセット
 xp set @s 0 levels

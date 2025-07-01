@@ -7,7 +7,7 @@
         {
           "type": "minecraft:loot_table",
           "name": "pvp_pve:item/accessories/legendary_accessories",
-          "weight": 3
+          "weight": 1
         },
         {
           "type": "minecraft:loot_table",
@@ -17,12 +17,40 @@
         {
           "type": "minecraft:loot_table",
           "name": "pvp_pve:item/boots/legendary_boots",
-          "weight": 3
+          "weight": 1
         },
         {
           "type": "minecraft:loot_table",
           "name": "pvp_pve:item/boots/goddess_boots",
           "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 1,
+          "quality": 0,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 10
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 8
+            }
+          ]
         }
       ]
     }

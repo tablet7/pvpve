@@ -3,7 +3,7 @@
 #skill2
 execute as @e[tag=sor_2] at @s run particle lava ~ ~ ~
 execute as @e[tag=sor_2] at @s run particle explosion ~ ~ ~
-execute as @e[tag=sor_2] at @s if block ^ ^ ^1 air run tp ^ ^ ^0.2
+execute as @e[tag=sor_2] at @s if block ^ ^ ^1 air run tp ^ ^ ^0.5
 
 execute as @e[tag=sor_2,scores={particle_cnt=1..}] at @s run scoreboard players remove @s particle_cnt 1
 execute as @e[tag=sor_2,scores={particle_cnt=..0}] at @s run kill @s 

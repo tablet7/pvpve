@@ -1,5 +1,5 @@
 #> pvp_pve:player/level/tester_level
 
 
-give @s acacia_sign
+give @s glass_bottle 2
 

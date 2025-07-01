@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "相棒召喚",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:相棒の馬を召喚する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "馬の周囲にいる時、耐性、再生力、攻撃力上昇を獲得",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "馬は20秒後に消える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム20秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:73}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

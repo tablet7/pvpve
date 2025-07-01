@@ -22,6 +22,14 @@ tag @p remove adventurer
 tag @p remove zauberkugel
 ##sorcerer
 tag @p remove sorcerer
+##hunter
+tag @p remove hunter
+##guardian
+tag @p remove guardian
+##summoner
+tag @p remove summoner
+##berserker
+tag @p remove berserker
 
 #共通アイテム
 give @p leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true} 1
