@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "「世界を綴るもの」",
-                        "color": "#00ff88",
+                        "text": "ピンポイントショット",
+                        "color": "#ff5858",
                         "italic": false
                     }
                 ]
@@ -24,17 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:自身を上空にテレポートする",
+                        "text": "右クリック:周囲の敵の座標に的を設置する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "周りの敵にダメージを与え、体力を全回復し、自身を100m上空にテレポートする",
+                        "text": "的を壊すと爆発し、周囲の敵にダメージと鈍足を与える",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム120秒",
+                        "text": "的は5秒間持続し、設置する際に鈍足を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム60秒",
                         "color": "green",
                         "italic": false
                     }

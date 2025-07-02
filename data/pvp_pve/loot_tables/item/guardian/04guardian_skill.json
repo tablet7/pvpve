@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "「世界を綴るもの」",
-                        "color": "#00ff88",
+                        "text": "ガーディアンエンジェル",
+                        "color": "#f0ff9e",
                         "italic": false
                     }
                 ]
@@ -24,17 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:自身を上空にテレポートする",
+                        "text": "右クリック:守護天使を召喚する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "周りの敵にダメージを与え、体力を全回復し、自身を100m上空にテレポートする",
+                        "text": "天使の周囲では自分チームはスキル以外のダメージを受けない",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム120秒",
+                        "text": "天使は破壊可能かつ15秒で消える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム180秒",
                         "color": "green",
                         "italic": false
                     }

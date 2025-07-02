@@ -55,7 +55,7 @@ $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel21,team=$(Team)] 
         rotated as @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest] positioned ^ ^ ^4 \
         rotated as @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest] positioned ^ ^ ^2 \
         rotated as @e[type=armor_stand,name=zauberkugel22,limit=2,sort=nearest] positioned ^ ^ ^1 \
-        run execute as @e[distance=..1.5,team=Enemy] at @s run damage @s 20
+        run execute as @e[distance=..1.5,team=Enemy] at @s run damage @s 30
 
 $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel21,team=$(Team)] at @s run execute as @s positioned ^ ^ ^3 positioned ^ ^1 ^ \
         rotated as @e[type=armor_stand,name=zauberkugel21,limit=2,sort=nearest] positioned ^ ^ ^0.1 \

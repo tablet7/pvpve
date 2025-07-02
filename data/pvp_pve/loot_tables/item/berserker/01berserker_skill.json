@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "溶岩設置",
+                        "text": "オーバーロード",
                         "color": "white",
                         "italic": false
                     }
@@ -24,22 +24,27 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に溶岩を召喚する",
+                        "text": "右クリック:体力を消費し、バフとデバフを得る",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "前方に溶岩を設置する。自身は火炎耐性を得る。溶岩は4秒で消える",
+                        "text": "衝撃吸収、再生能力、攻撃力上昇、攻撃速度増加、移動速度増加、",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "※下に向きすぎると発動しない",
+                        "text": "ウィザー、弱体化、攻撃速度低下、移動速度低下を得る",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム7秒",
+                        "text": "消費体力4",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
                         "color": "green",
                         "italic": false
                     }

@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "ミルクインアバケツ",
+                        "text": "ヘイトテレポート",
                         "color": "white",
                         "italic": false
                     }
@@ -24,17 +24,12 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:状態異常を回復",
+                        "text": "右クリック:周囲の敵を自分のもとへテレポートさせて、鈍足を付与する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "すべてのデバフを解除し、最大体力上昇を付与する",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム10秒",
+                        "text": "クールタイム15秒",
                         "color": "green",
                         "italic": false
                     }

@@ -52,10 +52,17 @@ scoreboard objectives add ma_take dummy
 scoreboard players set @a[tag=zauberkugel] ma_take 0
 scoreboard objectives add ma_effect dummy
 scoreboard objectives add circle_par dummy
+##hunter_skill
+scoreboard objectives add arrow_rain_cnt dummy
+scoreboard objectives add trap_cnt dummy
+scoreboard objectives add skill4_cnt dummy
 ##sorcerer
 scoreboard objectives add magic_point dummy
 scoreboard players set @a[tag=sorcerer] magic_point 0
 clear @a diamond
+##guardian
+scoreboard objectives add guardian_skill3 dummy
+scoreboard objectives add guardian_skill4 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

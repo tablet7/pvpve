@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "溶岩設置",
+                        "text": "矢筒",
                         "color": "white",
                         "italic": false
                     }
@@ -24,22 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に溶岩を召喚する",
+                        "text": "右クリック:ポーション効果の付いた矢をランダムに３つ得る",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "前方に溶岩を設置する。自身は火炎耐性を得る。溶岩は4秒で消える",
+                        "text": "効果は即時ダメージ、毒、鈍足、弱体化、攻撃速度低下、炎",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "※下に向きすぎると発動しない",
+                        "text": "※通常の矢を一番右列の３行目に置いておくといい",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム7秒",
+                        "text": "クールタイム5秒",
                         "color": "green",
                         "italic": false
                     }
