@@ -7,5 +7,5 @@ scoreboard players set @e[limit=1,sort=nearest,tag=guardian_skill3] guardian_ski
 
 
 #recast設定
-scoreboard players set @s skill3_recast 2
+scoreboard players set @s skill3_recast 12
 

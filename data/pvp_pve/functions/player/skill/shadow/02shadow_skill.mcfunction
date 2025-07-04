@@ -17,4 +17,4 @@ execute if score @s team_set matches 5 run execute as @e[tag=shadow_shadow,dista
 execute if score @s team_set matches 6 run execute as @e[tag=shadow_shadow,distance=..20,scores={team_set=6}] at @s run tp ^ ^ ^2
 
 #recast設定
-scoreboard players set @s skill2_recast 1
+scoreboard players set @s skill2_recast 2

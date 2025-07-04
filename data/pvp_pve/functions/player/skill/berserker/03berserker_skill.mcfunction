@@ -2,6 +2,9 @@
 
 say 93
 
+scoreboard players set @s berserker_skill3 5
+damage @s 2
+
 #recast設定
-scoreboard players set @s skill3_recast 2
+scoreboard players set @s skill3_recast 7
 

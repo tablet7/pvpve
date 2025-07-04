@@ -63,6 +63,14 @@ clear @a diamond
 ##guardian
 scoreboard objectives add guardian_skill3 dummy
 scoreboard objectives add guardian_skill4 dummy
+#summoner
+scoreboard objectives add summoner_skill_cnt dummy
+##berserker
+scoreboard objectives add berserker_passive custom:damage_dealt
+scoreboard players set @a berserker_passive 0
+scoreboard objectives add berserker_skill2 dummy
+scoreboard objectives add berserker_skill3 dummy
+scoreboard objectives add berserker_skill4 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
@@ -102,6 +110,8 @@ scoreboard players set @e[tag=timer] tick 0
 scoreboard players set @e[tag=timer] seconds 0
 scoreboard players set @e[tag=timer] minutes 0
 scoreboard players set @e[tag=timer] hours 0
+#heal_bottle
+scoreboard objectives add heal_bottle_cnt dummy
 
 #constant
 scoreboard objectives add constant dummy
