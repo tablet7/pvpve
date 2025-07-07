@@ -1,12 +1,12 @@
 #> pvp_pve:player/skill/berserker/berserker_main
 
 #passive
-execute as @a[tag=berserker,scores={berserker_passive=1..}] at @s run effect give @s instant_health
+execute as @a[tag=berserker,scores={berserker_passive=1..}] at @s run effect give @s regeneration 3 1
 execute as @a[tag=berserker,scores={berserker_passive=1..}] at @s run scoreboard players set @s berserker_passive 0
 
 #skill2
 execute as @a[scores={berserker_skill2=1..}] at @s run scoreboard players remove @s berserker_skill2 1
-execute as @a[scores={berserker_skill2=1}] at @s run tp ^ ^ ^-2
+execute as @a[scores={berserker_skill2=1}] at @s run execute if block ^ ^ ^-2 air if block ^ ^ ^-1 air run tp ^ ^ ^-2
 
 #skill3
 execute as @a[scores={berserker_skill3=1..}] at @s run particle damage_indicator ~ ~ ~ 3.0 0.0 3.0 0 10

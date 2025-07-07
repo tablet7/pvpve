@@ -10,6 +10,7 @@ scoreboard players set @p skill5_recast 0
 scoreboard players set @p skill6_recast 0
 scoreboard players set @p heal_bottle_cnt 0
 scoreboard players set @p berserker_passive 0
+scoreboard players set @p ma_take 0
 ##tester
 tag @p remove tester
 scoreboard players set @p[tag=tester] tester_passive01 0

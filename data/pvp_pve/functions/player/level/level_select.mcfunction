@@ -15,26 +15,10 @@ execute if score @s level_bonus matches 11 run attribute @s generic.max_health b
 execute if score @s level_bonus matches 13 run attribute @s generic.max_health base set 44
 execute if score @s level_bonus matches 15 run attribute @s generic.max_health base set 46
 
-#tester
-execute at @s[tag=tester] run function pvp_pve:player/level/tester_level
-#shadow
-execute at @s[tag=shadow] run function pvp_pve:player/level/shadow_level
-#red_mist
-execute at @s[tag=red_mist] run function pvp_pve:player/level/red_mist_level
-#red_mist
-execute at @s[tag=adventurer] run function pvp_pve:player/level/adventurer_level
-#zauberkugel
-execute at @s[tag=zauberkugel] run function pvp_pve:player/level/zauberkugel_level
-#sorcerer
-execute at @s[tag=sorcerer] run function pvp_pve:player/level/sorcerer_level
-#summoner
-execute at @s[tag=summoner] run function pvp_pve:player/level/summoner_level
-#hunter
-execute at @s[tag=hunter] run function pvp_pve:player/level/hunter_level
-#guardian
-execute at @s[tag=guardian] run function pvp_pve:player/level/guardian_level
-#berserker
-execute at @s[tag=berserker] run function pvp_pve:player/level/berserker_level
+#ender_pearl
+execute if score @s level_bonus_select matches 1 run function pvp_pve:player/level/emerald_level
+execute if score @s level_bonus_select matches 2 run function pvp_pve:player/level/ender_level
+execute if score @s level_bonus_select matches 3 run function pvp_pve:player/level/gacha_level
 
 #レベルリセット
 xp set @s 0 levels

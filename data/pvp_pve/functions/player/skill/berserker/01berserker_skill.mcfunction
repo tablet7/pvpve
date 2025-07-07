@@ -16,5 +16,5 @@ effect give @s haste 8 8
 effect give @s speed 8 12
 
 #recast設定
-scoreboard players set @s skill1_recast 10
+scoreboard players set @s skill1_recast 11
 

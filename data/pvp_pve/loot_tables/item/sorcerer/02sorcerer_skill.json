@@ -33,6 +33,11 @@
                         "italic": false
                     },
                     {
+                        "text": "自分が当たると少し上に飛ぶ",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
                         "text": "必要魔力2",
                         "color": "green",
                         "italic": false                        

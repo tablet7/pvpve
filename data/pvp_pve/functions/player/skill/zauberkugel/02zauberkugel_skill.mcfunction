@@ -3,7 +3,7 @@
 say 42
 
 execute if score @s ma_cnt2 matches 0 run scoreboard players set @s ma_cnt 1
-execute if score @s ma_cnt2 matches 0 run title @s subtitle "1:魔弾装填"
+execute if score @s ma_cnt2 matches 0 run title @s subtitle "1:強化"
 
 execute if score @s ma_cnt2 matches 1 run scoreboard players set @s ma_cnt 2
 execute if score @s ma_cnt2 matches 1 run title @s subtitle "2:炎"

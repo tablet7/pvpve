@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:name_tag",
+          "weight": 500,
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                      "text": "ガチャ券[コモン]"
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                    {
+                      "text": "投げて使用できる"
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:name_tag",
+          "weight": 100,
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                      "text": "ガチャ券[レア]"
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                    {
+                      "text": "投げて使用できる"
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:name_tag",
+          "weight": 5,
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                      "text": "ガチャ券[レジェンダリー]"
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                    {
+                      "text": "投げて使用できる"
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:name_tag",
+          "weight": 1,
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                      "text": "ガチャ券[ゴッデス]"
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                    {
+                      "text": "投げて使用できる"
+                    }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

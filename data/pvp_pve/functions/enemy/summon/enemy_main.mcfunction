@@ -15,8 +15,8 @@ execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run particle item_sl
 execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run kill @s
 
 #ライダー
-execute as @e[tag=bow_skeleton] at @s run execute if entity @p[distance=..4] run data merge entity @s {HandItems:[{id:iron_sword,Count:1b},{}],Tags:["legendary_e","sword_skeleton"]}
-execute as @e[tag=sword_skeleton] at @s run execute if entity @p[distance=5..] run data merge entity @s {HandItems:[{id:bow,Count:1b},{}],Tags:["legendary_e","bow_skeleton"]}
+execute as @e[tag=bow_skeleton] at @s run execute if entity @e[distance=..4,limit=1,type=player] run data merge entity @s {HandItems:[{id:iron_sword,Count:1b},{}],Tags:["legendary_e","sword_skeleton"]}
+execute as @e[tag=sword_skeleton] at @s run execute if entity @e[distance=5..,limit=1,type=player] run data merge entity @s {HandItems:[{id:bow,Count:1b},{}],Tags:["legendary_e","bow_skeleton"]}
 execute as @e[type=arrow,nbt={inGround:true},tag=!player_arrow] at @s run kill @s
 
 #貪るもの
@@ -49,7 +49,7 @@ execute as @e[tag=devour_skill2,scores={devour_skill2=1..}] at @s run scoreboard
 execute as @e[tag=devour_skill2,scores={devour_skill2=..0}] at @s run kill @s 
 execute as @e[tag=devour_skill2,scores={devour_skill2=1..}] at @s run tp @s ~ ~ ~ ~5 ~
 execute as @e[tag=devour_skill2] at @s run particle crit ~ ~1 ~ 0.0 0.0 0.0 1 1
-execute as @e[tag=devour_skill2,scores={devour_skill2=2}] at @s run summon wither_skeleton ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"Enemy",Health:3f,Tags:["common_e","skill_e"],HandItems:[{id:"minecraft:stone_sword",Count:1b},{}],Attributes:[{Name:generic.max_health,Base:3},{Name:generic.movement_speed,Base:0.7}]}
+execute as @e[tag=devour_skill2,scores={devour_skill2=2}] at @s run summon wither_skeleton ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"Enemy",Health:1f,Tags:["common_e","skill_e"],HandItems:[{id:"minecraft:stone_sword",Count:1b},{}],HandDropChances:[0f,0f],Attributes:[{Name:generic.max_health,Base:1},{Name:generic.movement_speed,Base:0.7}]}
 
 execute as @e[tag=devour_skill3,scores={devour_skill3=1..}] at @s run scoreboard players remove @s devour_skill3 1
 execute as @e[tag=devour_skill3,scores={devour_skill3=..0}] at @s run kill @s 

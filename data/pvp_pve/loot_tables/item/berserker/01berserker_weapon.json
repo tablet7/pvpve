@@ -24,7 +24,7 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "殴ると体力が回復する",
+                        "text": "殴ると再生能力がつく",
                         "color": "white",
                         "italic": false
                     }

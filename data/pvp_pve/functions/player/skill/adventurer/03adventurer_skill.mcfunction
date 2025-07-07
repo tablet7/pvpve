@@ -6,5 +6,5 @@ $summon horse ~ ~ ~ {Tame:1b,DeathLootTable:"minecraft:empty",Team:"$(Team)",Hea
 $scoreboard players set @e[tag=ad_skill3,limit=1,sort=nearest,team=$(Team)] ad_skill3 400
 
 #recast設定
-scoreboard players set @s skill3_recast 20
+scoreboard players set @s skill3_recast 30
 

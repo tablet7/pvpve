@@ -50,16 +50,6 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"swiftness\"}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{Potion:\"harming\"}"
             }
           ]
