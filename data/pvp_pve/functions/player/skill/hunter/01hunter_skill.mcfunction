@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/hunter/01hunter_skill
 
-say 61
-
 loot give @s loot pvp_pve:item/hunter/hunter_skill_item/skillarrow
 
 #recast設定

@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/adventurer/04adventurer_skill
 
-say 54
-
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["sor_4","skill_e"],Team:"$(Team)"}
 $execute as @e[tag=sor_4,limit=1,sort=nearest,team=$(Team)] at @s rotated as @p run tp @s ~ ~ ~ ~ 0
 

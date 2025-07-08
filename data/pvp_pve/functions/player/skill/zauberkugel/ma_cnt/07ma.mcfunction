@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/07ma
 
-say 7
-
 execute as @a[distance=..20] at @s run playsound entity.warden.death master @s ~ ~ ~ 3
 
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["ma_effect2","skill_e","ma_7"],Team:"$(Team)"}

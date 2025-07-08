@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/hunter/03hunter_skill
 
-say 63
-
 clear @s endermite_spawn_egg
 clear @s blaze_spawn_egg
 

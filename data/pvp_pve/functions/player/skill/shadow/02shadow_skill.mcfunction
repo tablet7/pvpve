@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/tester/02test_skill
 
-say 12
-
 execute if score @s team_set matches 1 run function pvp_pve:player/skill/shadow/02shadow_skill/mc_02shadow_skill1 {Team:Red,team_set:1}
 execute if score @s team_set matches 2 run function pvp_pve:player/skill/shadow/02shadow_skill/mc_02shadow_skill1 {Team:Blue,team_set:2}
 execute if score @s team_set matches 3 run function pvp_pve:player/skill/shadow/02shadow_skill/mc_02shadow_skill1 {Team:Yellow,team_set:3}

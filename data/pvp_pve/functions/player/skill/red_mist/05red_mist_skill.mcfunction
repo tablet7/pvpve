@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/red_mist/05red_mist_skill
 
-say 25
-
 execute as @a[distance=..10] at @s run playsound entity.warden.sonic_boom master @s ~ ~ ~
 
 execute if score @s team_set matches 1 run function pvp_pve:player/skill/red_mist/mc_particle_stand_summon {x:"^",y:"^1.5",z:"^",Team:"Red",Tag:"red_mist_skill5",xx:"~",yy:"-90"}

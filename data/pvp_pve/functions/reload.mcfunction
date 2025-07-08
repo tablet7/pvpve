@@ -2,6 +2,7 @@
 
 #function
 effect clear @a
+kill @e[tag=point_gold]
 kill @e[tag=skill_e]
 kill @e[team=Enemy]
 kill @e[type=item]
@@ -29,8 +30,6 @@ scoreboard objectives add minutes dummy
 scoreboard objectives add hours dummy
 ##player
 scoreboard objectives add used_carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add sell_gold dummy
-scoreboard players set @a sell_gold 0
 ###skill_recast
 scoreboard objectives add skill1_recast dummy
 scoreboard objectives add skill2_recast dummy
@@ -139,6 +138,7 @@ scoreboard players set Timer game_finish_timer 7
 #0:試合前,1:pvp
 scoreboard objectives add mode_select dummy
 scoreboard players set Timer mode_select 0
+scoreboard players set @a mode_select 0
 scoreboard objectives add pvp_time_select dummy
 scoreboard objectives add winner_team dummy
 scoreboard players set Timer winner_team 0
@@ -157,6 +157,8 @@ scoreboard players set 3:Yellow_team pvp 0
 scoreboard players set 4:Green_team pvp 0
 scoreboard players set 5:Gray_team pvp 0
 scoreboard players set 6:Black_team pvp 0
+#score_スニーク
+scoreboard objectives add score_gold_cnt dummy
 
 #constant
 scoreboard objectives add constant dummy

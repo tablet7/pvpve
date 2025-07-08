@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/summoner/04summoner_skill
 
-say 84
-
 effect give @s strength 20 2
 $effect give @e[distance=..10,team=$(Team),type=wolf] strength 20 2
 tag @e[distance=..10,tag=summoner_skill2] add sum_skill_24

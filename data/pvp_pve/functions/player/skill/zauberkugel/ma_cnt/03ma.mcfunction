@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/03ma
 
-say 3
-
 execute as @a[distance=..15] at @s run playsound entity.firework_rocket.blast master @s ~ ~ ~
 
 execute as @e[limit=3,sort=nearest,team=Enemy] at @s run damage @s 45

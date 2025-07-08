@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/adventurer/03adventurer_skill
 
-say 53
-
 execute as @e[distance=..10,team=Enemy] at @s run damage @s 16
 $execute as @e[distance=..10,team=!$(Team)] at @s run damage @s 8
 

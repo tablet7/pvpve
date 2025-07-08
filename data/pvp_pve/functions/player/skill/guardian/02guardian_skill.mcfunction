@@ -1,6 +1,5 @@
 #> pvp_pve:player/skill/guardian/02guardian_skill
 
-say 72
 
 $tp @e[distance=..8,team=!$(Team),type=!armor_stand] ~ ~ ~
 $effect give @e[distance=..1,team=!$(Team),type=!armor_stand] slowness 3 1

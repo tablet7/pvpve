@@ -21,6 +21,33 @@ execute as @a[team=Gray] at @s run execute if entity @s[nbt={Inventory:[{id:"min
 execute as @a[team=Black] at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:gold_block"}]}] run scoreboard players add 6:Black_team pvp 1
 execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:gold_block"}]}] run clear @s gold_block 1
 
+#point_cnt
+execute as @a at @s run execute unless predicate pvp_pve:flags/sneaking_f run scoreboard players set @s score_gold_cnt 0
+execute as @e[tag=point_2] at @s run scoreboard players add @a[distance=..1.5,predicate=pvp_pve:flags/sneaking_f] score_gold_cnt 1
+execute as @a at @s run execute if score @s score_gold_cnt matches 60.. run function pvp_pve:system/pvp/pvp_get_gold
+
+#point_spawn
+
+execute if score Timer pvp matches 540 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer pvp matches 520 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+execute if score Timer pvp matches 460 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer pvp matches 440 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+execute if score Timer pvp matches 380 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer pvp matches 360 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+execute if score Timer pvp_time_select matches 6.. if score Timer pvp matches 300 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer ma_cnt matches 1 if score Timer pvp matches 280 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+execute if score Timer ma_cnt matches 2 if score Timer pvp matches 220 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer ma_cnt matches 1 if score Timer pvp matches 200 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+execute if score Timer ma_cnt matches 2 if score Timer pvp matches 140 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer ma_cnt matches 1 if score Timer pvp matches 120 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+#summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["point_2","point_gold"],ArmorItems:[{},{},{},{id:"minecraft:gold_block",Count:1b}]}
+
+
+#スタート時のリセット
+execute if score Timer pvp_time_select matches 5 if score Timer pvp matches 299 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_action_reset/ruins_reset
+execute if score Timer pvp_time_select matches 10 if score Timer pvp matches 599 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_action_reset/ruins_reset
+execute if score Timer pvp_time_select matches 15 if score Timer pvp matches 899 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_action_reset/ruins_reset
+
 #死亡時の処理
 execute as @a at @s run spawnpoint @s ~ ~ ~
 gamemode spectator @a[scores={death_cnt_ser=1..}]
@@ -31,6 +58,7 @@ scoreboard players set @a[scores={death_cnt_ser=1..}] death_cnt_ser 0
 execute as @a[scores={death_timer=0}] at @s run function pvp_pve:system/pvp/pvp_death_pro
 
 #勝ったチームの判定
+execute if score Timer pvp matches 1 run kill @e[tag=point_gold]
 execute if score Timer winner_team matches 0 if score Timer pvp matches 0 if score 1:Red_team pvp > 2:Blue_team pvp if score 1:Red_team pvp > 3:Yellow_team pvp if score 1:Red_team pvp > 4:Green_team pvp if score 1:Red_team pvp > 5:Gray_team pvp if score 1:Red_team pvp > 6:Black_team pvp run function pvp_pve:system/pvp/pvp_finish/red_vict
 execute if score Timer winner_team matches 0 if score Timer pvp matches 0 if score 2:Blue_team pvp > 1:Red_team pvp if score 2:Blue_team pvp > 3:Yellow_team pvp if score 2:Blue_team pvp > 4:Green_team pvp if score 2:Blue_team pvp > 5:Gray_team pvp if score 2:Blue_team pvp > 6:Black_team pvp run function pvp_pve:system/pvp/pvp_finish/blue_vict
 execute if score Timer winner_team matches 0 if score Timer pvp matches 0 if score 3:Yellow_team pvp > 2:Blue_team pvp if score 3:Yellow_team pvp > 1:Red_team pvp if score 3:Yellow_team pvp > 4:Green_team pvp if score 3:Yellow_team pvp > 5:Gray_team pvp if score 3:Yellow_team pvp > 6:Black_team pvp run function pvp_pve:system/pvp/pvp_finish/yellow_vict

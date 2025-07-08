@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/berserker/01berserker_skill
 
-say 91
-
 damage @s 4
 
 effect give @s wither 10 3

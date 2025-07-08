@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/adventurer/04adventurer_skill
 
-say 34
-
 execute as @a[distance=..15] at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~
 
 effect give @s instant_health 1 50

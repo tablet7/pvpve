@@ -20,6 +20,9 @@ execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:glas
 execute as @a[scores={heal_bottle_cnt=1}] at @s run clear @s dragon_breath
 execute as @a[scores={heal_bottle_cnt=1}] at @s run give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"3秒後にまた飲めるようになる"}']},Potion:"minecraft:healing"} 1
 
+#ニンジン棒
+execute as @e[nbt={Item:{id:"minecraft:carrot_on_a_stick"}}] at @s run kill @s
+
 #xp_up
 execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:iron_trapdoor"}]}] run xp add @s 1000
 execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:iron_trapdoor"}]}] run clear @s minecraft:iron_trapdoor 1

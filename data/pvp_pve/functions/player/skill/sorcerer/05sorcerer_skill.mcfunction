@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/adventurer/04adventurer_skill
 
-say 55
-
 effect give @s regeneration 10 2
 effect give @s speed 10 2
 

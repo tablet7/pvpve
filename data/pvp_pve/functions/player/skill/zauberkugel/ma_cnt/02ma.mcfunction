@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/02ma
 
-say 2
-
 execute as @a[distance=..15] at @s run playsound entity.firework_rocket.blast master @s ~ ~ ~
 
 $function pvp_pve:player/skill/zauberkugel/mc_hanidamage_stand_summon {Team:"$(Team)",Name1:"zauberkugel21",Name2:"zauberkugel22",team_set:"$(team_set)"}

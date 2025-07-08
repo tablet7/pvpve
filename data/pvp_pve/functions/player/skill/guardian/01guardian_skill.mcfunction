@@ -1,6 +1,5 @@
 #> pvp_pve:player/skill/guardian/01guardian_skill
 
-say 71
 
 effect give @s slowness 5 10
 effect give @s absorption 5 3

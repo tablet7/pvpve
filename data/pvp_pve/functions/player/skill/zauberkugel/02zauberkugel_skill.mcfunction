@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/02zauberkugel_skill
 
-say 42
-
 execute if score @s ma_cnt2 matches 0 run scoreboard players set @s ma_cnt 1
 execute if score @s ma_cnt2 matches 0 run title @s subtitle "1:強化"
 

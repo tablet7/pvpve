@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/05ma
 
-say 5
-
 execute as @a[distance=..15] at @s run playsound entity.allay.death master @s ~ ~ ~
 
 $summon armor_stand ~ ~ ~ {CustomName:'"zauberkugel5"',Invisible:true,Marker:true,Tags:["ma_effect","skill_e"],Team:"$(Team)",Rotation:[0f,0f]}

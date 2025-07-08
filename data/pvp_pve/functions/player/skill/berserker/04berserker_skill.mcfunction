@@ -1,6 +1,5 @@
 #> pvp_pve:player/skill/berserker/04berserker_skill
 
-say 94
 
 $summon minecraft:armor_stand ^ ^ ^ {Marker:true,Invisible:true,Tags:["berserker4","skill_e"],Team:$(Team)}
 $execute as @e[tag=berserker4,limit=1,sort=nearest,team=$(Team)] at @s rotated as @p run tp @s ~ ~ ~ ~ 0

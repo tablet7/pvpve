@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/summoner/02summoner_skill
 
-say 82
-
 $summon snow_golem ~ ~ ~ {Health:15f,Attributes:[{Name:generic.max_health,Base:15}],Silent:1b,DeathLootTable:"pvp_pve:item/summoner/skill2_team_item/$(team_set)_item",Team:"$(Team)",NoAI:1b,Tags:["skill_e","sum_skill","summoner_skill2"],active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:2000}]}
 $scoreboard players set @e[limit=1,sort=nearest,type=snow_golem,team=$(Team)] summoner_skill_cnt 200
 
