@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/ma_take
 
-say take a stand
-
 $execute if score @s ma_cnt matches 0 run function pvp_pve:player/skill/zauberkugel/ma_cnt/00ma {Team:$(Team),team_set:$(team_set)}
 $execute if score @s ma_cnt matches 1 run function pvp_pve:player/skill/zauberkugel/ma_cnt/01ma {Team:$(Team),team_set:$(team_set)}
 $execute if score @s ma_cnt matches 2 run function pvp_pve:player/skill/zauberkugel/ma_cnt/02ma {Team:$(Team),team_set:$(team_set)}

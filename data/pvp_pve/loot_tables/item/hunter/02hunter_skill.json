@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "ミルクインアバケツ",
+                        "text": "矢の雨",
                         "color": "white",
                         "italic": false
                     }
@@ -24,12 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:状態異常を回復",
+                        "text": "右クリック:前方に矢の雨を降らす",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "すべてのデバフを解除し、最大体力上昇を付与する",
+                        "text": "雨の中では敵が鈍足になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "敵味方関係なく当たるので注意",
                         "color": "white",
                         "italic": false
                     },
@@ -42,7 +47,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:62}"
+                "tag": "{CustomModelData:62,Enchantments:[{id:\"infinity\",lvl:1s}]}"
             }
           ]
         }

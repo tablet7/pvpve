@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/red_mist/06red_mist_skill
 
-say 26
-
 execute as @a[distance=..10] at @s run playsound entity.warden.sonic_boom master @s ~ ~ ~
 effect give @s slowness 1 10
 

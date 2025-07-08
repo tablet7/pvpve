@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:splash_potion",
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -16,7 +16,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:splash_potion",
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:splash_potion",
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -36,17 +36,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"swiftness\"}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:splash_potion",
           "functions": [
             {
               "function": "minecraft:set_nbt",

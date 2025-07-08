@@ -16,3 +16,12 @@ execute as @e[tag=shadow_shadow] at @s run function pvp_pve:player/passive/shado
 
 #red_mist_skill
 execute as @a[tag=red_mist] at @s run execute if score @s red_mist_EGO matches 1.. run scoreboard players remove @s red_mist_EGO 1
+
+#berserker_skill3
+execute as @a[scores={berserker_skill3=1..}] at @s run execute as @e[distance=..5] at @s run damage @s 2
+execute as @a[scores={berserker_skill3=1..}] at @s run scoreboard players remove @s berserker_skill3 1
+
+
+
+
+

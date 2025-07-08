@@ -6,8 +6,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name":"minecraft:iron_sword",
+          "name":"minecraft:wooden_sword",
           "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "狩人の短剣",
+                        "italic": false
+                    }
+                ]
+            },
             {
                 "function": "set_nbt",
                 "tag": "{Unbreakable:true}"

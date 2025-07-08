@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/04ma
 
-say 4
-
 execute as @a[distance=..15] at @s run playsound entity.firework_rocket.blast master @s ~ ~ ~
 
 $function pvp_pve:player/skill/zauberkugel/mc_hanidamage_stand_summon {Team:"$(Team)",Name1:"zauberkugel41",Name2:"zauberkugel42",team_set:"$(team_set)"}
@@ -32,7 +30,7 @@ $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel41,team=$(Team)] 
         rotated as @e[type=armor_stand,name=zauberkugel41,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
         rotated as @e[type=armor_stand,name=zauberkugel41,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
         rotated as @e[type=armor_stand,name=zauberkugel41,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
-        run execute as @e[distance=..1.5,team=Enemy] at @s run damage @s 20
+        run execute as @e[distance=..1.5,team=Enemy] at @s run damage @s 30
 
 $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel41,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
         rotated as @e[type=armor_stand,name=zauberkugel41,limit=2,sort=nearest] positioned ^ ^ ^0.4 \

@@ -3,7 +3,7 @@
 setblock ~ ~ ~ air
 setblock ~ ~ ~1 air
 setblock ~ ~ ~1 minecraft:chest[facing=west,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
-setblock ~ ~ ~ minecraft:chest[facing=west,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
+setblock ~ ~ ~ minecraft:chest[facing=west,type=right]{LootTable:"pvp_pve:chest/rare_chest"}
 
 setblock ~ ~-9 ~ air
 setblock ~ ~-9 ~1 air

@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "溶岩設置",
+                        "text": "サモン・ウルフ",
                         "color": "white",
                         "italic": false
                     }
@@ -24,22 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に溶岩を召喚する",
+                        "text": "右クリック:オオカミを召喚する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "前方に溶岩を設置する。自身は火炎耐性を得る。溶岩は4秒で消える",
+                        "text": "骨を得るので手なずけて一緒に戦おう",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "※下に向きすぎると発動しない",
+                        "text": "オオカミは60秒で消える",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム7秒",
+                        "text": "クールタイム10秒",
                         "color": "green",
                         "italic": false
                     }

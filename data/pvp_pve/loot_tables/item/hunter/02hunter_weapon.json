@@ -9,8 +9,18 @@
           "name":"minecraft:bow",
           "functions": [
             {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "狩人の弓",
+                        "italic": false
+                    }
+                ]
+            },
+            {
                 "function": "set_nbt",
-                "tag": "{Unbreakable:true,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+                "tag": "{Unbreakable:true,Enchantments:[{id:\"infinity\",lvl:1s},{id:\"power\",lvl:1s},{id:\"knockback\",lvl:1s}]}"
             }
           ]
         }

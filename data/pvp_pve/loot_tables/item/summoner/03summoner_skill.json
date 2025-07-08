@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "相棒召喚",
+                        "text": "サモン・カーズドタワー",
                         "color": "white",
                         "italic": false
                     }
@@ -24,22 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:相棒の馬を召喚する",
+                        "text": "右クリック:呪いの塔を召喚する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "馬の周囲にいる時、耐性、再生力、攻撃力上昇を獲得",
+                        "text": "塔の周囲にいる敵は、ウィザー、弱体化、鈍足を得る",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "馬は20秒後に消える",
+                        "text": "塔は破壊可能かつ、10秒で消える",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム20秒",
+                        "text": "クールタイム15秒",
                         "color": "green",
                         "italic": false
                     }

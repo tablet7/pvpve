@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "相棒召喚",
+                        "text": "アドベントクラッシュ",
                         "color": "white",
                         "italic": false
                     }
@@ -24,22 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:相棒の馬を召喚する",
+                        "text": "右クリック:高く飛び上がり、周囲の敵にダメージを与える",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "馬の周囲にいる時、耐性、再生力、攻撃力上昇を獲得",
+                        "text": "ダメージが当たった敵は弱体化を得る",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "馬は20秒後に消える",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム20秒",
+                        "text": "クールタイム12秒",
                         "color": "green",
                         "italic": false
                     }

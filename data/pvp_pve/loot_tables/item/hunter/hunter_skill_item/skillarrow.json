@@ -1,0 +1,136 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{custom_potion_effects:[{id:\"minecraft:slowness\",amplifier:2b,duration:60}],CustomPotionColor:6062466}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "鈍足の矢",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{custom_potion_effects:[{id:\"minecraft:poison\",amplifier:1b,duration:100}],CustomPotionColor:26918}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "毒の矢",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{custom_potion_effects:[{id:\"minecraft:instant_damage\",amplifier:1b,duration:1}],CustomPotionColor:16711680}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "強化されたの矢",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{custom_potion_effects:[{id:\"minecraft:weakness\",amplifier:2b,duration:60}],CustomPotionColor:3735723}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "弱体化の矢",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{custom_potion_effects:[{id:\"minecraft:mining_fatigue\",amplifier:2b,duration:60}],CustomPotionColor:10988416}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "攻撃速度低下の矢",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{CustomPotionColor:16753152}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "炎の矢",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

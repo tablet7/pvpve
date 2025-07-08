@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/tester/03test_skill
 
-say 13
-
 execute if score @s team_set matches 1 run execute as @e[tag=shadow_shadow,distance=..20,scores={team_set=1}] at @s run execute as @e[team=Enemy,tag=!skill_e,distance=..4] run damage @s 12
 execute if score @s team_set matches 2 run execute as @e[tag=shadow_shadow,distance=..20,scores={team_set=2}] at @s run execute as @e[team=Enemy,tag=!skill_e,distance=..4] run damage @s 12
 execute if score @s team_set matches 3 run execute as @e[tag=shadow_shadow,distance=..20,scores={team_set=3}] at @s run execute as @e[team=Enemy,tag=!skill_e,distance=..4] run damage @s 12

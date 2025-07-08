@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "「世界を綴るもの」",
-                        "color": "#00ff88",
+                        "text": "「ガンガン行こうぜ」",
+                        "color": "#00e1ff",
                         "italic": false
                     }
                 ]
@@ -24,12 +24,27 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:自身を上空にテレポートする",
+                        "text": "右クリック:自分と召喚している召喚物を20秒間大幅に強化する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "周りの敵にダメージを与え、体力を全回復し、自身を100m上空にテレポートする",
+                        "text": "自分・ウルフ：攻撃力上昇、攻撃速度上昇",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "癒しの木・呪いの塔：与えるバフ、デバフの強化",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "バフを得ている間、召喚物の制限時間が無くなる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "ただしバフが切れると召喚物は消える",
                         "color": "white",
                         "italic": false
                     },

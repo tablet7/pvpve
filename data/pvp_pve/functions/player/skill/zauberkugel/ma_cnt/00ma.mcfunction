@@ -1,11 +1,35 @@
 #> pvp_pve:player/skill/zauberkugel/00ma
 
-say 0
+execute as @a[distance=..15] at @s run playsound entity.firework_rocket.blast master @s ~ ~ ~
 
-execute anchored eyes run summon arrow ^ ^ ^0.5 {Tags:["magic_ammo","skill_e"],life:1200s,PierceLevel:10,damage:7}
-$execute rotated as @s positioned 0.0 0.0 0.0 run summon armor_stand ^ ^ ^1 {Tags:["magic_ammo_motion"],Marker:true,Invisible:true,Team:$(Team)}
-$execute as @e[tag=magic_ammo,limit=1,sort=nearest] run data modify entity @s Motion set from entity @e[tag=magic_ammo_motion,limit=1,team=$(Team)] Pos
-$kill @e[tag=magic_ammo_motion,team=$(Team)]
-tag @e[tag=magic_ammo] remove magic_ammo
+$function pvp_pve:player/skill/zauberkugel/mc_hanidamage_stand_summon {Team:"$(Team)",Name1:"zauberkugel11",Name2:"zauberkugel12",team_set:"$(team_set)"}
+
+$execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel11,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
+        run particle dust 0 0 1 2 ~ ~ ~
+
+$execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel11,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
+        run execute as @e[distance=..1.5,team=Enemy] at @s run damage @s 10
+
+$execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel11,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
+        rotated as @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
+        run execute as @e[distance=..1.5,team=!$(Team)] at @s run damage @s 5
+
+
+$kill @e[type=armor_stand,name=zauberkugel11,limit=2,sort=nearest,team=$(Team)]
+$kill @e[type=armor_stand,name=zauberkugel12,limit=2,sort=nearest,team=$(Team)]
 
 scoreboard players set @s ma_take 0

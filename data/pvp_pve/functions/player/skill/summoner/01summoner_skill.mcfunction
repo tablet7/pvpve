@@ -1,7 +1,10 @@
 #> pvp_pve:player/skill/summoner/01summoner_skill
 
-say 81
+$summon wolf ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"$(Team)",Health:20f,Tags:["skill_e","sum_skill"],Attributes:[{Name:generic.max_health,Base:20},{Name:generic.movement_speed,Base:0.3}]}
+$scoreboard players set @e[limit=1,sort=nearest,type=wolf,team=$(Team)] summoner_skill_cnt 1200
+clear @s bone
+give @s bone 10
 
 #recast設定
-scoreboard players set @s skill1_recast 2
+scoreboard players set @s skill1_recast 10
 

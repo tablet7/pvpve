@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/red_mist/02red_mist_skill
 
-say 22
-
 scoreboard players set @s red_mist_skill2 12
 
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["red_mist_skill2","skill_e"],Team:"$(Team)"}

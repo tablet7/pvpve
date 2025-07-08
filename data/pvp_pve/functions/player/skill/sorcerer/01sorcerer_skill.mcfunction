@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/adventurer/01adventurer_skill
 
-say 51
-
 execute if score @s magic_point matches 15 run title @s subtitle "もう魔力は貯められない"
 execute if score @s magic_point matches 15 run title @s title ""
 execute if score @s magic_point matches ..14 run loot give @s loot pvp_pve:item/sorcerer/magic_point

@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/red_mist/04red_mist_skill
 
-say 24
-
 #演出
 execute as @a[distance=..10] at @s run playsound entity.elder_guardian.death master @s ~ ~ ~
 particle dust 1 0 0 1 ~ ~ ~ 1 2 1 1 1000

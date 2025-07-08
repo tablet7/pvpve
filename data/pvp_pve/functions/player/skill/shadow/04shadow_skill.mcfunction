@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/shadow/04shadow_skill
 
-say 14
-
 execute if score @s team_set matches 1 run execute as @e[team=!Red,limit=1,distance=..15,sort=nearest] at @s run function pvp_pve:player/skill/shadow/mc_shadow_skill4
 execute if score @s team_set matches 2 run execute as @e[team=!Blue,limit=1,distance=..15,sort=nearest] at @s run function pvp_pve:player/skill/shadow/mc_shadow_skill4
 execute if score @s team_set matches 3 run execute as @e[team=!Yellow,limit=1,distance=..15,sort=nearest] at @s run function pvp_pve:player/skill/shadow/mc_shadow_skill4

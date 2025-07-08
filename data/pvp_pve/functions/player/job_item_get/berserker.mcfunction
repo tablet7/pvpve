@@ -9,7 +9,6 @@ loot give @p loot pvp_pve:item/berserker/01berserker_skill
 loot give @p loot pvp_pve:item/berserker/02berserker_skill
 loot give @p loot pvp_pve:item/berserker/03berserker_skill
 loot give @p loot pvp_pve:item/berserker/04berserker_skill
-give @p arrow
 
 #tag
 function pvp_pve:player/job_item_get/tag_remove

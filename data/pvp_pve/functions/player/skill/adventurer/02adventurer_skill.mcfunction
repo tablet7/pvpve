@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/adventurer/02adventurer_skill
 
-say 32
-
 effect clear @s slowness
 effect clear @s mining_fatigue
 effect clear @s nausea

@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "「世界を綴るもの」",
-                        "color": "#00ff88",
+                        "text": "「羅生門」",
+                        "color": "#ff0000",
                         "italic": false
                     }
                 ]
@@ -24,17 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:自身を上空にテレポートする",
+                        "text": "右クリック:前方に大ダメージを与える",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "周りの敵にダメージを与え、体力を全回復し、自身を100m上空にテレポートする",
+                        "text": "ダメージを与えられた敵は燃えて、浮遊を付与される",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム120秒",
+                        "text": "消費体力8",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム30秒",
                         "color": "green",
                         "italic": false
                     }

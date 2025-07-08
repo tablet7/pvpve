@@ -1,7 +1,5 @@
 #> pvp_pve:player/skill/zauberkugel/07ma
 
-say 7
-
 execute as @a[distance=..20] at @s run playsound entity.warden.death master @s ~ ~ ~ 3
 
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["ma_effect2","skill_e","ma_7"],Team:"$(Team)"}
@@ -17,6 +15,14 @@ $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel71,team=$(Team)] 
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
         run particle dust 0 0 0.42 7 ~ ~ ~ 0.5 0.5 0.5 1 20
+
+$execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel71,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
+        rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
+        rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
+        rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
+        rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
+        rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
+        run damage @e[limit=1,distance=..4.5,tag=goddes_e] 45
 
 $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel71,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^0.4 \

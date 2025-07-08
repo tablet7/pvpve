@@ -1,16 +1,11 @@
 #> pvp_pve:player/skill/adventurer/03adventurer_skill
 
-say 53
+execute as @e[distance=..10,team=Enemy] at @s run damage @s 16
+$execute as @e[distance=..10,team=!$(Team)] at @s run damage @s 8
 
-execute as @e[distance=..7,team=Enemy] at @s run damage @s 16
-$execute as @e[distance=..7,team=!$(Team)] at @s run damage @s 8
-
-$execute as @e[distance=..7,team=!$(Team)] at @s run effect give @s slowness 5
-particle minecraft:white_smoke ~2 ~ ~2 0.5 0.5 0.5 1 100
-particle minecraft:white_smoke ~-2 ~ ~2 0.5 0.5 0.5 1 100
-particle minecraft:white_smoke ~2 ~ ~-2 0.5 0.5 0.5 1 100
-particle minecraft:white_smoke ~-2 ~ ~-2 0.5 0.5 0.5 1 100
-
+$execute as @e[distance=..10,team=!$(Team)] at @s run effect give @s slowness 5 1
+particle minecraft:end_rod ~ ~ ~ 3 2 3 0.1 1000
+ 
 execute as @a[distance=..10] at @s run playsound block.snow.break master @s ~ ~ ~ 3
 
 ##魔力設定
