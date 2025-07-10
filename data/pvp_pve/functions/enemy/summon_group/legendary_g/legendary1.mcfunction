@@ -1,6 +1,7 @@
 #> pvp_pve:enemy/summon_group/legendary_g/legendary1
 
 setblock ~ ~ ~ air
+setblock ~-1 ~ ~ air
 setblock ~ ~ ~ minecraft:chest[facing=south,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
 setblock ~-1 ~ ~ minecraft:chest[facing=south,type=right]{LootTable:"pvp_pve:chest/rare_chest"}
 

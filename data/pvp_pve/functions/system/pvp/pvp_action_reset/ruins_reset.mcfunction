@@ -20,3 +20,8 @@ setblock -9983 -13 -9941 stone_bricks
 setblock -9979 -13 -9937 stone_bricks
 setblock -9981 -13 -9939 chiseled_stone_bricks
 
+#enemy_stand
+kill @e[tag=enemy_pvp_summon]
+summon minecraft:armor_stand -9998 -18 -9907 {Marker:true,Tags:["enemy_pvp_summon"]}
+
+scoreboard players set Timer tem 1

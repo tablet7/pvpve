@@ -2,6 +2,7 @@
 
 setblock ~ ~ ~ air
 setblock ~ ~ ~ minecraft:chest{LootTable:"pvp_pve:chest/rare_chest"}
+setblock ~1 ~ ~1 air
 setblock ~1 ~ ~1 minecraft:chest{LootTable:"pvp_pve:chest/rare_chest"}
 
 function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:0,y:0,z:0}

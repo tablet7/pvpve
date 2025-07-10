@@ -4,6 +4,8 @@
 #みらぼや
 execute if score Timer random_rand matches 1 run say 「みらぼや」にポイントが出現しました
 execute if score Timer random_rand matches 1 run summon armor_stand -10053 22 -9907 {Marker:1b,Invisible:1b,Tags:["point_2","point_gold"],ArmorItems:[{},{},{},{id:"minecraft:gold_block",Count:1b}]}
+execute if score Timer random_rand matches 9 run say 「みらぼや」にポイントが出現しました
+execute if score Timer random_rand matches 9 run summon armor_stand -10053 22 -9907 {Marker:1b,Invisible:1b,Tags:["point_2","point_gold"],ArmorItems:[{},{},{},{id:"minecraft:gold_block",Count:1b}]}
 
 #コンクリ
 execute if score Timer random_rand matches 2 run say 「工事中の建物」にポイントが出現しました

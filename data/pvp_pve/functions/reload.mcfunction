@@ -7,8 +7,8 @@ kill @e[tag=skill_e]
 kill @e[team=Enemy]
 kill @e[type=item]
 spawnpoint @a 0 -60 0
-tp @a 0.0 -60.0 0.0
-gamemode adventure @a
+#tp @a 0.0 -60.0 0.0
+#gamemode adventure @a
 
 #item_reload
 execute as @a[tag=adventurer] at @s run function pvp_pve:player/job_item_get/reload_job/adventurer_item_get
@@ -24,6 +24,7 @@ execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/re
 #scoreboard
 scoreboard objectives add tem dummy
 scoreboard objectives add random_rand dummy
+scoreboard objectives add random_rand2 dummy
 scoreboard objectives add tick dummy
 scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy
@@ -140,6 +141,7 @@ scoreboard objectives add mode_select dummy
 scoreboard players set Timer mode_select 0
 scoreboard players set @a mode_select 0
 scoreboard objectives add pvp_time_select dummy
+scoreboard objectives add pvp_enemy_select dummy
 scoreboard objectives add winner_team dummy
 scoreboard players set Timer winner_team 0
 scoreboard objectives add winner_team dummy
