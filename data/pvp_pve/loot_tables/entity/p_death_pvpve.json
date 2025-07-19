@@ -1,8 +1,8 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 15,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:limit_count",
-              "limit": 1
+              "limit": 10
             },
             {
               "function": "set_nbt",
@@ -21,20 +21,17 @@
       ]
     },
     {
-      "rolls": 3,
+      "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "pvp_pve:item/accessories/potion_random"
-        }
-      ]
-    },
-    {
-      "rolls": 3,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "pvp_pve:chest_sub/goddes_item"
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 10
+            }
+          ]
         }
       ]
     },
@@ -43,7 +40,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "pvp_pve:item/accessories/potion_random"
+          "name": "pvp_pve:entity/legendary_item"
         }
       ]
     }

@@ -13,12 +13,19 @@ execute as @e[tag=rain_arrow,scores={arrow_rain_cnt=1..},limit=1] at @s run data
 
 execute as @e[tag=rain_arrow] at @s run function pvp_pve:player/skill/hunter/02hunter_skill_arrow_rain with storage rain_arrow
 
-execute as @e[tag=rain_arrow,team=Red] at @s run effect give @e[distance=..4,team=!Red] slowness 1
-execute as @e[tag=rain_arrow,team=Blue] at @s run effect give @e[distance=..4,team=!Blue] slowness 1
-execute as @e[tag=rain_arrow,team=Yellow] at @s run effect give @e[distance=..4,team=!Yellow] slowness 1
-execute as @e[tag=rain_arrow,team=Green] at @s run effect give @e[distance=..4,team=!Green] slowness 1
-execute as @e[tag=rain_arrow,team=Gray] at @s run effect give @e[distance=..4,team=!Gray] slowness 1
-execute as @e[tag=rain_arrow,team=Black] at @s run effect give @e[distance=..4,team=!Black] slowness 1
+execute as @e[tag=rain_arrow,team=Red] at @s run effect give @e[distance=..4,team=!Red] slowness 1 2
+execute as @e[tag=rain_arrow,team=Blue] at @s run effect give @e[distance=..4,team=!Blue] slowness 1 2
+execute as @e[tag=rain_arrow,team=Yellow] at @s run effect give @e[distance=..4,team=!Yellow] slowness 1 2
+execute as @e[tag=rain_arrow,team=Green] at @s run effect give @e[distance=..4,team=!Green] slowness 1 2
+execute as @e[tag=rain_arrow,team=Gray] at @s run effect give @e[distance=..4,team=!Gray] slowness 1 2
+execute as @e[tag=rain_arrow,team=Black] at @s run effect give @e[distance=..4,team=!Black] slowness 1 2
+
+execute as @e[tag=rain_arrow,team=Red] at @s run effect give @e[distance=..4,team=!Red] jump_boost 1 100
+execute as @e[tag=rain_arrow,team=Blue] at @s run effect give @e[distance=..4,team=!Blue] jump_boost 1 100
+execute as @e[tag=rain_arrow,team=Yellow] at @s run effect give @e[distance=..4,team=!Yellow] jump_boost 1 100
+execute as @e[tag=rain_arrow,team=Green] at @s run effect give @e[distance=..4,team=!Green] jump_boost 1 100
+execute as @e[tag=rain_arrow,team=Gray] at @s run effect give @e[distance=..4,team=!Gray] jump_boost 1 100
+execute as @e[tag=rain_arrow,team=Black] at @s run effect give @e[distance=..4,team=!Black] jump_boost 1 100
 
 #skill3
 execute as @e[type=armor_stand,scores={trap_cnt=1..}] at @s run scoreboard players remove @s trap_cnt 1

@@ -11,5 +11,5 @@ particle cloud ^ ^1 ^ -2 0 -2 1 500
 tp @s ~ ~100 ~
 
 #recast設定
-scoreboard players set @s skill4_recast 120
+scoreboard players set @s skill4_recast 300
 

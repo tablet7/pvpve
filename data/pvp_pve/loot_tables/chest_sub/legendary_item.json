@@ -45,46 +45,6 @@
           "weight": 1
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "weight": 1,
-          "quality": 0,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 7
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.8
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 4
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.9
-            }
-          ]
-        }
-      ]
     }
   ]
 }

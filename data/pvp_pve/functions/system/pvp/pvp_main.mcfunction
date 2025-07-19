@@ -40,6 +40,7 @@ execute if score Timer tem matches 0 run function pvp_pve:system/pvp/pvp_start_m
 execute as @a at @s run spawnpoint @s ~ ~ ~
 gamemode spectator @a[scores={death_cnt_ser=1..}]
 execute as @a[scores={death_cnt_ser=1..}] at @s run summon silverfish ~ ~ ~ {Tags:["p_death_pvp"],DeathLootTable:"pvp_pve:entity/p_death_pvp",Silent:true}
+kill @e[tag=p_death_pvp]
 scoreboard players set @a[scores={death_cnt_ser=1..}] death_timer 100
 scoreboard players set @a[scores={death_cnt_ser=1..}] death_cnt_ser 0
 #復活処理

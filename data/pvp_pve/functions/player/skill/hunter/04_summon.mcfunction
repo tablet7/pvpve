@@ -12,5 +12,5 @@ $execute as @e[team=!$(Team),distance=..15,type=!armor_stand] at @s run summon h
                                                                             Attributes:[{Name:generic.max_health,Base:5}],Health:5}
 
 $execute as @e[team=!$(Team),distance=..15] at @s run scoreboard players set @e[limit=1,sort=nearest,tag=target_e,team=$(Team)] skill4_cnt 100
-$execute as @e[team=!$(Team),distance=..15] at @s run effect give @s slowness 3
+$execute as @e[team=!$(Team),distance=..15] at @s run effect give @s slowness 3 4
 

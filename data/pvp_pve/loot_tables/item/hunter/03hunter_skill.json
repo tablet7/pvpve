@@ -24,17 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:２種類の罠を獲得",
+                        "text": "右クリック:炎の罠を設置する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "拘束罠：敵が触れると周囲の敵を拘束し暗闇を付与",
-                        "color": "white",
+                        "text": "シフト+右クリック:拘束罠を設置する",
+                        "color": "yellow",
                         "italic": false
                     },
                     {
                         "text": "炎の罠：敵が触れると周囲の敵にダメージを与え燃やし、バフを解除",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "拘束罠：敵が触れると周囲の敵を拘束し暗闇を付与",
                         "color": "white",
                         "italic": false
                     },
@@ -44,12 +49,7 @@
                         "italic": false
                     },
                     {
-                        "text": "※罠は一つずつしか保持できない",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム10秒",
+                        "text": "クールタイム5秒",
                         "color": "green",
                         "italic": false
                     }
