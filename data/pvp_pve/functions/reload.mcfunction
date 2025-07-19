@@ -7,6 +7,10 @@ kill @e[tag=skill_e]
 kill @e[team=Enemy]
 kill @e[type=item]
 spawnpoint @a 0 -60 0
+forceload remove all
+forceload add 0 0
+worldborder center 0.0 0.0
+worldborder set 100000 0
 tp @a 0.0 -60.0 0.0
 gamemode adventure @a
 
@@ -24,6 +28,7 @@ execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/re
 #scoreboard
 scoreboard objectives add tem dummy
 scoreboard objectives add random_rand dummy
+scoreboard objectives add random_rand2 dummy
 scoreboard objectives add tick dummy
 scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy
@@ -140,8 +145,7 @@ scoreboard objectives add mode_select dummy
 scoreboard players set Timer mode_select 0
 scoreboard players set @a mode_select 0
 scoreboard objectives add pvp_time_select dummy
-scoreboard objectives add winner_team dummy
-scoreboard players set Timer winner_team 0
+scoreboard objectives add pvp_enemy_select dummy
 scoreboard objectives add winner_team dummy
 scoreboard players set Timer winner_team 0
 scoreboard objectives add death_timer dummy
@@ -160,6 +164,20 @@ scoreboard players set 6:Black_team pvp 0
 #score_スニーク
 scoreboard objectives add score_gold_cnt dummy
 
+#pvpve
+scoreboard objectives add pvpve dummy
+scoreboard objectives add pvpve_circle_cnt dummy
+scoreboard players set Timer pvpve_circle_cnt 0
+scoreboard objectives add winner_cnt_1 dummy
+scoreboard players set Timer winner_cnt_1 0
+#game_score
+scoreboard players set 1:Red_team pvpve 0
+scoreboard players set 2:Blue_team pvpve 0
+scoreboard players set 3:Yellow_team pvpve 0
+scoreboard players set 4:Green_team pvpve 0
+scoreboard players set 5:Gray_team pvpve 0
+scoreboard players set 6:Black_team pvpve 0
+
 #constant
 scoreboard objectives add constant dummy
 
@@ -167,42 +185,42 @@ scoreboard objectives add constant dummy
 team add Red
 team modify Red color red
 team modify Red friendlyFire false
-team modify Red nametagVisibility always
+team modify Red nametagVisibility hideForOtherTeams
 team modify Red seeFriendlyInvisibles false
 team join Red 1:Red_team
 
 team add Blue
 team modify Blue color blue
 team modify Blue friendlyFire false
-team modify Blue nametagVisibility always
+team modify Blue nametagVisibility hideForOtherTeams
 team modify Blue seeFriendlyInvisibles false
 team join Blue 2:Blue_team
 
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow friendlyFire false
-team modify Yellow nametagVisibility always
+team modify Yellow nametagVisibility hideForOtherTeams
 team modify Yellow seeFriendlyInvisibles false
 team join Yellow 3:Yellow_team
 
 team add Green
 team modify Green color green
 team modify Green friendlyFire false
-team modify Green nametagVisibility always
+team modify Green nametagVisibility hideForOtherTeams
 team modify Green seeFriendlyInvisibles false
 team join Green 4:Green_team
 
 team add Gray
 team modify Gray color gray
 team modify Gray friendlyFire false
-team modify Gray nametagVisibility always
+team modify Gray nametagVisibility hideForOtherTeams
 team modify Gray seeFriendlyInvisibles false
 team join Gray 5:Gray_team
 
 team add Black
 team modify Black color black
 team modify Black friendlyFire false
-team modify Black nametagVisibility always
+team modify Black nametagVisibility hideForOtherTeams
 team modify Black seeFriendlyInvisibles false
 team join Black 6:Black_team
 

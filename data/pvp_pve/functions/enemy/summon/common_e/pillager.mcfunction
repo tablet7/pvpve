@@ -1,3 +1,9 @@
 
 
-$summon pillager ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/common_item",Team:"Enemy",Tags:["common_e"],CustomName:'{"text":"ピリジャー"}',HandItems:[{id:"minecraft:iron_axe",Count:1b},{}],HandDropChances:[0.000F,0.085F]}
+$summon zombie ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/common_item",\
+                                  Team:Enemy,\
+                                  Health:25f,Attributes:[{Name:generic.max_health,Base:25}],\
+                                  Tags:["common_e"],\
+                                  CustomName:'{"text":"ゾンビ"}',\
+                                  ArmorItems:[{},{},{},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:7697781}}}],\
+                                  ArmorDropChances:[0.085F,0.085F,0.085F,0.000F]}

@@ -16,5 +16,7 @@ scoreboard players set @a mode_select 1
 
 execute as @a at @s run function pvp_pve:system/pvp/pvp_warp
 
-execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer pvp_field matches 1 if score Timer pvp_time_select matches 5 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
+execute if score Timer pvp_field matches 1 if score Timer pvp_time_select matches 6.. run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say40
 
+scoreboard players set Timer tem 0

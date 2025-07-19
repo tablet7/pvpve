@@ -2,11 +2,39 @@
   "type": "minecraft:chest",
   "pools": [
     {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"通貨\"}'}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/potion_random"
+        }
+      ]
+    },
+    {
       "rolls": 3,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "pvp_pve:entity/rare_item"
+          "name": "pvp_pve:chest_sub/rare_item"
         }
       ]
     },
@@ -15,7 +43,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "pvp_pve:entity/legendary_item",
+          "name": "pvp_pve:chest_sub/legendary_item",
           "conditions": [
             {
               "condition": "minecraft:random_chance",

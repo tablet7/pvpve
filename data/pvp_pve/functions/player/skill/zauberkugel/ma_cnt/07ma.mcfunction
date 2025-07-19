@@ -30,7 +30,7 @@ $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel71,team=$(Team)] 
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^3.2 \
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^6.4 \
-        run damage @e[limit=1,distance=..4.5,team=!$(Team)] 15
+        run damage @e[limit=1,distance=..4.5,team=!$(Team)] 20 out_of_world
 
 $execute as @e[tag=ma_ds1,limit=1,sort=nearest,name=zauberkugel71,team=$(Team)] at @s run execute as @s positioned ^ ^ ^13 positioned ^ ^1 ^ \
         rotated as @e[type=armor_stand,name=zauberkugel71,limit=2,sort=nearest] positioned ^ ^ ^0.4 \

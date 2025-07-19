@@ -36,6 +36,6 @@ execute if score @e[tag=test_06,limit=1,sort=arbitrary] test_stand_06 matches 30
 
 ###shadow_skill
 scoreboard players add @e[tag=shadow_shadow] shadow_shadow_cnt 1
-execute if score @e[tag=shadow_shadow,limit=1,sort=arbitrary] shadow_shadow_cnt matches 200.. run kill @e[tag=shadow_shadow,limit=1,sort=arbitrary]
+execute if score @e[tag=shadow_shadow,limit=1,sort=arbitrary] shadow_shadow_cnt matches 300.. run kill @e[tag=shadow_shadow,limit=1,sort=arbitrary]
 
 

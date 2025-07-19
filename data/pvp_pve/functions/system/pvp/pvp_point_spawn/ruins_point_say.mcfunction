@@ -1,11 +1,14 @@
 
 #遺跡
 
-execute store result score Timer random_rand run random value 1..8
+execute store result score Timer random_rand run random value 1..9
 
 #みらぼや
 execute if score Timer random_rand matches 1 run say 20秒後に「みらぼや」にポイントが出現します
 execute if score Timer random_rand matches 1 run summon firework_rocket -10053 22 -9907 {LifeTime:30,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:2,Colors:[I;16777215]}]}}}}
+
+execute if score Timer random_rand matches 9 run say 20秒後に「みらぼや」にポイントが出現します
+execute if score Timer random_rand matches 9 run summon firework_rocket -10053 22 -9907 {LifeTime:30,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:2,Colors:[I;16777215]}]}}}}
 
 #コンクリ
 execute if score Timer random_rand matches 2 run say 20秒後に「工事中の建物」にポイントが出現します

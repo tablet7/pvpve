@@ -1,6 +1,6 @@
 #> pvp_pve:player/skill/hunter/04hunter_skill
 
-$execute as @e[team=!$(Team),distance=..15] at @s run summon husk ~ ~0.2 ~ {Silent:true,\
+$execute as @e[team=!$(Team),distance=..15,type=!armor_stand] at @s run summon husk ~ ~0.2 ~ {Silent:true,\
                                                                             DeathLootTable:"pvp_pve:item/hunter/skill4_team_item/$(team)_item",\
                                                                             Team:$(Team),\
                                                                             NoAI:1b,\
@@ -12,5 +12,5 @@ $execute as @e[team=!$(Team),distance=..15] at @s run summon husk ~ ~0.2 ~ {Sile
                                                                             Attributes:[{Name:generic.max_health,Base:5}],Health:5}
 
 $execute as @e[team=!$(Team),distance=..15] at @s run scoreboard players set @e[limit=1,sort=nearest,tag=target_e,team=$(Team)] skill4_cnt 100
-$execute as @e[team=!$(Team),distance=..15] at @s run effect give @s slowness 3
+$execute as @e[team=!$(Team),distance=..15] at @s run effect give @s slowness 3 4
 

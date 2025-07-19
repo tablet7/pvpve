@@ -15,8 +15,8 @@ execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run particle item_sl
 execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run kill @s
 
 #ライダー
-execute as @e[tag=bow_skeleton] at @s run execute if entity @e[distance=..4,limit=1,type=player] run data merge entity @s {HandItems:[{id:iron_sword,Count:1b},{}],Tags:["legendary_e","sword_skeleton"]}
-execute as @e[tag=sword_skeleton] at @s run execute if entity @e[distance=5..,limit=1,type=player] run data merge entity @s {HandItems:[{id:bow,Count:1b},{}],Tags:["legendary_e","bow_skeleton"]}
+#execute as @e[tag=bow_skeleton] at @s run execute if entity @e[distance=..4,limit=1,type=player] run data merge entity @s {HandItems:[{id:iron_sword,Count:1b},{}],Tags:["legendary_e","sword_skeleton"]}
+#execute as @e[tag=sword_skeleton] at @s run execute if entity @e[distance=5..,limit=1,type=player] run data merge entity @s {HandItems:[{id:bow,Count:1b},{}],Tags:["legendary_e","bow_skeleton"]}
 execute as @e[type=arrow,nbt={inGround:true},tag=!player_arrow] at @s run kill @s
 
 #貪るもの

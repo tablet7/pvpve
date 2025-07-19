@@ -10,7 +10,8 @@ summon villager ~ ~ ~ {NoAI:1b,\
                            {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:16b,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:name_tag",Count:1b,tag:{display:{Name:'"ガチャ券[レア]"',Lore:['"投げて使用できる"']}}}},\
                            {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:32,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:name_tag",Count:1b,tag:{display:{Name:'"ガチャ券[レジェンダリー]"',Lore:['"投げて使用できる"']}}}},\
                            {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:64,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:name_tag",Count:1b,tag:{display:{Name:'"ガチャ券[ゴッデス]"',Lore:['"投げて使用できる"']}}}},\
-                           {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:3,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:ender_pearl",Count:1b}},\
+                           {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:5,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:ender_pearl",Count:1b}},\
                            {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:3,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:experience_bottle",Count:5b}},\
+                           {rewardExp:0b,maxUses:100,uses:0,xp:0,buy:{id:"minecraft:emerald",Count:3,tag:{display:{Name:'{"text":"通貨"}'}}},sell:{id:"minecraft:splash_potion",Count:1b,tag:{Potion:"strong_healing"}}},\
                            ]}}
 

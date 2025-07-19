@@ -3,6 +3,14 @@
 #銃を構える
 effect give @a[scores={ma_take=2}] slowness 1 20
 
+#skill1
+execute as @e[tag=normal_amo,team=Red] at @s run function pvp_pve:player/skill/zauberkugel/00ma_mc {Team:Red}
+execute as @e[tag=normal_amo,team=Blue] at @s run function pvp_pve:player/skill/zauberkugel/00ma_mc {Team:Blue}
+execute as @e[tag=normal_amo,team=Yellow] at @s run function pvp_pve:player/skill/zauberkugel/00ma_mc {Team:Yellow}
+execute as @e[tag=normal_amo,team=Green] at @s run function pvp_pve:player/skill/zauberkugel/00ma_mc {Team:Green}
+execute as @e[tag=normal_amo,team=Gray] at @s run function pvp_pve:player/skill/zauberkugel/00ma_mc {Team:Gray}
+execute as @e[tag=normal_amo,team=Black] at @s run function pvp_pve:player/skill/zauberkugel/00ma_mc {Team:Black}
+
 #skill_effect
 execute as @e[tag=ma_effect,scores={ma_effect=1..}] at @s run scoreboard players remove @s ma_effect 1
 execute as @e[tag=ma_effect,scores={ma_effect=1..}] at @s run tp @s ~ ~ ~ ~8 ~

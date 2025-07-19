@@ -35,6 +35,6 @@ tag @s remove summoner
 tag @s remove berserker
 
 #共通アイテム
-give @s leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true} 1
-give @s elytra{Unbreakable:1b} 1
+item replace entity @s armor.chest with elytra{Unbreakable:1b}
+item replace entity @s armor.legs with leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true}
 give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"3秒後にまた飲めるようになる"}']},Potion:"minecraft:healing"} 1

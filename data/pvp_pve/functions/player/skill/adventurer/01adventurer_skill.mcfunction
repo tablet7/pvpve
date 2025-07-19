@@ -6,5 +6,5 @@ $execute if block ^ ^1 ^2 air run summon armor_stand ^ ^1 ^2 {Marker:true,Invisi
 $scoreboard players set @e[tag=ad_skill1,limit=1,sort=nearest,team=$(Team)] ad_skill1 81
 
 #recast設定
-scoreboard players set @s skill1_recast 7
+scoreboard players set @s skill1_recast 14
 

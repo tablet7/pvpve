@@ -24,7 +24,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Red] at @s
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Blue] at @s run execute if score @s team_set matches 2 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -32,7 +32,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Blue] at @
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Yellow] at @s run execute if score @s team_set matches 3 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -40,7 +40,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Yellow] at
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Green] at @s run execute if score @s team_set matches 4 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -48,7 +48,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Green] at 
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Gray] at @s run execute if score @s team_set matches 5 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -56,7 +56,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Gray] at @
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Black] at @s run execute if score @s team_set matches 6 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -64,7 +64,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Black] at 
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=Enemy] 40 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Red] at @s run execute if score @s team_set matches 1 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -80,7 +80,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Blue] at @
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Blue] 20
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Blue] 20 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Yellow] at @s run execute if score @s team_set matches 3 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -88,7 +88,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Yellow] at
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Yellow] 20
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Yellow] 20 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Green] at @s run execute if score @s team_set matches 4 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -96,7 +96,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Green] at 
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Green] 20
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Green] 20 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Gray] at @s run execute if score @s team_set matches 5 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -104,7 +104,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Gray] at @
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Gray] 20
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Gray] 20 out_of_world
 
 execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Black] at @s run execute if score @s team_set matches 6 run execute as @s positioned ^ ^ ^2 positioned ^ ^ ^ \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.1 \
@@ -112,7 +112,7 @@ execute as @e[tag=ds1,limit=1,sort=nearest,name=red_mist_skill61,team=Black] at 
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.4 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^0.8 \
         rotated as @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest] positioned ^ ^ ^1.6 \
-        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Black] 20
+        if entity @s[distance=..3] run damage @e[distance=..1.3,limit=1,team=!Black] 20 out_of_world
 
 kill @e[type=armor_stand,name=red_mist_skill61,limit=2,sort=nearest]
 kill @e[type=armor_stand,name=red_mist_skill62,limit=2,sort=nearest]

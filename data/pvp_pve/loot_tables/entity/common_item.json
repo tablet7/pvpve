@@ -52,13 +52,13 @@
           "functions": [
             {
               "function": "minecraft:limit_count",
-              "limit": 2
+              "limit": 3
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.5
+              "chance": 0.7
             }
           ]
         },
@@ -69,13 +69,13 @@
           "functions": [
             {
               "function": "minecraft:limit_count",
-              "limit": 1
+              "limit": 2
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.7
+              "chance": 0.9
             }
           ]
         }

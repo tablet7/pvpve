@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/legendary_accessories",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/goddess_accessories",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/legendary_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/goddess_boots",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

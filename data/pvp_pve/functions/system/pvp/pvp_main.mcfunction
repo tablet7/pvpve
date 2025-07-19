@@ -27,31 +27,20 @@ execute as @e[tag=point_2] at @s run scoreboard players add @a[distance=..1.5,pr
 execute as @a at @s run execute if score @s score_gold_cnt matches 60.. run function pvp_pve:system/pvp/pvp_get_gold
 
 #point_spawn
-
-execute if score Timer pvp matches 540 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
-execute if score Timer pvp matches 520 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
-execute if score Timer pvp matches 460 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
-execute if score Timer pvp matches 440 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
-execute if score Timer pvp matches 380 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
-execute if score Timer pvp matches 360 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
-execute if score Timer pvp_time_select matches 6.. if score Timer pvp matches 300 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
-execute if score Timer ma_cnt matches 1 if score Timer pvp matches 280 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
-execute if score Timer ma_cnt matches 2 if score Timer pvp matches 220 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
-execute if score Timer ma_cnt matches 1 if score Timer pvp matches 200 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
-execute if score Timer ma_cnt matches 2 if score Timer pvp matches 140 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_say
-execute if score Timer ma_cnt matches 1 if score Timer pvp matches 120 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point
+execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_point_spawn/ruins_point_spawn_main
 #summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["point_2","point_gold"],ArmorItems:[{},{},{},{id:"minecraft:gold_block",Count:1b}]}
 
+#enemy_spawn
+execute if score Timer pvp_enemy_select matches 1 run function pvp_pve:system/pvp/pvp_enemy_spawn/enemy_mc_main
 
 #スタート時のリセット
-execute if score Timer pvp_time_select matches 5 if score Timer pvp matches 299 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_action_reset/ruins_reset
-execute if score Timer pvp_time_select matches 10 if score Timer pvp matches 599 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_action_reset/ruins_reset
-execute if score Timer pvp_time_select matches 15 if score Timer pvp matches 899 run execute if score Timer pvp_field matches 1 run function pvp_pve:system/pvp/pvp_action_reset/ruins_reset
+execute if score Timer tem matches 0 run function pvp_pve:system/pvp/pvp_start_mc
 
 #死亡時の処理
 execute as @a at @s run spawnpoint @s ~ ~ ~
 gamemode spectator @a[scores={death_cnt_ser=1..}]
 execute as @a[scores={death_cnt_ser=1..}] at @s run summon silverfish ~ ~ ~ {Tags:["p_death_pvp"],DeathLootTable:"pvp_pve:entity/p_death_pvp",Silent:true}
+kill @e[tag=p_death_pvp]
 scoreboard players set @a[scores={death_cnt_ser=1..}] death_timer 100
 scoreboard players set @a[scores={death_cnt_ser=1..}] death_cnt_ser 0
 #復活処理

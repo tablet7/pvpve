@@ -2,16 +2,26 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 3,
+      "rolls": 15,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "pvp_pve:entity/goddes_item"
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"通貨\"}'}}"
+            }
+          ]
         }
       ]
     },
     {
-      "rolls": 2,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:loot_table",
@@ -23,26 +33,17 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 2
-            }
-          ]
-        },
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:chest_sub/goddes_item"
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 1
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/potion_random"
         }
       ]
     }
