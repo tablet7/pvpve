@@ -9,4 +9,4 @@ execute as @p[tag=shadow] at @s run function pvp_pve:player/job_item_get/reload_
 execute as @p[tag=sorcerer] at @s run function pvp_pve:player/job_item_get/reload_job/sorcerer_item_get
 execute as @p[tag=summoner] at @s run function pvp_pve:player/job_item_get/reload_job/summoner
 execute as @p[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
-
+execute as @p[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get

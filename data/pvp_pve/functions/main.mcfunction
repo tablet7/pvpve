@@ -20,6 +20,13 @@ execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:glas
 execute as @a[scores={heal_bottle_cnt=1}] at @s run clear @s dragon_breath
 execute as @a[scores={heal_bottle_cnt=1}] at @s run give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"3秒後にまた飲めるようになる"}']},Potion:"minecraft:healing"} 1
 
+#ender_pearl
+execute as @a[scores={ender_left_click=1..}] at @s run scoreboard players remove @s ender_cnt 1
+execute as @a[scores={ender_left_click=1..}] at @s run scoreboard players set @s ender_left_click 0
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl"}}] at @s run scoreboard players remove @p ender_cnt 1
+kill @e[type=item,nbt={Item:{id:"minecraft:ender_pearl"}}]
+execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:ender_eye"}]}] run function pvp_pve:system/enderpearl_cnt
+
 #ニンジン棒
 execute as @e[nbt={Item:{id:"minecraft:carrot_on_a_stick"}}] at @s run kill @s
 
@@ -37,5 +44,4 @@ execute if score @e[tag=test_06,limit=1,sort=arbitrary] test_stand_06 matches 30
 ###shadow_skill
 scoreboard players add @e[tag=shadow_shadow] shadow_shadow_cnt 1
 execute if score @e[tag=shadow_shadow,limit=1,sort=arbitrary] shadow_shadow_cnt matches 300.. run kill @e[tag=shadow_shadow,limit=1,sort=arbitrary]
-
 

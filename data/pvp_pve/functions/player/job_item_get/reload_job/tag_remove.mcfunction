@@ -11,6 +11,9 @@ scoreboard players set @s skill6_recast 0
 scoreboard players set @s heal_bottle_cnt 0
 scoreboard players set @s berserker_passive 0
 scoreboard players set @s ma_take 0
+scoreboard players set @s sozai_set1 0
+scoreboard players set @s sozai_set2 0
+scoreboard players set @s sozai_set_cnt 0
 ##tester
 tag @s remove tester
 scoreboard players set @s[tag=tester] tester_passive01 0
@@ -33,6 +36,8 @@ tag @s remove guardian
 tag @s remove summoner
 ##berserker
 tag @s remove berserker
+##alchemist
+tag @s remove alchemist
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}

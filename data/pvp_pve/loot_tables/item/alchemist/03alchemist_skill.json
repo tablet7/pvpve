@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "錬金術[土]",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:素材を1つ消費し、真下にガラスを設置",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "シフト+右クリック:素材を1つ消費し、大ジャンプ",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "ガラスは10秒で破壊される",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "設置:クールタイム1秒",
+                        "color": "green",
+                        "italic": false
+                    },
+                    {
+                        "text": "ジャンプ:クールタイム3秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:1103}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

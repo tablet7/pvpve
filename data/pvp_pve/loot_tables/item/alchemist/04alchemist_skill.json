@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "錬禁術[幕開]",
+                        "color": "#65726c",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:素材をすべて消費し、伝説の武器を生成する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "※素材を20個以上所持しているときに発動可能",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "味方に渡すことはできない",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "２種類以上所持できない",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム120秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:1104}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

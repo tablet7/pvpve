@@ -1,0 +1,231 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:netherite_sword",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "エンド・オブ・エンド",
+                        "color": "#d400ff",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:sharpness\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:1s}],Damage:2030}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{CustomPotionColor:16252672}"
+            },
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "雷帝の矢",
+                        "color": "#eeff00",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "この矢は雷を落とせる",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_count",
+                "count": 7
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:infinity\",lvl:1s}]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:trident",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "グングニル",
+                        "color": "#b40000",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "この武器で敵を殴ると回復できる",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{densetu:1,CustomModelData:1111,Enchantments:[{id:\"minecraft:loyalty\",lvl:1s}]}"
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 0.04
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:golden_sword",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "エクスカリバー",
+                        "color": "#ffc400",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "この武器で敵を殴ると敵の周囲に光の剣を召喚する",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{densetu:1,CustomModelData:1112,Enchantments:[{id:\"minecraft:infinity\",lvl:1s}]}"
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 0.3
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 8,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2.4,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:shield",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "イージスの盾",
+                        "color": "#ffffff",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "直接殴っても強い",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:loyalty\",lvl:1s}]}"
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 0.09
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 10,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -3.2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 4,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.knockback_resistance",
+                  "name": "",
+                  "amount": 0.1,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

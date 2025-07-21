@@ -3,23 +3,23 @@
 #skill2
 execute as @e[tag=sor_2] at @s run particle lava ~ ~ ~
 execute as @e[tag=sor_2] at @s run particle explosion ~ ~ ~
-execute as @e[tag=sor_2] at @s if block ^ ^ ^1 air run tp ^ ^ ^0.5
+execute as @e[tag=sor_2] at @s if block ^ ^ ^1 air run tp ^ ^ ^0.7
 
 execute as @e[tag=sor_2,scores={particle_cnt=1..}] at @s run scoreboard players remove @s particle_cnt 1
 execute as @e[tag=sor_2,scores={particle_cnt=..0}] at @s run kill @s 
 
 execute as @e[tag=sor_2,team=Red] at @s unless block ^ ^ ^1 air run function pvp_pve:player/skill/sorcerer/02_exp {Team:Red}
-execute as @e[tag=sor_2,team=Red] at @s if entity @e[team=!Red,distance=..1] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Red}
+execute as @e[tag=sor_2,team=Red] at @s if entity @e[team=!Red,distance=..3] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Red}
 execute as @e[tag=sor_2,team=Blue] at @s unless block ^ ^ ^1 air run function pvp_pve:player/skill/sorcerer/02_exp {Team:Blue}
-execute as @e[tag=sor_2,team=Blue] at @s if entity @e[team=!Blue,distance=..1] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Blue}
+execute as @e[tag=sor_2,team=Blue] at @s if entity @e[team=!Blue,distance=..3] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Blue}
 execute as @e[tag=sor_2,team=Yellow] at @s unless block ^ ^ ^1 air run function pvp_pve:player/skill/sorcerer/02_exp {Team:Yellow}
-execute as @e[tag=sor_2,team=Yellow] at @s if entity @e[team=!Yellow,distance=..1] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Yellow}
+execute as @e[tag=sor_2,team=Yellow] at @s if entity @e[team=!Yellow,distance=..3] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Yellow}
 execute as @e[tag=sor_2,team=Green] at @s unless block ^ ^ ^1 air run function pvp_pve:player/skill/sorcerer/02_exp {Team:Green}
-execute as @e[tag=sor_2,team=Green] at @s if entity @e[team=!Green,distance=..1] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Green}
+execute as @e[tag=sor_2,team=Green] at @s if entity @e[team=!Green,distance=..3] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Green}
 execute as @e[tag=sor_2,team=Gray] at @s unless block ^ ^ ^1 air run function pvp_pve:player/skill/sorcerer/02_exp {Team:Gray}
-execute as @e[tag=sor_2,team=Gray] at @s if entity @e[team=!Gray,distance=..1] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Gray}
+execute as @e[tag=sor_2,team=Gray] at @s if entity @e[team=!Gray,distance=..3] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Gray}
 execute as @e[tag=sor_2,team=Black] at @s unless block ^ ^ ^1 air run function pvp_pve:player/skill/sorcerer/02_exp {Team:Black}
-execute as @e[tag=sor_2,team=Black] at @s if entity @e[team=!Black,distance=..1] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Black}
+execute as @e[tag=sor_2,team=Black] at @s if entity @e[team=!Black,distance=..3] run function pvp_pve:player/skill/sorcerer/02_exp {Team:Black}
 
 #skill6
 execute as @e[tag=sor_6,scores={particle_cnt=1..}] at @s run scoreboard players remove @s particle_cnt 1

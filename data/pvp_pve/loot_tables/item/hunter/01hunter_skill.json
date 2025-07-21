@@ -34,6 +34,11 @@
                         "italic": false
                     },
                     {
+                        "text": "使用時回復",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
                         "text": "※通常の矢を一番右列の３行目に置いておくといい",
                         "color": "white",
                         "italic": false
