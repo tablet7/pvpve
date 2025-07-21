@@ -24,7 +24,7 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "殴ると再生能力がつく",
+                        "text": "殴ると再生能力付与",
                         "color": "white",
                         "italic": false
                     }

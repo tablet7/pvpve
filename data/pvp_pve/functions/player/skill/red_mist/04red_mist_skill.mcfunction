@@ -5,7 +5,7 @@ execute as @a[distance=..10] at @s run playsound entity.elder_guardian.death mas
 particle dust 1 0 0 1 ~ ~ ~ 1 2 1 1 1000
 
 #バフ
-effect give @s haste 20 2
+effect give @s haste 20 3
 effect give @s speed 20 2
 effect give @s health_boost 20 2
 effect give @s strength 20 1

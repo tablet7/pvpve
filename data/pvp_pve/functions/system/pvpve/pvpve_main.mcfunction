@@ -8,6 +8,8 @@ execute if score Timer pvpve matches 800 if score Timer pvpve_circle_cnt matches
 execute if score Timer pvpve matches 500 if score Timer pvpve_circle_cnt matches 1 run function pvp_pve:system/pvpve/circle_cnt/circle_2
 execute if score Timer pvpve matches 200 if score Timer pvpve_circle_cnt matches 2 run function pvp_pve:system/pvpve/circle_cnt/circle_3
 execute if score Timer pvpve matches 140 if score Timer pvpve_circle_cnt matches 3 run function pvp_pve:system/pvpve/circle_cnt/circle_4
+##140から上に上限
+execute if score Timer pvpve_circle_cnt matches 4 run execute as @a at @s run damage @s[y=100,dy=1000,gamemode=adventure] 1
 
 #勝った後の処理
 execute if score Timer game_timer matches 20.. if score Timer game_finish_timer matches 2..6 run function pvp_pve:system/pvp/pvp_finish/fire_work_end
@@ -16,6 +18,8 @@ execute if score Timer game_timer matches 20.. run scoreboard players set Timer 
 #死亡タイマー
 execute if score Timer pvpve_circle_cnt matches ..2 run execute as @a[scores={death_timer=1..}] at @s run scoreboard players remove @s death_timer 1
 
+#ジャンプタワー
+scoreboard players remove @a[scores={jump_tower_cool=1..}] jump_tower_cool 1
 
 #落下阻止
 execute as @a at @s run kill @s[y=-40,dy=-1000,gamemode=adventure]
@@ -27,9 +31,16 @@ execute if score Timer pvp_enemy_select matches 1 run function pvp_pve:system/pv
 execute if score Timer tem matches 0 if score Timer pvpve matches 898 run function pvp_pve:system/pvpve/pvpve_reset
 
 #死亡時の処理
-execute as @a[gamemode=adventure] at @s run spawnpoint @s ~ ~ ~
+execute as @a[gamemode=adventure] at @s run execute if block ~ ~ ~ air run spawnpoint @s ~ ~ ~
 gamemode spectator @a[scores={death_cnt_ser=1..}]
-execute as @a[scores={death_cnt_ser=1..}] at @s run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+
+execute as @a[scores={death_cnt_ser=1..},team=Red] at @s run execute if entity @a[distance=..15,gamemode=adventure,team=!Red] run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+execute as @a[scores={death_cnt_ser=1..},team=Blue] at @s run execute if entity @a[distance=..15,gamemode=adventure,team=!Blue] run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+execute as @a[scores={death_cnt_ser=1..},team=Yellow] at @s run execute if entity @a[distance=..15,gamemode=adventure,team=!Yellow] run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+execute as @a[scores={death_cnt_ser=1..},team=Green] at @s run execute if entity @a[distance=..15,gamemode=adventure,team=!Green] run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+execute as @a[scores={death_cnt_ser=1..},team=Gray] at @s run execute if entity @a[distance=..15,gamemode=adventure,team=!Gray] run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+execute as @a[scores={death_cnt_ser=1..},team=Black] at @s run execute if entity @a[distance=..15,gamemode=adventure,team=!Black] run summon silverfish ~ ~ ~ {Tags:["p_death_pvpve"],DeathLootTable:"pvp_pve:entity/p_death_pvpve",Silent:true}
+
 kill @e[tag=p_death_pvpve]
 scoreboard players set @a[scores={death_cnt_ser=1..}] death_timer 200
 
@@ -39,6 +50,8 @@ execute if score Timer pvpve_circle_cnt matches 3.. run execute as @a[team=Yello
 execute if score Timer pvpve_circle_cnt matches 3.. run execute as @a[team=Green,scores={death_cnt_ser=1..}] run scoreboard players remove 4:Green_team pvpve 1
 execute if score Timer pvpve_circle_cnt matches 3.. run execute as @a[team=Gray,scores={death_cnt_ser=1..}] run scoreboard players remove 5:Gray_team pvpve 1
 execute if score Timer pvpve_circle_cnt matches 3.. run execute as @a[team=Black,scores={death_cnt_ser=1..}] run scoreboard players remove 6:Black_team pvpve 1
+
+execute as @a[scores={death_cnt_ser=1..}] at @s run summon firework_rocket ~ ~ ~ {LifeTime:30,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:3,Colors:[I;16735422]},{Type:2},{Type:4}]}}}}
 
 scoreboard players set @a[scores={death_cnt_ser=1..}] death_cnt_ser 0
 #復活処理
@@ -53,3 +66,4 @@ execute if score Timer winner_team matches 0 if score Timer pvpve_circle_cnt mat
 execute if score Timer winner_team matches 0 if score Timer pvpve_circle_cnt matches 3.. if score 6:Black_team pvpve matches 1.. if score 2:Blue_team pvpve matches ..0 if score 3:Yellow_team pvpve matches ..0 if score 4:Green_team pvpve matches ..0 if score 5:Gray_team pvpve matches ..0 if score 1:Red_team pvpve matches ..0 run function pvp_pve:system/pvp/pvp_finish/black_vict
 
 execute if score Timer game_finish_timer matches 0 run function main:reload
+

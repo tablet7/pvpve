@@ -3,7 +3,7 @@
 $summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["sor_4","skill_e"],Team:"$(Team)"}
 $execute as @e[tag=sor_4,limit=1,sort=nearest,team=$(Team)] at @s rotated as @p run tp @s ~ ~ ~ ~ 0
 
-$execute as @e[tag=sor_4,limit=1,sort=nearest,team=$(Team)] at @s positioned ^ ^ ^10 run execute as @e[distance=..10,team=!$(Team)] at @s run summon lightning_bolt ~ ~ ~
+$execute as @e[tag=sor_4,limit=1,sort=nearest,team=$(Team)] at @s positioned ^ ^ ^10 run execute as @e[distance=..10,team=!$(Team),type=!villager] at @s run summon lightning_bolt ~ ~ ~
 
 $kill @e[tag=sor_4,limit=1,sort=nearest,team=$(Team)]
 

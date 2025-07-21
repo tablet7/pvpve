@@ -30,17 +30,22 @@ function pvp_pve:player/skill/hunter/hunter_main
 #summoner_skill
 function pvp_pve:player/skill/summoner/summoner_main
 
+#alchemist_skill
+function pvp_pve:player/skill/alchemist/alchemist_main
+
 #ガチャ
-execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:entity/common_item
+execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/common_item
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run kill @s
 
-execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[レア]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:entity/rare_item
+execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[レア]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/rare_item
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[レア]"',Lore:['"投げて使用できる"']}}}}] at @s run kill @s
 
-execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[レジェンダリー]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:entity/legendary_item
+execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[レジェンダリー]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/legendary_item
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[レジェンダリー]"',Lore:['"投げて使用できる"']}}}}] at @s run kill @s
 
-execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[ゴッデス]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:entity/goddes_item
+execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[ゴッデス]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/goddes_item
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[ゴッデス]"',Lore:['"投げて使用できる"']}}}}] at @s run kill @s
+
+kill @e[type=witch,team=!Enemy]
 
 

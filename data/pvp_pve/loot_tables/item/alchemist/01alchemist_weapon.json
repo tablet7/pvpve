@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:golden_sword",
+          "functions": [
+            {
+                "function": "set_nbt",
+                "tag": "{Unbreakable:true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

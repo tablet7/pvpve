@@ -37,7 +37,7 @@
           "functions": [
             {
               "function": "minecraft:limit_count",
-              "limit": 20
+              "limit": 10
             }
           ]
         },
@@ -48,7 +48,7 @@
           "functions": [
             {
               "function": "minecraft:limit_count",
-              "limit": 16
+              "limit": 8
             }
           ]
         }

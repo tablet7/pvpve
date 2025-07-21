@@ -65,6 +65,11 @@ execute if predicate pvp_pve:selecteditem/summoner_skill/02summoner_skill run fu
 execute if predicate pvp_pve:selecteditem/summoner_skill/03summoner_skill run function pvp_pve:player/skill/summoner/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/summoner_skill/04summoner_skill run function pvp_pve:player/skill/summoner/skill_check/04skill_check
 
+##alchemist
+execute if predicate pvp_pve:selecteditem/alchemist_skill/01alchemist_skill run function pvp_pve:player/skill/alchemist/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/alchemist_skill/02alchemist_skill run function pvp_pve:player/skill/alchemist/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/alchemist_skill/03alchemist_skill run function pvp_pve:player/skill/alchemist/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/alchemist_skill/04alchemist_skill run function pvp_pve:player/skill/alchemist/skill_check/04skill_check
 
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

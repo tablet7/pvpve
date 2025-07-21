@@ -20,12 +20,12 @@ execute as @e[tag=rain_arrow,team=Green] at @s run effect give @e[distance=..4,t
 execute as @e[tag=rain_arrow,team=Gray] at @s run effect give @e[distance=..4,team=!Gray] slowness 1 2
 execute as @e[tag=rain_arrow,team=Black] at @s run effect give @e[distance=..4,team=!Black] slowness 1 2
 
-execute as @e[tag=rain_arrow,team=Red] at @s run effect give @e[distance=..4,team=!Red] jump_boost 1 100
-execute as @e[tag=rain_arrow,team=Blue] at @s run effect give @e[distance=..4,team=!Blue] jump_boost 1 100
-execute as @e[tag=rain_arrow,team=Yellow] at @s run effect give @e[distance=..4,team=!Yellow] jump_boost 1 100
-execute as @e[tag=rain_arrow,team=Green] at @s run effect give @e[distance=..4,team=!Green] jump_boost 1 100
-execute as @e[tag=rain_arrow,team=Gray] at @s run effect give @e[distance=..4,team=!Gray] jump_boost 1 100
-execute as @e[tag=rain_arrow,team=Black] at @s run effect give @e[distance=..4,team=!Black] jump_boost 1 100
+execute as @e[tag=rain_arrow,team=Red] at @s run effect give @e[distance=..4,team=!Red] jump_boost 1 238
+execute as @e[tag=rain_arrow,team=Blue] at @s run effect give @e[distance=..4,team=!Blue] jump_boost 1 238
+execute as @e[tag=rain_arrow,team=Yellow] at @s run effect give @e[distance=..4,team=!Yellow] jump_boost 1 238
+execute as @e[tag=rain_arrow,team=Green] at @s run effect give @e[distance=..4,team=!Green] jump_boost 1 238
+execute as @e[tag=rain_arrow,team=Gray] at @s run effect give @e[distance=..4,team=!Gray] jump_boost 1 238
+execute as @e[tag=rain_arrow,team=Black] at @s run effect give @e[distance=..4,team=!Black] jump_boost 1 238
 
 #skill3
 execute as @e[type=armor_stand,scores={trap_cnt=1..}] at @s run scoreboard players remove @s trap_cnt 1

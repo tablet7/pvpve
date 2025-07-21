@@ -24,6 +24,8 @@ execute as @a[tag=shadow] at @s run function pvp_pve:player/job_item_get/reload_
 execute as @a[tag=sorcerer] at @s run function pvp_pve:player/job_item_get/reload_job/sorcerer_item_get
 execute as @a[tag=summoner] at @s run function pvp_pve:player/job_item_get/reload_job/summoner
 execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
+execute as @a[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
+
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -35,6 +37,11 @@ scoreboard objectives add minutes dummy
 scoreboard objectives add hours dummy
 ##player
 scoreboard objectives add used_carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add jump_tower_cool dummy
+scoreboard players set @a jump_tower_cool 0
+scoreboard objectives add ender_left_click minecraft.used:ender_pearl
+scoreboard objectives add ender_cnt dummy
+scoreboard players set @a ender_cnt 0
 ###skill_recast
 scoreboard objectives add skill1_recast dummy
 scoreboard objectives add skill2_recast dummy
@@ -83,8 +90,21 @@ clear @a diamond
 ##guardian
 scoreboard objectives add guardian_skill3 dummy
 scoreboard objectives add guardian_skill4 dummy
-#summoner
+##summoner
 scoreboard objectives add summoner_skill_cnt dummy
+##alchemist
+scoreboard objectives add alchemist_skill3_cnt dummy
+scoreboard objectives add sozai_set1 dummy
+scoreboard players set @a[tag=alchemist] sozai_set1 0
+scoreboard objectives add sozai_set2 dummy
+scoreboard players set @a[tag=alchemist] sozai_set2 0
+scoreboard objectives add sozai_set_cnt dummy
+scoreboard players set @a[tag=alchemist] sozai_set_cnt 0
+scoreboard objectives add lit_cnt dummy
+scoreboard objectives add sword_cnt dummy
+#hanyou_passive
+scoreboard objectives add skill_log_cnt dummy
+scoreboard players set @a[tag=alchemist] skill_log_cnt 0
 ##berserker
 scoreboard objectives add berserker_passive custom:damage_dealt
 scoreboard players set @a berserker_passive 0
