@@ -33,6 +33,9 @@ function pvp_pve:player/skill/summoner/summoner_main
 #alchemist_skill
 function pvp_pve:player/skill/alchemist/alchemist_main
 
+#timer_finance_skill
+function pvp_pve:player/skill/timer_finance/timer_finance_main
+
 #ガチャ
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/common_item
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run kill @s

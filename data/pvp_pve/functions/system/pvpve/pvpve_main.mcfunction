@@ -1,7 +1,7 @@
 
 #時間管理
 scoreboard players add Timer game_timer 1
-execute if score Timer pvpve matches 1.. if score Timer game_timer matches 20.. run scoreboard players remove Timer pvpve 1
+execute if score Timer game_timer matches 20.. run scoreboard players remove Timer pvpve 1
 execute if score Timer winner_team matches 1.. if score Timer game_timer matches 20.. if score Timer game_finish_timer matches 1.. run scoreboard players remove Timer game_finish_timer 1
 #worldborder
 execute if score Timer pvpve matches 800 if score Timer pvpve_circle_cnt matches 0 run function pvp_pve:system/pvpve/circle_cnt/circle_1
@@ -10,6 +10,8 @@ execute if score Timer pvpve matches 200 if score Timer pvpve_circle_cnt matches
 execute if score Timer pvpve matches 140 if score Timer pvpve_circle_cnt matches 3 run function pvp_pve:system/pvpve/circle_cnt/circle_4
 ##140から上に上限
 execute if score Timer pvpve_circle_cnt matches 4 run execute as @a at @s run damage @s[y=100,dy=1000,gamemode=adventure] 1
+###-60からさらに上限
+execute if score Timer pvpve matches ..-60 run execute as @a at @s run damage @s[y=70,dy=1000,gamemode=adventure] 1
 
 #勝った後の処理
 execute if score Timer game_timer matches 20.. if score Timer game_finish_timer matches 2..6 run function pvp_pve:system/pvp/pvp_finish/fire_work_end
@@ -29,6 +31,12 @@ execute if score Timer pvp_enemy_select matches 1 run function pvp_pve:system/pv
 
 #スタート時のリセット
 execute if score Timer tem matches 0 if score Timer pvpve matches 898 run function pvp_pve:system/pvpve/pvpve_reset
+
+#エリトラの一時的削除
+execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=0}] at @s run scoreboard players set @s no_ery 301
+execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=301}] at @s run clear @s elytra
+execute as @a[scores={no_ery=1}] at @s run item replace entity @s armor.chest with elytra{Unbreakable:1b}
+execute as @a[scores={no_ery=1..}] at @s run scoreboard players remove @s no_ery 1
 
 #死亡時の処理
 execute as @a[gamemode=adventure] at @s run execute if block ~ ~ ~ air run spawnpoint @s ~ ~ ~

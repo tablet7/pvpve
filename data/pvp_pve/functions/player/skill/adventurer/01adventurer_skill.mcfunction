@@ -7,3 +7,5 @@ $scoreboard players set @e[tag=ad_skill1,limit=1,sort=nearest,team=$(Team)] ad_s
 #recast設定 
 scoreboard players set @s skill1_recast 14
 
+$execute unless entity @e[tag=ad_skill1,limit=1,sort=nearest,team=$(Team),distance=..3] run scoreboard players set @s skill1_recast 2
+$execute unless entity @e[tag=ad_skill1,limit=1,sort=nearest,team=$(Team),distance=..3] run effect clear @s fire_resistance

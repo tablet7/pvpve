@@ -26,5 +26,5 @@ execute if score @s ma_cnt2 matches 7 run title @s subtitle "もう弾は残っ�
 title @s title ""
 
 #recast設定
-scoreboard players set @s skill2_recast 10
+scoreboard players set @s skill2_recast 2
 

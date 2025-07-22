@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "因果応報",
+                        "color": "#a5b451",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:スキル使用後3秒間、自分が受けたダメージを記録する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "その後一番近い周囲の敵プレイヤーに受けたダメージを返す",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム300秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11114}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,7 @@ $summon armor_stand ~ ~ ~ {CustomName:'"zauberkugel5"',Invisible:true,Marker:tru
 $execute as @e[type=armor_stand,team=$(Team),limit=4,sort=nearest,name="zauberkugel5"] at @s run scoreboard players set @s ma_effect 20
 
 execute as @e[team=Enemy,distance=..12] at @s run damage @s 36
-$execute as @e[team=!$(Team),distance=..12] at @s run damage @s 12
+$execute as @e[team=!$(Team),distance=..12] at @s run damage @s 12 out_of_world
 particle minecraft:electric_spark ~ ~ ~ 5 5 5 0 1000
 
 function pvp_pve:player/skill/zauberkugel/all_baf

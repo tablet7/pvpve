@@ -71,5 +71,11 @@ execute if predicate pvp_pve:selecteditem/alchemist_skill/02alchemist_skill run 
 execute if predicate pvp_pve:selecteditem/alchemist_skill/03alchemist_skill run function pvp_pve:player/skill/alchemist/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/alchemist_skill/04alchemist_skill run function pvp_pve:player/skill/alchemist/skill_check/04skill_check
 
+##timer_finance
+execute if predicate pvp_pve:selecteditem/timer_finance_skill/01timer_finance_skill run function pvp_pve:player/skill/timer_finance/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/timer_finance_skill/02timer_finance_skill run function pvp_pve:player/skill/timer_finance/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/timer_finance_skill/03timer_finance_skill run function pvp_pve:player/skill/timer_finance/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/timer_finance_skill/04timer_finance_skill run function pvp_pve:player/skill/timer_finance/skill_check/04skill_check
+
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

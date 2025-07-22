@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "いつかの古時計",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:現在いる場所を保存し、8秒後に戻ってくる。",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "スキル2、スキル3のクールダウンを1秒にする",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "また、戻ってくるときに体力を回復、すべてのデバフを削除",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム80秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11111}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ $execute as @e[tag=ma_6,limit=1,sort=nearest,team=$(Team)] at @s run summon armo
 $execute as @e[tag=ma_6,limit=1,sort=nearest,team=$(Team)] at @s run execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=4,sort=nearest,name="zauberkugel6"] at @s run scoreboard players set @s ma_effect 20
 
 $execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run execute as @e[team=Enemy,distance=..12] at @s run damage @s 36
-$execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run execute as @e[team=!$(Team),distance=..12] at @s run damage @s 12
+$execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run execute as @e[team=!$(Team),distance=..12] at @s run damage @s 12 out_of_world
 $execute as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run particle minecraft:end_rod ~ ~ ~ 5 5 5 1 1000
 
 $execute positioned ^ ^ ^10 as @e[type=armor_stand,team=$(Team),limit=1,sort=nearest,name="zauberkugel6"] at @s run kill @e[distance=..12,tag=skill_e,team=!$(Team)]
