@@ -44,7 +44,12 @@
                         "italic": false
                     },
                     {
-                        "text": "クールタイム2秒",
+                        "text": "すべての魔弾は確定ダメージを与える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム1秒",
                         "color": "green",
                         "italic": false
                     }

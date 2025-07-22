@@ -25,7 +25,7 @@ execute as @a[tag=sorcerer] at @s run function pvp_pve:player/job_item_get/reloa
 execute as @a[tag=summoner] at @s run function pvp_pve:player/job_item_get/reload_job/summoner
 execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
 execute as @a[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
-
+execute as @a[tag=timer_finance] at @s run function pvp_pve:player/job_item_get/reload_job/timer_finance
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -42,6 +42,8 @@ scoreboard players set @a jump_tower_cool 0
 scoreboard objectives add ender_left_click minecraft.used:ender_pearl
 scoreboard objectives add ender_cnt dummy
 scoreboard players set @a ender_cnt 0
+scoreboard objectives add no_ery dummy
+scoreboard players set @a no_ery 0
 ###skill_recast
 scoreboard objectives add skill1_recast dummy
 scoreboard objectives add skill2_recast dummy
@@ -87,6 +89,11 @@ scoreboard objectives add skill4_cnt dummy
 scoreboard objectives add magic_point dummy
 scoreboard players set @a[tag=sorcerer] magic_point 0
 clear @a diamond
+bossbar remove magic_point_disply
+bossbar add magic_point_disply "魔力"
+bossbar set magic_point_disply color purple
+bossbar set magic_point_disply max 15
+bossbar set magic_point_disply players @a[tag=sorcerer]
 ##guardian
 scoreboard objectives add guardian_skill3 dummy
 scoreboard objectives add guardian_skill4 dummy
@@ -111,6 +118,13 @@ scoreboard players set @a berserker_passive 0
 scoreboard objectives add berserker_skill2 dummy
 scoreboard objectives add berserker_skill3 dummy
 scoreboard objectives add berserker_skill4 dummy
+#time_finance
+scoreboard objectives add time_finance_skill1 dummy
+scoreboard players set @a time_finance_skill1 0
+scoreboard objectives add time_finance_skill4_cnt dummy
+scoreboard players set @a time_finance_skill4_cnt 0
+scoreboard objectives add time_finance_skill4_damage custom:damage_taken
+scoreboard players set @a time_finance_skill4_damage 0
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
@@ -190,6 +204,7 @@ scoreboard objectives add pvpve_circle_cnt dummy
 scoreboard players set Timer pvpve_circle_cnt 0
 scoreboard objectives add winner_cnt_1 dummy
 scoreboard players set Timer winner_cnt_1 0
+
 #game_score
 scoreboard players set 1:Red_team pvpve 0
 scoreboard players set 2:Blue_team pvpve 0

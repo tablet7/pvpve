@@ -34,6 +34,11 @@
                         "italic": false
                     },
                     {
+                        "text": "pvpveの場合、残り時間200になると1発目から再装填",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
                         "text": "1発目:強化の魔弾を放つ。小範囲にダメージ",
                         "color": "white",
                         "italic": false
@@ -69,7 +74,7 @@
                         "italic": false
                     },
                     {
-                        "text": "クールタイム10秒",
+                        "text": "クールタイム2秒",
                         "color": "green",
                         "italic": false
                     }

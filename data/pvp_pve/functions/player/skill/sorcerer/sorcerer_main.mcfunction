@@ -1,5 +1,8 @@
 #> pvp_pve:player/skill/sorcerer/04sorcerer_skill
 
+#bossbar
+execute as @a[tag=sorcerer] at @s run execute store result bossbar magic_point_disply value run scoreboard players get @s magic_point
+
 #skill2
 execute as @e[tag=sor_2] at @s run particle lava ~ ~ ~
 execute as @e[tag=sor_2] at @s run particle explosion ~ ~ ~

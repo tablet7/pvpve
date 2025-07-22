@@ -38,6 +38,8 @@ tag @s remove summoner
 tag @s remove berserker
 ##alchemist
 tag @s remove alchemist
+##timer_finance
+tag @s remove timer_finance
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}

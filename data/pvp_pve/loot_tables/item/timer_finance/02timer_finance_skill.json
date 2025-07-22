@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "時間貸与",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:１秒間移動速度超増加と２秒間の耐性を付与",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "このスキル以外のクールダウンを20秒縮める",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "使用時、再生能力を10秒付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "また、周囲の味方のクールダウンが6秒以上のスキルをすべて3秒短縮",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム12秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11112}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

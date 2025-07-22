@@ -6,4 +6,5 @@ effect give @s nausea 10 1
 effect give @s weakness 10 1
 effect give @s poison 10 1
 effect give @s wither 10 1
+effect give @s jump_boost 10 238
 effect give @s darkness 10 1

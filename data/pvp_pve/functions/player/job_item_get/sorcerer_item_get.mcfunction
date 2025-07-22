@@ -15,6 +15,7 @@ loot give @p loot pvp_pve:item/sorcerer/06sorcerer_skill
 function pvp_pve:player/job_item_get/tag_remove
 tag @p add sorcerer
 
+#bossbar
 
 #passive
 scoreboard players set @p magic_point 0

@@ -10,3 +10,4 @@ execute as @p[tag=sorcerer] at @s run function pvp_pve:player/job_item_get/reloa
 execute as @p[tag=summoner] at @s run function pvp_pve:player/job_item_get/reload_job/summoner
 execute as @p[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
 execute as @p[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
+execute as @p[tag=timer_finance] at @s run function pvp_pve:player/job_item_get/reload_job/timer_finance

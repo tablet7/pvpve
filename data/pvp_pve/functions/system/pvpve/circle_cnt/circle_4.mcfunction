@@ -1,5 +1,5 @@
 
-worldborder set 5 240
+worldborder set 5 200
 
 say 今からy100以上の人はダメージを食らいます
 
