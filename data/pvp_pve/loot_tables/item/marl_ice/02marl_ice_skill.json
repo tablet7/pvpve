@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「アイス」",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に氷魔法を投げる",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵に移動速度低下と弱体化を与える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム8秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11122}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

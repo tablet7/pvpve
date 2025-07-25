@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"strong_healing\"}"
+              "tag": "{custom_potion_effects:[{id:\"minecraft:strength\",amplifier:1b,duration:1200}]}"
             }
           ]
         },
@@ -30,7 +30,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"strong_strength\"}"
+              "tag": "{Potion:\"strength\"}"
             }
           ]
         },

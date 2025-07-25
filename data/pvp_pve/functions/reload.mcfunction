@@ -26,6 +26,7 @@ execute as @a[tag=summoner] at @s run function pvp_pve:player/job_item_get/reloa
 execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
 execute as @a[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
 execute as @a[tag=timer_finance] at @s run function pvp_pve:player/job_item_get/reload_job/timer_finance
+execute as @a[tag=marl_ice] at @s run function pvp_pve:player/job_item_get/reload_job/marl_ice_item_get
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -125,6 +126,15 @@ scoreboard objectives add time_finance_skill4_cnt dummy
 scoreboard players set @a time_finance_skill4_cnt 0
 scoreboard objectives add time_finance_skill4_damage custom:damage_taken
 scoreboard players set @a time_finance_skill4_damage 0
+#marl_ice
+scoreboard objectives add arrow_marl_cnt used:crossbow
+scoreboard players set @a arrow_marl_cnt 0
+scoreboard objectives add fast_cool_down dummy
+scoreboard players set @a fast_cool_down 0
+scoreboard objectives add marl_skill2_par dummy
+scoreboard objectives add marl_skill3_cnt dummy
+scoreboard objectives add marl_skill3_tick dummy
+scoreboard objectives add marl_skill4_cnt dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
@@ -204,6 +214,8 @@ scoreboard objectives add pvpve_circle_cnt dummy
 scoreboard players set Timer pvpve_circle_cnt 0
 scoreboard objectives add winner_cnt_1 dummy
 scoreboard players set Timer winner_cnt_1 0
+#1:舞倉市,2:島
+scoreboard objectives add pvpve_field dummy
 
 #game_score
 scoreboard players set 1:Red_team pvpve 0

@@ -18,7 +18,7 @@ function pvp_pve:enemy/summon_group/eg_main
 scoreboard players remove @a[scores={heal_bottle_cnt=1..}] heal_bottle_cnt 1
 execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] run function pvp_pve:system/heal_bottle
 execute as @a[scores={heal_bottle_cnt=1}] at @s run clear @s dragon_breath
-execute as @a[scores={heal_bottle_cnt=1}] at @s run give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"3秒後にまた飲めるようになる"}']},Potion:"minecraft:healing"} 1
+execute as @a[scores={heal_bottle_cnt=1}] at @s run give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"5秒後にまた飲めるようになる"}']},Potion:"minecraft:strong_healing"} 1
 
 #ender_pearl
 execute as @a[scores={ender_left_click=1..}] at @s run scoreboard players remove @s ender_cnt 1

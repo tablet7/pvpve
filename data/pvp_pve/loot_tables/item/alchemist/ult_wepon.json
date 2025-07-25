@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:sharpness\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:1s}],Damage:2030}"
+              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:sharpness\",lvl:15s},{id:\"minecraft:unbreaking\",lvl:1s}],Damage:2030}"
             }
           ]
         },

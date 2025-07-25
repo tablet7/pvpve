@@ -40,8 +40,10 @@ tag @s remove berserker
 tag @s remove alchemist
 ##timer_finance
 tag @s remove timer_finance
+##marl_ice
+tag @s remove marl_ice
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true}
-give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"3秒後にまた飲めるようになる"}']},Potion:"minecraft:healing"} 1
+give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"5秒後にまた飲めるようになる"}']},Potion:"minecraft:strong_healing"} 1

@@ -38,8 +38,6 @@ execute as @e[type=snow_golem,tag=summoner_skill3,team=Green,tag=!sum_skill_34] 
 execute as @e[type=snow_golem,tag=summoner_skill3,team=Gray,tag=!sum_skill_34] at @s run function pvp_pve:player/skill/summoner/mc03debuff {Team:Gray}
 execute as @e[type=snow_golem,tag=summoner_skill3,team=Black,tag=!sum_skill_34] at @s run function pvp_pve:player/skill/summoner/mc03debuff {Team:Black}
 
-execute as @e[type=item,nbt={Item:{id:"minecraft:oak_button"}}] at @s run kill @s
-
 #skill4
 execute as @e[type=snow_golem,tag=summoner_skill2,team=Red,tag=sum_skill_24] at @s run function pvp_pve:player/skill/summoner/mc04buff2 {Team:Red}
 execute as @e[type=snow_golem,tag=summoner_skill2,team=Blue,tag=sum_skill_24] at @s run function pvp_pve:player/skill/summoner/mc04buff2 {Team:Blue}
