@@ -15,4 +15,4 @@ execute as @e[scores={filip_skill2_1=0}] at @s run kill @s
 
 execute as @e[scores={filip_skill2_1=1..}] at @s run tp @s ~ ~ ~ ~18 ~
 execute as @e[scores={filip_skill2_1=1..}] at @s run execute positioned ^ ^1.7 ^3 run particle flame ~ ~ ~ 0.0 0.0 0.0 0.1 10
-execute as @e[scores={filip_skill2_1=1..}] at @s run execute positioned ^ ^1.7 ^3 run particle explosion
+execute as @e[scores={filip_skill2_1=1..}] at @s run execute positioned ^ ^1.7 ^3 run particle end_rod ~ ~ ~ 0.2 0.0 0.2 0 3
