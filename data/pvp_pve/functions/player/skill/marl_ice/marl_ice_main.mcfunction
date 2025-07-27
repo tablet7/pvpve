@@ -31,8 +31,6 @@ execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"4444"'}}}}] at @s run ki
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"5555"'}}}}] at @s run kill @e[distance=..1.5,limit=3,sort=nearest,tag=marl_skill3_h,team=Gray]
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"6666"'}}}}] at @s run kill @e[distance=..1.5,limit=3,sort=nearest,tag=marl_skill3_h,team=Black]
 
-execute as @e[type=item,nbt={Item:{id:"minecraft:oak_button"}}] at @s run kill @s
-
 execute as @e[type=snow_golem,tag=marl_skill3_h] at @s run particle end_rod ~ ~1 ~ 0.5 0.5 0.5 0.1 1
 
 execute as @e[type=snow_golem,tag=marl_skill3_h,scores={marl_skill3_tick=40},team=Red] at @s run function pvp_pve:player/skill/marl_ice/mc_03skill {Team:Red}

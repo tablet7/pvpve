@@ -16,6 +16,5 @@ tag @p add slave
 
 
 #passive
-scoreboard players set @p skill4_recast 200
 
 ##attribute
