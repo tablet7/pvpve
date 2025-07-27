@@ -19,6 +19,12 @@ execute as @e[nbt={Item:{id:"minecraft:slime_ball"}}] at @s run kill @s
 #execute as @e[tag=sword_skeleton] at @s run execute if entity @e[distance=5..,limit=1,type=player] run data merge entity @s {HandItems:[{id:bow,Count:1b},{}],Tags:["legendary_e","bow_skeleton"]}
 execute as @e[type=arrow,nbt={inGround:true},tag=!player_arrow] at @s run kill @s
 
+#ボマー
+execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=1..}] at @s run scoreboard players remove @s bommar_cnt 1
+execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..10]
+execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run execute if entity @p[distance=..10] run tp ^ ^ ^0.25
+execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run execute if entity @p[distance=..0.2] run function pvp_pve:enemy/summon/legendary_e/mc_bomaa
+
 #貪るもの
 execute as @e[nbt={Item:{id:"minecraft:bedrock"}}] at @s run summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["devour_summon"]}
 execute as @e[nbt={Item:{id:"minecraft:bedrock"}}] at @s run scoreboard players set @e[limit=1,sort=nearest,tag=devour_summon] devour_summon_cnt 80

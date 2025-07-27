@@ -14,6 +14,9 @@ scoreboard players set @p ma_take 0
 scoreboard players set @p sozai_set1 0
 scoreboard players set @p sozai_set2 0
 scoreboard players set @p sozai_set_cnt 0
+scoreboard players set @p slave_skill1_cnt 0
+scoreboard players set @p arrow_marl_cnt 0
+scoreboard players set @p negire_filip 0
 ##tester
 tag @p remove tester
 scoreboard players set @p[tag=tester] tester_passive01 0
@@ -42,6 +45,10 @@ tag @p remove alchemist
 tag @p remove timer_finance
 ##marl_ice
 tag @p remove marl_ice
+##slave
+tag @p remove slave
+##slave
+tag @p remove filip_fire
 
 #共通アイテム
 item replace entity @p armor.chest with elytra{Unbreakable:1b}

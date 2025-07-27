@@ -15,11 +15,11 @@ execute as @e[tag=marl_skill2] at @s run execute positioned ~ ~1.7 ~ run particl
 execute as @e[tag=marl_skill2] at @s run tp @s ^ ^ ^0.5
 
 execute as @e[tag=marl_skill2,team=Red] at @s if entity @e[team=!Red,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Red}
-execute as @e[tag=marl_skill2,team=Blue] at @s if entity @e[team=!Red,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Blue}
-execute as @e[tag=marl_skill2,team=Yellow] at @s if entity @e[team=!Red,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Yellow}
-execute as @e[tag=marl_skill2,team=Green] at @s if entity @e[team=!Red,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Green}
-execute as @e[tag=marl_skill2,team=Gray] at @s if entity @e[team=!Red,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Gray}
-execute as @e[tag=marl_skill2,team=Black] at @s if entity @e[team=!Red,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Black}
+execute as @e[tag=marl_skill2,team=Blue] at @s if entity @e[team=!Blue,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Blue}
+execute as @e[tag=marl_skill2,team=Yellow] at @s if entity @e[team=!Yellow,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Yellow}
+execute as @e[tag=marl_skill2,team=Green] at @s if entity @e[team=!Green,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Green}
+execute as @e[tag=marl_skill2,team=Gray] at @s if entity @e[team=!Gray,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Gray}
+execute as @e[tag=marl_skill2,team=Black] at @s if entity @e[team=!Black,distance=..2] run function pvp_pve:player/skill/marl_ice/mc_02skill {Team:Black}
 
 #skill3
 execute as @e[scores={marl_skill3_tick=..39},type=snow_golem] at @s run scoreboard players add @s marl_skill3_tick 1

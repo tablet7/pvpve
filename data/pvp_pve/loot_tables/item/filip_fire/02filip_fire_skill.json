@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "茜さす剣/燃え盛る勇気",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:使用時、周囲を切って燃やす",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "「蜜蝋の翼」状態の場合、攻撃力上昇を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「泣く子」状態の場合、さらに前方に斬撃を飛ばす",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム8秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11142}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

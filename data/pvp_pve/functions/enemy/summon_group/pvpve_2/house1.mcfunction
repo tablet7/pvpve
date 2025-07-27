@@ -4,7 +4,7 @@
 setblock ~-4 ~9 ~-11 air
 setblock ~-3 ~9 ~-11 air
 setblock ~-4 ~9 ~-11 minecraft:chest[facing=south,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
-setblock ~-3 ~9 ~-11 minecraft:chest[facing=south,type=right]{LootTable:"pvp_pve:chest/rare_chest"}
+setblock ~-3 ~9 ~-11 minecraft:chest[facing=south,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
 
 function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:5,y:0,z:0}
 function pvp_pve:enemy/summon/common_e/random_common_enemy {x:0,y:0,z:5}

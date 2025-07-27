@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「望まぬ革命」",
+                        "color": "#645e04",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:  自分の持ち物をスキルを含めてすべて捨て、バフを付与",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "体力増強、攻撃力上昇、移動速度増加、耐性、攻撃速度増加、再生能力を30秒間付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "40秒後に初期所持品のみ戻ってくる。その時、持っている所持品は失う。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム90秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11134}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

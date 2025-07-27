@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{custom_potion_effects:[{id:\"minecraft:strength\",amplifier:1b,duration:1200}]}"
+              "tag": "{custom_potion_effects:[{id:\"minecraft:strength\",duration:1200}]}"
             }
           ]
         },

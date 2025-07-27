@@ -8,8 +8,9 @@ scoreboard objectives setdisplay sidebar pvpve
 scoreboard players set Timer mode_select 2
 scoreboard players set @a mode_select 2
 
-execute if score Timer pvpve_field matches 1 run function pvp_pve:system/pvpve/warp_point_f/pvpve_warp1
 execute if score Timer pvpve_field matches 1 run function pvp_pve:system/pvpve/start_up_field/field1_start
+
+execute if score Timer pvpve_field matches 2 run function pvp_pve:system/pvpve/start_up_field/field2_start
 
 scoreboard players set Timer tem 0
 

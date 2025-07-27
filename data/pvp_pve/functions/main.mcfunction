@@ -14,6 +14,10 @@ function pvp_pve:enemy/summon/enemy_main
 function pvp_pve:enemy/summon_group/eg_main
 ##
 
+##gate
+execute as @e[tag=gate_tp] at @s run particle witch ~ ~1 ~ 0.2 1 0.2 1 10
+execute as @e[tag=gate_90] at @s run tp @a[distance=..1] ~ ~90 ~
+
 ##glass_bin
 scoreboard players remove @a[scores={heal_bottle_cnt=1..}] heal_bottle_cnt 1
 execute as @a at @s run execute if entity @s[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] run function pvp_pve:system/heal_bottle

@@ -40,7 +40,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{Unbreakable:true,Enchantments:[{id:\"minecraft:knockback\",lvl:1s},{id:\"minecraft:piercing\",lvl:1s},{id:\"minecraft:quick_charge\",lvl:3s}]}"
+                "tag": "{Unbreakable:true,Enchantments:[{id:\"minecraft:knockback\",lvl:1s},{id:\"minecraft:piercing\",lvl:1s},{id:\"minecraft:quick_charge\",lvl:2s}]}"
             }
           ]
         }
