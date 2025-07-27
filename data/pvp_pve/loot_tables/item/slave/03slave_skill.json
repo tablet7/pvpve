@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "服従の刻印",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:近くの敵プレイヤー１人に服従の刻印を付与する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "服従の刻印はスキルのクールダウンを8秒を与え、",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "さらに盲目と弱体化を5秒付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム20秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11133}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

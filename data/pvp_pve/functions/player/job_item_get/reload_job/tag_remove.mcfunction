@@ -14,6 +14,9 @@ scoreboard players set @s ma_take 0
 scoreboard players set @s sozai_set1 0
 scoreboard players set @s sozai_set2 0
 scoreboard players set @s sozai_set_cnt 0
+scoreboard players set @s slave_skill1_cnt 0
+scoreboard players set @s arrow_marl_cnt 0
+scoreboard players set @s negire_filip 0
 ##tester
 tag @s remove tester
 scoreboard players set @s[tag=tester] tester_passive01 0
@@ -40,8 +43,14 @@ tag @s remove berserker
 tag @s remove alchemist
 ##timer_finance
 tag @s remove timer_finance
+##marl_ice
+tag @s remove marl_ice
+##slave
+tag @s remove slave
+##slave
+tag @s remove filip_fire
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true}
-give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"3秒後にまた飲めるようになる"}']},Potion:"minecraft:healing"} 1
+give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"5秒後にまた飲めるようになる"}']},Potion:"minecraft:strong_healing"} 1

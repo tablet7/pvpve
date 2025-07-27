@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:chain",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "hier_1"
+                    }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/potion_random",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/uncommon_accessories",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/rare_accessories",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/epic_accessories",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/uncommon_boots",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/rare_bootss",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/epic_boots",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 1,
+          "quality": 0,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 5
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.8
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 3
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

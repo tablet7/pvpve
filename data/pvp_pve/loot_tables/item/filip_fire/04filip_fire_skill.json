@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "不安定E.G.O「蜜蝋の翼」/ねじれ「泣く子」/炸裂する絶望",
+                        "color": "#ff9100",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:現在の形態に応じて強化を得る",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "このスキルは試合開始時クールダウンが200秒に設定される。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "1回目使用時、不安定E.G.O「蜜蝋の翼」状態となり、スキルがすべて強化される。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "2回目使用時、ねじれ「泣く子」状態となり、スキルがすべてさらに強化される。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「泣く子」状態の時、完全な炎耐性を得て、このスキルは「炸裂する絶望」となる。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "※スキルの強化は試合中、永久に持続する",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「炸裂する絶望」  クールダウン60秒",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "広範囲に大ダメージと炎を振りまく。炎は10秒間持続し、触れた敵を燃やす。（破壊可能）",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム250秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11144}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "烙印/燃えたぎる一撃/再び燃えたぎる一撃",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に大ダメージを与えて燃やす",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "「蜜蝋の翼」状態の場合、範囲が超増加",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「泣く子」状態の場合、クールダウンが20秒に変更",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム40秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11143}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

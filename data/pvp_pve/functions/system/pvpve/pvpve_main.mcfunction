@@ -9,9 +9,12 @@ execute if score Timer pvpve matches 500 if score Timer pvpve_circle_cnt matches
 execute if score Timer pvpve matches 200 if score Timer pvpve_circle_cnt matches 2 run function pvp_pve:system/pvpve/circle_cnt/circle_3
 execute if score Timer pvpve matches 140 if score Timer pvpve_circle_cnt matches 3 run function pvp_pve:system/pvpve/circle_cnt/circle_4
 ##140から上に上限
-execute if score Timer pvpve_circle_cnt matches 4 run execute as @a at @s run damage @s[y=100,dy=1000,gamemode=adventure] 1
+execute if score Timer pvpve_field matches 1 run execute if score Timer pvpve_circle_cnt matches 4 run execute as @a at @s run damage @s[y=100,dy=1000,gamemode=adventure] 1
 ###-60からさらに上限
-execute if score Timer pvpve matches ..-60 run execute as @a at @s run damage @s[y=70,dy=1000,gamemode=adventure] 1
+execute if score Timer pvpve_field matches 1 run execute if score Timer pvpve matches ..-60 run execute as @a at @s run damage @s[y=70,dy=1000,gamemode=adventure] 1
+
+#スカルクの上にいるとダメージ
+execute if score Timer pvpve_field matches 2 run execute as @a at @s run execute if block ~ ~-0.7 ~ sculk run damage @s 1
 
 #勝った後の処理
 execute if score Timer game_timer matches 20.. if score Timer game_finish_timer matches 2..6 run function pvp_pve:system/pvp/pvp_finish/fire_work_end

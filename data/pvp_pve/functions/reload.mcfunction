@@ -6,6 +6,7 @@ kill @e[tag=point_gold]
 kill @e[tag=skill_e]
 kill @e[team=Enemy]
 kill @e[type=item]
+kill @e[tag=gate_tp]
 spawnpoint @a 0 -60 0
 forceload remove all
 forceload add 0 0
@@ -26,6 +27,9 @@ execute as @a[tag=summoner] at @s run function pvp_pve:player/job_item_get/reloa
 execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
 execute as @a[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
 execute as @a[tag=timer_finance] at @s run function pvp_pve:player/job_item_get/reload_job/timer_finance
+execute as @a[tag=marl_ice] at @s run function pvp_pve:player/job_item_get/reload_job/marl_ice_item_get
+execute as @a[tag=slave] at @s run function pvp_pve:player/job_item_get/reload_job/slave_item_get
+execute as @a[tag=filip_fire] at @s run function pvp_pve:player/job_item_get/reload_job/filip_fire
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -55,6 +59,7 @@ scoreboard players set @a skill1_recast 0
 scoreboard players set @a skill2_recast 0
 scoreboard players set @a skill3_recast 0
 scoreboard players set @a skill4_recast 0
+#scoreboard players set @a[tag=filip_fire] skill4_recast 200
 scoreboard players set @a skill5_recast 0
 scoreboard players set @a skill6_recast 0
 ###tester_skill
@@ -125,6 +130,28 @@ scoreboard objectives add time_finance_skill4_cnt dummy
 scoreboard players set @a time_finance_skill4_cnt 0
 scoreboard objectives add time_finance_skill4_damage custom:damage_taken
 scoreboard players set @a time_finance_skill4_damage 0
+#marl_ice
+scoreboard objectives add arrow_marl_cnt used:crossbow
+scoreboard players set @a arrow_marl_cnt 0
+scoreboard objectives add fast_cool_down dummy
+scoreboard players set @a fast_cool_down 0
+scoreboard objectives add marl_skill2_par dummy
+scoreboard objectives add marl_skill3_cnt dummy
+scoreboard objectives add marl_skill3_tick dummy
+scoreboard objectives add marl_skill4_cnt dummy
+#slave
+scoreboard objectives add slave_skill1_cnt dummy
+scoreboard players set @a slave_skill1_cnt 0
+scoreboard objectives add slave_skill4 dummy
+scoreboard players set @a slave_skill4 0
+#filip_fire
+scoreboard objectives add negire_filip dummy
+scoreboard players set @a negire_filip 0
+scoreboard objectives add filip_skill1 dummy
+scoreboard players set @a filip_skill1 0
+scoreboard objectives add filip_skill1_2 dummy
+scoreboard players set @a filip_skill1_2 0
+scoreboard objectives add filip_skill2_1 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
@@ -149,6 +176,8 @@ scoreboard objectives add Team playerKillCount
 scoreboard objectives setdisplay sidebar Team
 scoreboard players set @a Team 0
 ###enemy
+####bomaaa
+scoreboard objectives add bommar_cnt dummy
 ####devour
 scoreboard objectives add devour_summon_cnt dummy
 scoreboard objectives add devour_skill dummy
@@ -204,6 +233,15 @@ scoreboard objectives add pvpve_circle_cnt dummy
 scoreboard players set Timer pvpve_circle_cnt 0
 scoreboard objectives add winner_cnt_1 dummy
 scoreboard players set Timer winner_cnt_1 0
+#1:舞倉市,2:島
+scoreboard objectives add pvpve_field dummy
+##field2_dungeon
+scoreboard objectives add hier_1_cnt dummy
+scoreboard players set Timer hier_1_cnt 0
+scoreboard objectives add hier_2_cnt dummy
+scoreboard players set Timer hier_2_cnt 0
+scoreboard objectives add hier_3_cnt dummy
+scoreboard players set Timer hier_3_cnt 0
 
 #game_score
 scoreboard players set 1:Red_team pvpve 0

@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「ケアル」,「ヘイスト」",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:「ケアル」を発動する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "シフト右クリック:「ヘイスト」を発動する",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "「ケアル」：体力を16回復する",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「ヘイスト」：6秒間移動速度増加と攻撃速度増加を獲得。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "　　　　　　　また、効果時間中すべてのスキルのクールダウンを倍速で進める",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム15秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11121}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

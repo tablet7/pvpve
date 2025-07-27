@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「反作用ボム」",
+                        "color": "#91e0ff",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:周囲の敵の位置に反作用ボムを召喚",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "ボム（粉雪）は当たった敵の移動速度を下げ、3秒後に爆発する",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "爆発に当たった場合、移動速度低下、弱体化、ジャンプ禁止を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム150秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11124}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

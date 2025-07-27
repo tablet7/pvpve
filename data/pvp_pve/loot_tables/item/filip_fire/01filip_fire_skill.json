@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "構える/蜜蝋の翼/溶け落ちた翼",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:使用時、６秒間体力上昇、再生能力、耐性、移動速度低下を得る",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "「蜜蝋の翼」状態の場合、追加効果としてダメージを受けると周囲の敵を燃やす",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「泣く子」状態の場合、耐性と移動速度低下が消え、スキル中、常に周囲の敵を燃やす",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11141}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
