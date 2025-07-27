@@ -59,7 +59,7 @@ scoreboard players set @a skill1_recast 0
 scoreboard players set @a skill2_recast 0
 scoreboard players set @a skill3_recast 0
 scoreboard players set @a skill4_recast 0
-#scoreboard players set @a[tag=filip_fire] skill4_recast 200
+scoreboard players set @a[tag=filip_fire] skill4_recast 200
 scoreboard players set @a skill5_recast 0
 scoreboard players set @a skill6_recast 0
 ###tester_skill
@@ -153,6 +153,9 @@ scoreboard objectives add filip_skill1_2 dummy
 scoreboard players set @a filip_skill1_2 0
 scoreboard objectives add filip_skill2_1 dummy
 scoreboard objectives add filip_skill2_2 dummy
+scoreboard objectives add filip_skill3_2 dummy
+scoreboard objectives add filip_skill4_1 dummy
+scoreboard objectives add filip_skill4_2 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

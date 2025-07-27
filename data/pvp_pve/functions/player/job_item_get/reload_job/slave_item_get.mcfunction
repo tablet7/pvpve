@@ -11,7 +11,7 @@ loot give @s loot pvp_pve:item/slave/03slave_skill
 loot give @s loot pvp_pve:item/slave/04slave_skill
 
 #tag
-function pvp_pve:player/job_item_get/tag_remove
+function pvp_pve:player/job_item_get/reload_job/tag_remove
 tag @s add slave
 
 

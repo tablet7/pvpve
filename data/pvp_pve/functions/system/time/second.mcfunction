@@ -24,4 +24,4 @@ execute as @a[scores={berserker_skill3=1..}] at @s run scoreboard players remove
 #filip_skill1
 execute as @a[scores={filip_skill1_2=1..}] at @s run function pvp_pve:player/skill/filip_fire/mc01skill/mc_13
 
-
+#filip_skill4

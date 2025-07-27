@@ -15,6 +15,7 @@ scoreboard players set @s sozai_set1 0
 scoreboard players set @s sozai_set2 0
 scoreboard players set @s sozai_set_cnt 0
 scoreboard players set @s slave_skill1_cnt 0
+scoreboard players set @s slave_skill4 0
 scoreboard players set @s arrow_marl_cnt 0
 scoreboard players set @s negire_filip 0
 ##tester
@@ -54,3 +55,4 @@ tag @s remove filip_fire
 item replace entity @s armor.chest with elytra{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true}
 give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"5秒後にまた飲めるようになる"}']},Potion:"minecraft:strong_healing"} 1
+effect clear @s

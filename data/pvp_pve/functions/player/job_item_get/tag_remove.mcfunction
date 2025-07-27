@@ -15,6 +15,7 @@ scoreboard players set @p sozai_set1 0
 scoreboard players set @p sozai_set2 0
 scoreboard players set @p sozai_set_cnt 0
 scoreboard players set @p slave_skill1_cnt 0
+scoreboard players set @p slave_skill4 0
 scoreboard players set @p arrow_marl_cnt 0
 scoreboard players set @p negire_filip 0
 ##tester
@@ -55,3 +56,4 @@ item replace entity @p armor.chest with elytra{Unbreakable:1b}
 item replace entity @p armor.legs with leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true}
 
 give @p potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"5秒後にまた飲めるようになる"}']},Potion:"minecraft:strong_healing"} 1
+effect clear @p
