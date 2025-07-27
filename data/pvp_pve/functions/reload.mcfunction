@@ -152,6 +152,7 @@ scoreboard players set @a filip_skill1 0
 scoreboard objectives add filip_skill1_2 dummy
 scoreboard players set @a filip_skill1_2 0
 scoreboard objectives add filip_skill2_1 dummy
+scoreboard objectives add filip_skill2_2 dummy
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
