@@ -1,6 +1,6 @@
 #> pvp_pve:enemy/summon_group/legendary_g/legendary1
 
-#780 104 51 tag=pvpve2_house1
+#1676 104 -109 tag=pvpve2_house1
 setblock ~-4 ~9 ~-11 air
 setblock ~-3 ~9 ~-11 air
 setblock ~-4 ~9 ~-11 minecraft:chest[facing=south,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
@@ -20,3 +20,4 @@ kill @e[type=item,distance=..20]
 kill @s
 
 #summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house1"],CustomName:'"pvpve2_house1"'}
+#896 0 -160

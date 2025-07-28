@@ -7,4 +7,4 @@ $summon stray ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/pvpve/field2_dun
                                     Tags:["rare_e"],\
                                     CustomName:'{"text":"ストレイ"}',\
                                     HandItems:[{id:"minecraft:bow",Count:1b},{}],\
-                                    HandDropChances:[0.000F,0.085F]}
+                                    HandDropChances:[0.000F,0.085F],PersistenceRequired:1b}

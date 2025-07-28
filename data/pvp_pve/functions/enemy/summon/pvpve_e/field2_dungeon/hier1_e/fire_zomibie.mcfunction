@@ -10,4 +10,4 @@ $summon zombie ~$(x) ~$(y) ~$(z) {Fire:90000,\
                                   ArmorItems:[{},{},{},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:65535}}}],\
                                   ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],\
                                   active_effects:[{id:"minecraft:fire_resistance",amplifier:1b,duration:2000000}],\
-                                  Attributes:[{Name:generic.max_health,Base:40}]}
+                                  Attributes:[{Name:generic.max_health,Base:40}],PersistenceRequired:1b}

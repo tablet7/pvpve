@@ -1,6 +1,6 @@
 #> pvp_pve:enemy/summon_group/legendary_g/legendary1
 
-#403 72 94 tag=pvpve2_house5
+#1299 72 -66 tag=pvpve2_house5
 setblock ~-4 ~2 ~ air
 setblock ~-9 ~-30 ~1 air
 setblock ~-2 ~-24 ~5 air

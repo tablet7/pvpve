@@ -6,4 +6,4 @@ $summon zombie ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/pvpve/field2_du
                                   Tags:["common_e"],\
                                   CustomName:'{"text":"ゾンビ"}',\
                                   ArmorItems:[{},{},{},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:7697781}}}],\
-                                  ArmorDropChances:[0.085F,0.085F,0.085F,0.000F]}
+                                  ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],PersistenceRequired:1b}

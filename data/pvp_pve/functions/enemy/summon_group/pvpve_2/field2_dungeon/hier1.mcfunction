@@ -51,6 +51,8 @@ function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy 
 function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:10,y:4,z:-6}
 function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:14,y:4,z:-6}
 
+effect give @e[team=Enemy,distance=..20] glowing infinite
+
 kill @e[type=item,distance=..20]
 
 summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_hier1_fin"],CustomName:'"pvpve2_hier1_fin"'}
