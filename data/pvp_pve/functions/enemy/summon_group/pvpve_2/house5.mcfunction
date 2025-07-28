@@ -19,12 +19,12 @@ function pvp_pve:enemy/summon/common_e/random_common_enemy {x:-6,y:-24,z:-2}
 
 function pvp_pve:enemy/summon/legendary_e/random_legendary_enemy {x:0,y:-30,z:1}
 
-kill @e[type=item,distance=..35]
-
-kill @s
-
 #summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house5"],CustomName:'"pvpve2_house5"'}
 #496 77 -94
 
 setblock ~-7 ~ ~-5 minecraft:lever[facing=east] destroy
 setblock ~-7 ~-30 ~-2 minecraft:lever[facing=east] destroy
+
+
+kill @e[type=item,distance=..35]
+kill @s
