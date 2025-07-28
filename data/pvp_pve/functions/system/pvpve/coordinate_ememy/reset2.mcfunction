@@ -24,7 +24,7 @@ summon armor_stand 1590 102 -29 {Marker:true,Invisible:true,Tags:["egc_random"],
 summon armor_stand 1243 70 -292 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 summon armor_stand 1120 67 -273 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 #dungeon
-summon armor_stand 1538 63 -159 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_hier_set"],CustomName:'"pvpve2_hier_set"'}
+summon armor_stand 1538 63 -160 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_hier_set"],CustomName:'"pvpve2_hier_set"'}
 #hune
 #summon armor_stand 1083 70 -108 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 
