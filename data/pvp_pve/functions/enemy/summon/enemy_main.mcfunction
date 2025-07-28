@@ -39,6 +39,21 @@ execute as @e[tag=devour_summon,scores={devour_summon_cnt=30}] at @s run summon 
 execute as @e[tag=devour_summon,scores={devour_summon_cnt=10}] at @s run summon lightning_bolt ~ ~ ~
 execute as @e[tag=devour_summon,scores={devour_summon_cnt=1}] at @s run function pvp_pve:enemy/summon/goddes_e/devour2 {x:0,y:0,z:0}
 execute as @e[tag=devour_summon,scores={devour_summon_cnt=1}] at @s run execute as @a[distance=..20] at @s run playsound entity.wither.death master @s ~ ~ ~ 1 2
+###field2
+execute as @e[nbt={Item:{id:"minecraft:sculk_catalyst"}}] at @s run summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["devour_summon_f2"]}
+execute as @e[nbt={Item:{id:"minecraft:sculk_catalyst"}}] at @s run scoreboard players set @e[limit=1,sort=nearest,tag=devour_summon_f2] devour_summon_cnt_f2 80
+execute as @e[nbt={Item:{id:"minecraft:sculk_catalyst"}}] at @s run kill @s
+
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=1..}] at @s run scoreboard players remove @s devour_summon_cnt_f2 1
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=..0}] at @s run kill @s 
+
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=70}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=50}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=30}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=10}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=1}] at @s run function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier3_e/devour2 {x:0,y:0,z:0}
+execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=1}] at @s run execute as @a[distance=..20] at @s run playsound entity.wither.death master @s ~ ~ ~ 1 2
+
 ##devour_skill
 execute as @e[tag=devour2,scores={devour_skill=1..}] at @s run scoreboard players remove @s devour_skill 1
 execute as @e[tag=devour2,scores={devour_skill=..0}] at @s run scoreboard players set @s devour_skill 140

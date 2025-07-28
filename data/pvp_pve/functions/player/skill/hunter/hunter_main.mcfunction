@@ -32,7 +32,7 @@ execute as @e[type=armor_stand,scores={trap_cnt=1..}] at @s run scoreboard playe
 execute as @e[type=armor_stand,scores={trap_cnt=..0}] at @s run kill @s 
 ##restraint_trap
 execute as @e[tag=restraint_trap] at @s run tp @s ~ ~-1.95 ~
-execute as @e[tag=restraint_trap] at @s run scoreboard players set @s trap_cnt 600
+execute as @e[tag=restraint_trap] at @s run scoreboard players set @s trap_cnt 800
 execute as @e[tag=restraint_trap] at @s run data merge entity @s {Tags:["skill_e","restraint_trap2"]}
 
 execute as @e[tag=restraint_trap2,team=Red] at @s run execute positioned ~ ~2 ~ if entity @e[distance=..2,team=!Red] run function pvp_pve:player/skill/hunter/03_slow {Team:Red}
@@ -44,7 +44,7 @@ execute as @e[tag=restraint_trap2,team=Black] at @s run execute positioned ~ ~2 
 
 ##fire_trap
 execute as @e[tag=fire_trap] at @s run tp @s ~ ~-1.95 ~
-execute as @e[tag=fire_trap] at @s run scoreboard players set @s trap_cnt 600
+execute as @e[tag=fire_trap] at @s run scoreboard players set @s trap_cnt 800
 execute as @e[tag=fire_trap] at @s run data merge entity @s {Tags:["skill_e","fire_trap2"]}
 
 execute as @e[tag=fire_trap2,team=Red] at @s run execute positioned ~ ~2 ~ if entity @e[distance=..2,team=!Red] run function pvp_pve:player/skill/hunter/03_fire {Team:Red}

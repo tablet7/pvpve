@@ -24,17 +24,23 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:魔力を貯める(最大:15)",
+                        "text": "パッシブ:4秒に1度魔力を獲得できる(最大:15)",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "体力を回復し、魔力を獲得、少しの間動けなくなる",
-                        "color": "white",
+                        "text": "右クリック:5秒間魔力が1秒に1回獲得できるようになる",
+                        "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム5秒",
+                        "text": "体力を回復し、魔力を獲得、再生能力付与、少しの間動けなくなる。",
+                        "color": "white",
+                        "italic": false
+                    },
+                    
+                    {
+                        "text": "クールタイム10秒",
                         "color": "green",
                         "italic": false
                     }

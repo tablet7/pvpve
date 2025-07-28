@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/rare_accessories",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/accessories/epic_accessories",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/rare_boots",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "pvp_pve:item/boots/epic_boots",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sculk_catalyst",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -37,8 +37,19 @@ setblock ~14 ~ ~-6 air
 setblock ~14 ~ ~-6 minecraft:chest[facing=south]{LootTable:"pvp_pve:chest/rare_chest"}
 
 #teki
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:0,y:0,z:6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:4,y:0,z:6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:0,y:4,z:6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:4,y:4,z:6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:10,y:4,z:6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:14,y:4,z:6}
 
-
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:0,y:0,z:-6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:4,y:0,z:-6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:0,y:4,z:-6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:4,y:4,z:-6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:10,y:4,z:-6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier1_e/random_hier1_enemy {x:14,y:4,z:-6}
 
 kill @e[type=item,distance=..20]
 
