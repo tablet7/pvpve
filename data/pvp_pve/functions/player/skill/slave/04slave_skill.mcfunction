@@ -6,7 +6,7 @@ effect give @s strength 30 2
 effect give @s speed 30 2
 effect give @s resistance 30 2
 effect give @s haste 30 1
-effect give @s regeneration 30 2
+effect give @s regeneration 30 1
 
 scoreboard players set @s ender_cnt 0
 
@@ -16,5 +16,5 @@ scoreboard players set @s slave_skill4 800
 clear @s
 
 #recast設定
-scoreboard players set @s skill4_recast 90
+scoreboard players set @s skill4_recast 200
 

@@ -23,8 +23,8 @@ setblock ~4 ~3 ~-5 redstone_block
 setblock ~10 ~3 ~-5 redstone_block
 setblock ~14 ~3 ~-5 redstone_block
 
-setblock ~-9 ~4 ~3 air
-setblock ~-9 ~4 ~3 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/rare_chest"}
+setblock ~-9 ~4 ~4 air
+setblock ~-9 ~4 ~4 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/rare_chest"}
 
 setblock ~10 ~ ~6 air
 setblock ~10 ~ ~6 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/common_chest"}
