@@ -32,6 +32,10 @@ execute as @a at @s run kill @s[y=-40,dy=-1000,gamemode=adventure]
 #enemy_spawn
 execute if score Timer pvp_enemy_select matches 1 run function pvp_pve:system/pvp/pvp_enemy_spawn/enemy_mc_main
 
+#bar
+execute store result bossbar pvpve_phase_time_bar value run scoreboard players get Timer pvpve_phase_time
+execute if score Timer pvpve_phase_time matches 1.. run scoreboard players remove Timer pvpve_phase_time 1
+
 #スタート時のリセット
 execute if score Timer tem matches 0 if score Timer pvpve matches 898 run function pvp_pve:system/pvpve/pvpve_reset
 

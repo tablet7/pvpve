@@ -21,3 +21,7 @@ execute as @a[team=Yellow] run scoreboard players add 3:Yellow_team pvpve 1
 execute as @a[team=Green] run scoreboard players add 4:Green_team pvpve 1
 execute as @a[team=Gray] run scoreboard players add 5:Gray_team pvpve 1
 execute as @a[team=Black] run scoreboard players add 6:Black_team pvpve 1
+
+#bar
+bossbar set pvpve_phase_time_bar players @a
+scoreboard players set Timer pvpve_phase_time 2000
