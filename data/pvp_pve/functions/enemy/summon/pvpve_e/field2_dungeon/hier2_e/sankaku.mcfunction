@@ -12,4 +12,4 @@ $summon skeleton ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/pvpve/field2_
                                     {id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:7799039},Enchantments:[{id:"minecraft:fire_protection",lvl:1s}]}},\
                                     {id:"minecraft:dragon_egg",Count:1b}],\
                                     ArmorDropChances:[0.085F,0.000F,0.000F,0.000F],\
-                                    active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:2000000,show_particles:0b}]}
+                                    active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:2000000,show_particles:0b}],PersistenceRequired:1b}

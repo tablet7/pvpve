@@ -1,34 +1,54 @@
 
-function pvp_pve:system/pvpve/warp_point_f/pvpve_warp1
+function pvp_pve:system/pvpve/warp_point_f/pvpve_warp2
 
-worldborder center 1281 769
+worldborder center 1415 -152
 worldborder set 1200 0
 
 #enemy_force
-forceload add 1063 898
-forceload add 1026 829
-forceload add 1037 792
-forceload add 1060 692
-forceload add 1061 652
-forceload add 1062 545
-forceload add 1132 548
-forceload add 1141 699
-forceload add 1097 830
-forceload add 1206 948
-forceload add 1125 1005
-forceload add 1283 868
-forceload add 1251 765
-forceload add 1200 651
-forceload add 1205 495
-forceload add 1286 543
-forceload add 1353 614
-forceload add 1357 763
-forceload add 1356 1008
-forceload add 1431 548
-forceload add 1508 548
-forceload add 1459 627
-forceload add 1488 718
-forceload add 1471 802
-forceload add 1401 901
-forceload add 1477 1001
-forceload add 1507 906
+#house
+forceload add 1676 -109
+forceload add 1645 -275
+forceload add 1480 -69
+forceload add 1378 -254
+forceload add 1299 -66
+forceload add 1164 -38
+forceload add 1211 -180
+forceload add 1742 -251
+#random
+forceload add 1318 -177
+forceload add 1214 -113
+forceload add 1354 -77
+forceload add 1495 -306
+forceload add 1765 -65
+forceload add 1597 -135
+forceload add 1590 -29
+forceload add 1243 -292
+forceload add 1120 -273
+#dungeon
+forceload add 1538 -160
+#hune
+forceload add 1083 -108
+
+#house
+#1676 104 -109 h1
+#1645 79 -275 h2
+#1480 79 -69 h3
+#1378 73 -254 h4
+#1299 72 -66 h5
+#1164 71 -38 h6
+#1211 81 -180 h7
+#1742 83 -251 h8
+#random
+#1318 71 -177
+#1214 78 -113
+#1354 73 -77
+#1495 73 -306
+#1765 87 -65
+#1597 79 -135
+#1590 102 -29
+#1243 70 -292
+#1120 67 -273
+#dungeon
+#1538 63 -160
+#hune
+#1083 70 -108

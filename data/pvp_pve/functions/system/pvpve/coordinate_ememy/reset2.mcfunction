@@ -4,45 +4,51 @@
 
 #enemy_stand
 #kill
-summon armor_stand 1044 67 1003 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1063 67 898 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1026 67 829 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1037 67 792 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1060 67 692 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1061 67 652 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1062 67 545 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1132 67 548 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1141 67 699 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1097 67 830 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1206 63 948 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1125 67 1005 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1283 67 868 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1251 67 765 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1200 67 651 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1205 67 495 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1286 67 543 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1353 67 614 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1357 67 763 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1356 67 1008 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1431 67 548 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1508 67 548 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1459 67 627 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1488 67 718 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1471 67 802 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1401 67 901 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1477 67 1001 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
-summon armor_stand 1507 67 906 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+#house
+summon armor_stand 1676 104 -109 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house1"],CustomName:'"pvpve2_house1"'}
+summon armor_stand 1645 79 -275 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house2"],CustomName:'"pvpve2_house2"'}
+summon armor_stand 1480 79 -69 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house3"],CustomName:'"pvpve2_house3"'}
+summon armor_stand 1378 73 -254 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house4"],CustomName:'"pvpve2_house4"'}
+summon armor_stand 1299 72 -66 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house5"],CustomName:'"pvpve2_house5"'}
+summon armor_stand 1164 71 -38 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house6"],CustomName:'"pvpve2_house6"'}
+summon armor_stand 1211 81 -180 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house7"],CustomName:'"pvpve2_house7"'}
+summon armor_stand 1742 83 -251 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house8"],CustomName:'"pvpve2_house8"'}
+#random
+summon armor_stand 1318 71 -177 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1214 78 -113 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1354 73 -77 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1495 73 -306 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1765 87 -65 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1597 79 -135 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1590 102 -29 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1243 70 -292 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+summon armor_stand 1120 67 -273 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+#dungeon
+summon armor_stand 1538 63 -160 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_hier_set"],CustomName:'"pvpve2_hier_set"'}
+#hune
+#summon armor_stand 1083 70 -108 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 
-#1536 180 1026 始点
-#1026 180 513　終点
-#1281 180 769　中心
-#1282 210 700　スポーンポイント
-
-#初期スポ作る〇
-#敵の和木場作〇
-#ワールドボーダー〇
-##死んだときのスポーン〇
-#勝った時の処理
-##forceload削除〇
-#リセット登録
+#house
+#1676 104 -109 h1
+#1645 79 -275 h2
+#1480 79 -69 h3
+#1378 73 -254 h4
+#1299 72 -66 h5
+#1164 71 -38 h6
+#1211 81 -180 h7
+#1742 83 -251 h8
+#random
+#1318 71 -177
+#1214 78 -113
+#1354 73 -77
+#1495 73 -306
+#1765 87 -65
+#1597 79 -135
+#1590 102 -29
+#1243 70 -292
+#1120 67 -273
+#dungeon
+#1538 63 -160
+#hune
+#1083 70 -108
 
