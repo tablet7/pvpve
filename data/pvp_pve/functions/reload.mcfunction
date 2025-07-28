@@ -14,7 +14,7 @@ worldborder center 0.0 0.0
 worldborder set 100000 0
 tp @a 0.0 -60.0 0.0
 gamemode adventure @a
-#gamemode creative @a[limit=1,tag=zauberkugel]
+##gamemode creative @a[limit=1,tag=zauberkugel]
 
 #item_reload
 execute as @a[tag=adventurer] at @s run function pvp_pve:player/job_item_get/reload_job/adventurer_item_get
