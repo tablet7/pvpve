@@ -1,12 +1,12 @@
 #> pvp_pve:enemy/summon_group/legendary_g/legendary1
 
 #1480 79 -69 tag=pvpve2_house3
-setblock ~ ~ ~-4 air
+setblock ~6 ~ ~4 air
 setblock ~-8 ~5 ~-5 air
 setblock ~4 ~5 ~-6 air
 setblock ~2 ~5 ~-13 air
-setblock ~ ~ ~-4 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/rare_chest"}
-setblock ~-8 ~5 ~-5 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/rare_chest"}
+setblock ~6 ~ ~4 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/rare_chest"}
+setblock ~8 ~5 ~3 minecraft:chest[facing=west]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~4 ~5 ~-6 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~2 ~5 ~-13 minecraft:chest[facing=north]{LootTable:"pvp_pve:chest/legendary_chest"}
 
