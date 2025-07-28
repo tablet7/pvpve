@@ -237,6 +237,12 @@ scoreboard objectives add pvpve_circle_cnt dummy
 scoreboard players set Timer pvpve_circle_cnt 0
 scoreboard objectives add winner_cnt_1 dummy
 scoreboard players set Timer winner_cnt_1 0
+scoreboard objectives add pvpve_phase_time dummy
+scoreboard players set Timer pvpve_phase_time 0
+##bar
+bossbar remove pvpve_phase_time_bar
+bossbar add pvpve_phase_time_bar "Phase1"
+bossbar set pvpve_phase_time_bar max 2000
 #1:舞倉市,2:島
 scoreboard objectives add pvpve_field dummy
 ##field2_dungeon
