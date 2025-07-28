@@ -18,10 +18,10 @@ setblock ~4 ~-1 ~-5 stone_bricks
 setblock ~10 ~-1 ~-5 stone_bricks
 setblock ~14 ~-1 ~-5 stone_bricks
 
-setblock ~ ~3 ~-5 redstone_block
-setblock ~4 ~3 ~-5 redstone_block
-setblock ~10 ~3 ~-5 redstone_block
-setblock ~14 ~3 ~-5 redstone_block
+setblock ~ ~3 ~-5 stone_bricks
+setblock ~4 ~3 ~-5 stone_bricks
+setblock ~10 ~3 ~-5 stone_bricks
+setblock ~14 ~3 ~-5 stone_bricks
 
 setblock ~21 ~-2 ~-7 stone_bricks
 

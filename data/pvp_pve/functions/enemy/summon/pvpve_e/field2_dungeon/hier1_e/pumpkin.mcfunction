@@ -1,0 +1,3 @@
+#> pvp_pve:enemy/summon/common_e/zombie
+
+$summon zombie ~$(x) ~$(y) ~$(z) {CustomName:'{"text":"パンプキンヘッド"}',DeathLootTable:"pvp_pve:entity/pvpve/field2_dungeon/hier1",Team:"Enemy",Health:35f,IsBaby:1b,Tags:["rare_e"],HandItems:[{id:"minecraft:golden_pickaxe",Count:1b},{id:"minecraft:golden_pickaxe",Count:1b}],HandDropChances:[0.000F,0.000F],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:65535}}},{id:"minecraft:jack_o_lantern",Count:1b}],ArmorDropChances:[0.085F,0.085F,0.000F,0.000F],Attributes:[{Name:generic.max_health,Base:35},{Name:generic.attack_damage,Base:2}]}

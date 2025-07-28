@@ -11,6 +11,10 @@ execute as @a at @s run execute if score @s skill4_recast matches 1.. run scoreb
 execute as @a at @s run execute if score @s skill5_recast matches 1.. run scoreboard players remove @s skill5_recast 1
 execute as @a at @s run execute if score @s skill6_recast matches 1.. run scoreboard players remove @s skill6_recast 1
 
+#sorcerer_passive
+execute as @a[tag=sorcerer,scores={magic_point_pa_cnt=0,magic_point=..14}] at @s run function pvp_pve:player/skill/sorcerer/so_passive
+execute as @a[tag=sorcerer,scores={magic_point_pa_cnt=1..}] at @s run scoreboard players remove @s magic_point_pa_cnt 1
+
 #shadow_passive
 execute as @e[tag=shadow_shadow] at @s run function pvp_pve:player/passive/shadow_passive/main
 

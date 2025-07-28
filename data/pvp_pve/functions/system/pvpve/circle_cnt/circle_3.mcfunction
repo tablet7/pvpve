@@ -8,3 +8,9 @@ tellraw @a [{"text":"中心"},{"text":"("},{"nbt":"wx","storage":"pvpve_circle"}
 scoreboard players set Timer pvpve_circle_cnt 3
 
 scoreboard players set @a[tag=zauberkugel] ma_cnt2 0
+
+#bar
+bossbar set pvpve_phase_time_bar max 10
+scoreboard players set Timer pvpve_phase_time 10
+bossbar set minecraft:pvpve_phase_time_bar name "Phase4"
+

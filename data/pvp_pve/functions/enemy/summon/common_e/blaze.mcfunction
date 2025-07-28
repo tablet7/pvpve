@@ -1,7 +1,7 @@
-$summon zombie ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/common_item",\
+
+
+$summon wither_skeleton ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/common_item",\
                                   Team:Enemy,\
-                                  Health:25f,Attributes:[{Name:generic.max_health,Base:25}],\
+                                  Health:10f,Attributes:[{Name:generic.max_health,Base:10},{Name:generic.movement_speed,Base:0.5}],\
                                   Tags:["common_e"],\
-                                  CustomName:'{"text":"ゾンビ"}',\
-                                  ArmorItems:[{},{},{},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:7697781}}}],\
-                                  ArmorDropChances:[0.085F,0.085F,0.085F,0.000F]}
+                                  CustomName:'{"text":"眷属"}'}

@@ -135,7 +135,7 @@
                 {
                   "attribute": "minecraft:generic.knockback_resistance",
                   "name": "",
-                  "amount": 0.04,
+                  "amount": 0.4,
                   "operation": "addition",
                   "slot": "offhand"
                 }

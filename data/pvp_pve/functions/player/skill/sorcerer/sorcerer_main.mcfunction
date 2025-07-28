@@ -3,6 +3,9 @@
 #bossbar
 execute as @a[tag=sorcerer] at @s run execute store result bossbar magic_point_disply value run scoreboard players get @s magic_point
 
+#skill1
+execute as @a[tag=sorcerer,scores={so_skill1_cnt=1..}] at @s run scoreboard players remove @s so_skill1_cnt 1
+
 #skill2
 execute as @e[tag=sor_2] at @s run particle lava ~ ~ ~
 execute as @e[tag=sor_2] at @s run particle explosion ~ ~ ~

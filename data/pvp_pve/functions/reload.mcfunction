@@ -91,6 +91,10 @@ scoreboard objectives add arrow_rain_cnt dummy
 scoreboard objectives add trap_cnt dummy
 scoreboard objectives add skill4_cnt dummy
 ##sorcerer
+scoreboard objectives add so_skill1_cnt dummy
+scoreboard players set @a[tag=sorcerer] so_skill1_cnt 0
+scoreboard objectives add magic_point_pa_cnt dummy
+scoreboard players set @a[tag=sorcerer] magic_point_pa_cnt 4
 scoreboard objectives add magic_point dummy
 scoreboard players set @a[tag=sorcerer] magic_point 0
 clear @a diamond
@@ -184,6 +188,7 @@ scoreboard players set @a Team 0
 scoreboard objectives add bommar_cnt dummy
 ####devour
 scoreboard objectives add devour_summon_cnt dummy
+scoreboard objectives add devour_summon_cnt_f2 dummy
 scoreboard objectives add devour_skill dummy
 scoreboard objectives add devour_skill1 dummy
 scoreboard objectives add devour_skill2 dummy

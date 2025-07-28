@@ -9,7 +9,8 @@ setblock ~-18 ~3 ~-12 air
 setblock ~-18 ~3 ~-12 minecraft:chest[facing=east]{LootTable:"pvp_pve:chest/legendary_chest"}
 
 #teki
-
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier2_e/random_hier2_enemy {x:-4,y:0,z:-6}
+function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier2_e/random_hier2_enemy {x:-11,y:0,z:-6}
 
 kill @e[type=item,distance=..20]
 

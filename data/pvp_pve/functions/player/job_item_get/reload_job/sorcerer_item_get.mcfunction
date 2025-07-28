@@ -18,5 +18,7 @@ tag @s add sorcerer
 
 #passive
 scoreboard players set @s magic_point 0
+scoreboard players set @s magic_point_pa_cnt 4
+scoreboard players set @s so_skill1_cnt 4
 
 ##attribute
