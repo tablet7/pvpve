@@ -7,12 +7,12 @@ kill @e[tag=skill_e]
 kill @e[team=Enemy]
 kill @e[type=item]
 kill @e[tag=gate_tp]
-spawnpoint @a 0 -60 0
+spawnpoint @a -2772 150 3312
 forceload remove all
 forceload add 0 0
 worldborder center 0.0 0.0
 worldborder set 100000 0
-tp @a 0.0 -60.0 0.0
+tp @a -2772 150 3312
 gamemode adventure @a
 ##gamemode creative @a[limit=1,tag=zauberkugel]
 

@@ -25,3 +25,6 @@ execute as @a[team=Black] run scoreboard players add 6:Black_team pvpve 1
 #bar
 bossbar set pvpve_phase_time_bar players @a
 scoreboard players set Timer pvpve_phase_time 2000
+
+#book delete
+clear @a written_book
