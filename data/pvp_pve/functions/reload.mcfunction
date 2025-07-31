@@ -15,6 +15,7 @@ worldborder set 100000 0
 tp @a -2816 175 3312
 gamemode adventure @a
 ##gamemode creative @a[limit=1,tag=zauberkugel]
+effect give @a instant_health 1 10
 
 #scoreboard
 scoreboard objectives add tem dummy
