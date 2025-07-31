@@ -23,5 +23,6 @@ scoreboard players set @s bsw5_use 0
 scoreboard players set @s bsw6_use 0
 scoreboard players set @s bsw7_use 0
 scoreboard players set @s bsw8_use 0
+scoreboard players set @s bsw9_use 0
 
 scoreboard players set @s furioso_cnt 0
