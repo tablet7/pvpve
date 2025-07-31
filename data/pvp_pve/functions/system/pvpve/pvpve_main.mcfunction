@@ -6,6 +6,7 @@ execute if score Timer winner_team matches 1.. if score Timer game_timer matches
 #worldborder
 execute if score Timer pvpve matches 800 if score Timer pvpve_circle_cnt matches 0 run function pvp_pve:system/pvpve/circle_cnt/circle_1
 execute if score Timer pvpve matches 500 if score Timer pvpve_circle_cnt matches 1 run function pvp_pve:system/pvpve/circle_cnt/circle_2
+execute if score Timer pvpve matches 201 if score Timer pvpve_circle_cnt matches 2 run execute as @a[gamemode=spectator] at @s run gamemode adventure @s
 execute if score Timer pvpve matches 200 if score Timer pvpve_circle_cnt matches 2 run function pvp_pve:system/pvpve/circle_cnt/circle_3
 execute if score Timer pvpve matches 140 if score Timer pvpve_circle_cnt matches 3 run function pvp_pve:system/pvpve/circle_cnt/circle_4
 ##140から上に上限
