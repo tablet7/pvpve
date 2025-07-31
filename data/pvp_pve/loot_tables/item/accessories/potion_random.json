@@ -20,17 +20,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{custom_potion_effects:[{id:\"minecraft:strength\",duration:1200}]}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"strength\"}"
+              "tag": "{custom_potion_effects:[{id:\"minecraft:strength\",duration:1200}],CustomPotionColor:15728404}"
             }
           ]
         },

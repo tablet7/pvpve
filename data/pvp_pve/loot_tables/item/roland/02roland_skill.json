@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「Furioso」",
+                        "color": "#2c2c2c",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に特大ダメージを与える",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "前方に特大ダメージと弱体化、移動速度低下、ウィザー、攻撃速度低下を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "自身は移動速度上昇、衝撃吸収、攻撃力上昇、耐性、再生能力を獲得",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "このスキルはすべての武器を1度以上使用するまで使えない",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11154}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
