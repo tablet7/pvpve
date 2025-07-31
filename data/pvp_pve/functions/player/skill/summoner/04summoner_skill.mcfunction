@@ -9,5 +9,5 @@ $scoreboard players set @e[distance=..10,team=$(Team),tag=sum_skill] summoner_sk
 $execute as @e[distance=..10,team=$(Team),tag=sum_skill] at @s run particle note ~ ~ ~ 1 1 1 1 10
 
 #recast設定
-scoreboard players set @s skill4_recast 2
+scoreboard players set @s skill4_recast 120
 
