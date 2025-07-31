@@ -186,7 +186,7 @@ xp set @a 0 points
 #1:ender_pearl,2:emerald,3:random
 scoreboard objectives add level_bonus_select dummy
 execute as @a run attribute @s minecraft:generic.max_health base set 30
-execute as @a run effect give @s instant_health 1 10
+effect give @a instant_health 1 10
 ###Team_Display
 scoreboard objectives remove Team
 scoreboard objectives add Team playerKillCount
