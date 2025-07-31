@@ -1,14 +1,14 @@
 #> pvp_pve:player/skill/adventurer/03adventurer_skill
 
-effect give @s regeneration 10 1
-effect give @s absorption 10 5
-effect give @s speed 10 2
-effect give @s resistance 10 2
+effect give @s regeneration 5 1
+effect give @s absorption 5 5
+effect give @s speed 5 2
+effect give @s resistance 5 2
 
-$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] weakness 5 1
+$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] weakness 5
 $execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] mining_fatigue 5 1
 $execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] wither 5 1
-$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] slowness 5 1
+$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] slowness 5
 
 $execute positioned ^ ^1 ^3 run execute as @e[distance=..4,team=!$(Team)] at @s run damage @s 15
 

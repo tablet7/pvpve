@@ -29,7 +29,12 @@
                         "italic": false
                     },
                     {
-                        "text": " 中にいる敵に毒、移動速度低下、盲目を付与",
+                        "text": "中にいる敵に毒、移動速度低下、盲目を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "自身には移動速度低下を付与",
                         "color": "white",
                         "italic": false
                     },
