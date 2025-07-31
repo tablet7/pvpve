@@ -546,7 +546,7 @@
             },
             {
               "function": "minecraft:set_damage",
-              "damage": 0.008
+              "damage": 0.08
             },
             {
               "function": "minecraft:set_attributes",
