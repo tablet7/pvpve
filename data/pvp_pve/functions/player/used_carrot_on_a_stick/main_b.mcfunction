@@ -95,6 +95,12 @@ execute if predicate pvp_pve:selecteditem/filip_fire_skill/02filip_fire_skill ru
 execute if predicate pvp_pve:selecteditem/filip_fire_skill/03filip_fire_skill run function pvp_pve:player/skill/filip_fire/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/filip_fire_skill/04filip_fire_skill run function pvp_pve:player/skill/filip_fire/skill_check/04skill_check
 
+##roland
+execute if predicate pvp_pve:selecteditem/roland_skill/01roland_skill run function pvp_pve:player/skill/roland/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/roland_skill/02roland_skill run function pvp_pve:player/skill/roland/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/roland_skill/03roland_skill run function pvp_pve:player/skill/roland/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/roland_skill/04roland_skill run function pvp_pve:player/skill/roland/skill_check/04skill_check
+
 
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

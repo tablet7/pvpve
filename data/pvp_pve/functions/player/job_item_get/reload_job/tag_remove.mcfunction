@@ -2,12 +2,12 @@
 
 #tag
 scoreboard players set @s kill_count 0
-scoreboard players set @s skill1_recast 0
-scoreboard players set @s skill2_recast 0
-scoreboard players set @s skill3_recast 0
-scoreboard players set @s skill4_recast 0
-scoreboard players set @s skill5_recast 0
-scoreboard players set @s skill6_recast 0
+execute if score @s mode_select matches 0 run scoreboard players set @s skill1_recast 0
+execute if score @s mode_select matches 0 run scoreboard players set @s skill2_recast 0
+execute if score @s mode_select matches 0 run scoreboard players set @s skill3_recast 0
+execute if score @s mode_select matches 0 run scoreboard players set @s skill4_recast 0
+execute if score @s mode_select matches 0 run scoreboard players set @s skill5_recast 0
+execute if score @s mode_select matches 0 run scoreboard players set @s skill6_recast 0
 scoreboard players set @s heal_bottle_cnt 0
 scoreboard players set @s berserker_passive 0
 scoreboard players set @s ma_take 0
@@ -50,6 +50,19 @@ tag @s remove marl_ice
 tag @s remove slave
 ##slave
 tag @s remove filip_fire
+##roland
+tag @s remove roland
+scoreboard players set @s roland_skill1_cnt 0
+scoreboard players set @s bsw1_use 0
+scoreboard players set @s bsw2_use 0
+scoreboard players set @s bsw3_use 0
+scoreboard players set @s bsw4_use 0
+scoreboard players set @s bsw5_use 0
+scoreboard players set @s bsw6_use 0
+scoreboard players set @s bsw7_use 0
+scoreboard players set @s bsw8_use 0
+scoreboard players set @s bsw9_use 0
+scoreboard players set @s furioso_cnt 0
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}

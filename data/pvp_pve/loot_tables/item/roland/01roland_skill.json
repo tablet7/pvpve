@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "黒い沈黙の手袋",
+                        "color": "#2c2c2c",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:8種類の武器をランダムに1つ得られる",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "武器で敵を攻撃すると、体力を回復する",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "使用した武器はスキル2を使うまで出ない",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "このスキルを3回使うごとに攻撃力上昇を得る",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "武器は1つしか持てない",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム5秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11151}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

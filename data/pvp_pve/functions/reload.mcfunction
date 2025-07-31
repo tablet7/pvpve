@@ -7,30 +7,14 @@ kill @e[tag=skill_e]
 kill @e[team=Enemy]
 kill @e[type=item]
 kill @e[tag=gate_tp]
-spawnpoint @a -2772 150 3312
+spawnpoint @a -2816 175 3312
 forceload remove all
 forceload add 0 0
 worldborder center 0.0 0.0
 worldborder set 100000 0
-tp @a -2772 150 3312
+tp @a -2816 175 3312
 gamemode adventure @a
 ##gamemode creative @a[limit=1,tag=zauberkugel]
-
-#item_reload
-execute as @a[tag=adventurer] at @s run function pvp_pve:player/job_item_get/reload_job/adventurer_item_get
-execute as @a[tag=berserker] at @s run function pvp_pve:player/job_item_get/reload_job/berserker
-execute as @a[tag=guardian] at @s run function pvp_pve:player/job_item_get/reload_job/guardian
-execute as @a[tag=hunter] at @s run function pvp_pve:player/job_item_get/reload_job/hunter
-execute as @a[tag=red_mist] at @s run function pvp_pve:player/job_item_get/reload_job/red_mist_item_get
-execute as @a[tag=shadow] at @s run function pvp_pve:player/job_item_get/reload_job/shadow_item_get
-execute as @a[tag=sorcerer] at @s run function pvp_pve:player/job_item_get/reload_job/sorcerer_item_get
-execute as @a[tag=summoner] at @s run function pvp_pve:player/job_item_get/reload_job/summoner
-execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
-execute as @a[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
-execute as @a[tag=timer_finance] at @s run function pvp_pve:player/job_item_get/reload_job/timer_finance
-execute as @a[tag=marl_ice] at @s run function pvp_pve:player/job_item_get/reload_job/marl_ice_item_get
-execute as @a[tag=slave] at @s run function pvp_pve:player/job_item_get/reload_job/slave_item_get
-execute as @a[tag=filip_fire] at @s run function pvp_pve:player/job_item_get/reload_job/filip_fire
 
 #scoreboard
 scoreboard objectives add tem dummy
@@ -41,6 +25,8 @@ scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy
 scoreboard objectives add hours dummy
 ##player
+scoreboard objectives add login_par_cnt dummy
+scoreboard players set @a login_par_cnt 0
 scoreboard objectives add used_carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add jump_tower_cool dummy
 scoreboard players set @a jump_tower_cool 0
@@ -161,6 +147,29 @@ scoreboard objectives add filip_skill2_2 dummy
 scoreboard objectives add filip_skill3_2 dummy
 scoreboard objectives add filip_skill4_1 dummy
 scoreboard objectives add filip_skill4_2 dummy
+#roland
+scoreboard objectives add roland_skill1_cnt dummy
+scoreboard players set @a roland_skill1_cnt 0
+scoreboard objectives add bsw1_use dummy
+scoreboard objectives add bsw2_use dummy
+scoreboard objectives add bsw3_use dummy
+scoreboard objectives add bsw4_use dummy
+scoreboard objectives add bsw5_use dummy
+scoreboard objectives add bsw6_use dummy
+scoreboard objectives add bsw7_use dummy
+scoreboard objectives add bsw8_use dummy
+scoreboard objectives add bsw9_use dummy
+scoreboard players set @a bsw1_use 0
+scoreboard players set @a bsw2_use 0
+scoreboard players set @a bsw3_use 0
+scoreboard players set @a bsw4_use 0
+scoreboard players set @a bsw5_use 0
+scoreboard players set @a bsw6_use 0
+scoreboard players set @a bsw7_use 0
+scoreboard players set @a bsw8_use 0
+scoreboard objectives add bsw9_use dummy
+scoreboard objectives add furioso_cnt dummy
+scoreboard players set @a furioso_cnt 0
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
@@ -178,7 +187,6 @@ xp set @a 0 points
 scoreboard objectives add level_bonus_select dummy
 execute as @a run attribute @s minecraft:generic.max_health base set 30
 effect give @a instant_health 1 10
-effect give @a saturation infinite 1 true
 ###Team_Display
 scoreboard objectives remove Team
 scoreboard objectives add Team playerKillCount
@@ -322,3 +330,20 @@ scoreboard objectives add team_set dummy
 function pvp_pve:system/team/team_set_set
 
 #tags
+
+#item_reload
+execute as @a[tag=adventurer] at @s run function pvp_pve:player/job_item_get/reload_job/adventurer_item_get
+execute as @a[tag=berserker] at @s run function pvp_pve:player/job_item_get/reload_job/berserker
+execute as @a[tag=guardian] at @s run function pvp_pve:player/job_item_get/reload_job/guardian
+execute as @a[tag=hunter] at @s run function pvp_pve:player/job_item_get/reload_job/hunter
+execute as @a[tag=red_mist] at @s run function pvp_pve:player/job_item_get/reload_job/red_mist_item_get
+execute as @a[tag=shadow] at @s run function pvp_pve:player/job_item_get/reload_job/shadow_item_get
+execute as @a[tag=sorcerer] at @s run function pvp_pve:player/job_item_get/reload_job/sorcerer_item_get
+execute as @a[tag=summoner] at @s run function pvp_pve:player/job_item_get/reload_job/summoner
+execute as @a[tag=zauberkugel] at @s run function pvp_pve:player/job_item_get/reload_job/zauberkugel_item_get
+execute as @a[tag=alchemist] at @s run function pvp_pve:player/job_item_get/reload_job/alchemist_item_get
+execute as @a[tag=timer_finance] at @s run function pvp_pve:player/job_item_get/reload_job/timer_finance
+execute as @a[tag=marl_ice] at @s run function pvp_pve:player/job_item_get/reload_job/marl_ice_item_get
+execute as @a[tag=slave] at @s run function pvp_pve:player/job_item_get/reload_job/slave_item_get
+execute as @a[tag=filip_fire] at @s run function pvp_pve:player/job_item_get/reload_job/filip_fire
+execute as @a[tag=roland] at @s run function pvp_pve:player/job_item_get/reload_job/roland

@@ -8,3 +8,4 @@ execute if score @s random_rand matches 3 run function pvp_pve:system/team/team_
 execute if score @s random_rand matches 4 run function pvp_pve:system/team/team_reload/mc_team_select_reload {Team:"Green",team:"green"}
 execute if score @s random_rand matches 5 run function pvp_pve:system/team/team_reload/mc_team_select_reload {Team:"Gray",team:"gray"}
 execute if score @s random_rand matches 6 run function pvp_pve:system/team/team_reload/mc_team_select_reload {Team:"Black",team:"black"}
+

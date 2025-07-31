@@ -48,8 +48,21 @@ tag @p remove timer_finance
 tag @p remove marl_ice
 ##slave
 tag @p remove slave
-##slave
+##filip_fire
 tag @p remove filip_fire
+##roland
+tag @p remove roland
+scoreboard players set @p roland_skill1_cnt 0
+scoreboard players set @p bsw1_use 0
+scoreboard players set @p bsw2_use 0
+scoreboard players set @p bsw3_use 0
+scoreboard players set @p bsw4_use 0
+scoreboard players set @p bsw5_use 0
+scoreboard players set @p bsw6_use 0
+scoreboard players set @p bsw7_use 0
+scoreboard players set @p bsw8_use 0
+scoreboard players set @p bsw9_use 0
+scoreboard players set @p furioso_cnt 0
 
 #共通アイテム
 item replace entity @p armor.chest with elytra{Unbreakable:1b}
