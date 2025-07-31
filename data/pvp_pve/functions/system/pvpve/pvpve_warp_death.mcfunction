@@ -1,3 +1,3 @@
 
 #遺跡
-$tp $(SpawnX) 150 $(SpawnZ)
+$tp $(SpawnX) 180 $(SpawnZ)
