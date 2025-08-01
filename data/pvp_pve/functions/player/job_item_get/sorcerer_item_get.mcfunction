@@ -4,7 +4,6 @@
 clear @p
 
 #skill_item
-loot give @p loot pvp_pve:item/sorcerer/01sorcerer_weapon
 loot give @p loot pvp_pve:item/sorcerer/01sorcerer_skill
 loot give @p loot pvp_pve:item/sorcerer/02sorcerer_skill
 loot give @p loot pvp_pve:item/sorcerer/03sorcerer_skill
