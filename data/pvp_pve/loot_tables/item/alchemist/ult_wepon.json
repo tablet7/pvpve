@@ -38,19 +38,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "雷帝の矢",
+                        "text": "冥界の矢",
                         "color": "#3f974b",
-                        "italic": false
-                    }
-                ]
-            },
-            {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                    {
-                        "text": "この矢は雷を落とせる",
-                        "color": "white",
                         "italic": false
                     }
                 ]
@@ -61,7 +50,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{densetu:1,custom_potion_effects:[{id:\"minecraft:slowness\",amplifier:10b,duration:200},{id:\"minecraft:jump_boost\",amplifier:238b,duration:200},{id:\"minecraft:wither\",amplifier:3b,duration:200},{id:\"minecraft:glowing\",amplifier:10b,duration:200},{id:\"minecraft:levitation\",amplifier:100b,duration:20},{id:\"minecraft:darkness\",amplifier:10b,duration:200}],CustomPotionColor:1386010}"
+              "tag": "{densetu:1,custom_potion_effects:[{id:\"minecraft:slowness\",amplifier:10b,duration:200},{id:\"minecraft:jump_boost\",amplifier:237b,duration:200},{id:\"minecraft:wither\",amplifier:3b,duration:140},{id:\"minecraft:glowing\",amplifier:10b,duration:200},{id:\"minecraft:levitation\",amplifier:100b,duration:20},{id:\"minecraft:darkness\",amplifier:10b,duration:200}],CustomPotionColor:1386010}"
             }
           ]
         },
