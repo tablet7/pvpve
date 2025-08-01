@@ -15,5 +15,5 @@ execute if data entity @s {Tags:["slave"]} run function pvp_pve:player/job_item_
 execute if data entity @s {Tags:["filip_fire"]} run function pvp_pve:player/job_item_get/reload_job/filip_fire
 execute if data entity @s {Tags:["roland"]} run function pvp_pve:player/job_item_get/reload_job/roland
 
-
+effect clear @s
 
