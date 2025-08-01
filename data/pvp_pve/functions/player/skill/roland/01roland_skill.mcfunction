@@ -17,4 +17,4 @@ execute if score @s roland_skill1_cnt matches 3 run effect give @s strength 5 1
 execute if score @s roland_skill1_cnt matches 3 run scoreboard players set @s roland_skill1_cnt 0
 
 #recast設定 
-scoreboard players set @s skill1_recast 3
+scoreboard players set @s skill1_recast 5
