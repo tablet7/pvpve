@@ -38,13 +38,36 @@
                         "color": "white",
                         "italic": false
                     },
-                    
+                    {
+                        "text": "知識とは力なり。これで殴れ。",
+                        "color": "white",
+                        "italic": false
+                    },
                     {
                         "text": "クールタイム10秒",
                         "color": "green",
                         "italic": false
                     }
                 ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 4,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2.4,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
             },
             {
                 "function": "set_nbt",
