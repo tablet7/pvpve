@@ -626,7 +626,7 @@
                 {
                   "attribute": "minecraft:generic.knockback_resistance",
                   "name": "",
-                  "amount": 0.01,
+                  "amount": 0.1,
                   "operation": "addition",
                   "slot": "head"
                 }
