@@ -51,3 +51,6 @@ execute as @e[tag=light_sword,team=Gray] at @s run function pvp_pve:player/skill
 execute as @e[tag=light_sword,team=Black] at @s run function pvp_pve:player/skill/alchemist/mc_damage_sword {Team:Black}
 
 execute as @a[tag=alchemist,nbt={SelectedItem:{tag:{izisu:1}}},predicate=pvp_pve:flags/sneaking_f] at @s run effect give @s resistance 1 1 false 
+
+execute as @a[nbt={active_effects:[{id:"minecraft:hero_of_the_village"}]}] at @s run effect give @s jump_boost 10 238
+execute as @a[nbt={active_effects:[{id:"minecraft:hero_of_the_village"}]}] at @s run effect clear @s hero_of_the_village
