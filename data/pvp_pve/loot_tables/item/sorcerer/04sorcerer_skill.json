@@ -23,12 +23,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に雷を召喚する",
+                        "text": "右クリック:自身と周囲の敵の座標に雷を落とす魔方陣を展開",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "前方にいる敵に雷を落とす",
+                        "text": "魔方陣は1秒後に雷を落とし、周囲の敵にダメージと炎上を与える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "自分が当たると移動速度上昇を得られる",
                         "color": "white",
                         "italic": false
                     },

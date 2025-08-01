@@ -2,11 +2,7 @@
 
 #function
 effect clear @a
-kill @e[tag=point_gold]
-kill @e[tag=skill_e]
-kill @e[team=Enemy]
-kill @e[type=item]
-kill @e[tag=gate_tp]
+kill @e[type=!player]
 spawnpoint @a -2816 175 3312
 forceload remove all
 forceload add 0 0
