@@ -50,7 +50,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{densetu:1,custom_potion_effects:[{id:\"minecraft:slowness\",amplifier:10b,duration:200},{id:\"minecraft:jump_boost\",amplifier:-18b,duration:200},{id:\"minecraft:wither\",amplifier:3b,duration:140},{id:\"minecraft:glowing\",amplifier:10b,duration:200},{id:\"minecraft:levitation\",amplifier:100b,duration:20},{id:\"minecraft:darkness\",amplifier:10b,duration:200}],CustomPotionColor:1386010}"
+              "tag": "{densetu:1,custom_potion_effects:[{id:\"minecraft:slowness\",amplifier:10b,duration:200},{id:\"minecraft:hero_of_the_village\",amplifier:1b,duration:3},{id:\"minecraft:wither\",amplifier:3b,duration:140},{id:\"minecraft:glowing\",amplifier:10b,duration:200},{id:\"minecraft:levitation\",amplifier:100b,duration:20},{id:\"minecraft:darkness\",amplifier:10b,duration:200}],CustomPotionColor:1386010}"
             }
           ]
         },
