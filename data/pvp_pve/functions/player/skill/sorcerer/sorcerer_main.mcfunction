@@ -40,3 +40,15 @@ execute as @e[tag=sor_6,scores={particle_cnt=1..},team=Black] at @s run function
 
 execute as @e[tag=sor_6,scores={particle_cnt=80}] at @s run setblock ~ ~1 ~ obsidian
 execute as @e[tag=sor_6,scores={particle_cnt=1}] at @s run setblock ~ ~1 ~ air
+
+#skill4
+execute as @e[tag=sor_4] at @s run tp @s ~ ~ ~ ~14 ~
+execute as @e[tag=sor_4] at @s run particle dust 1 1 0 1 ^ ^ ^1 0.3 0 0 0 5
+execute as @e[tag=sor_4] at @s run particle dust 1 1 0 1 ^ ^ ^3 0.3 0 0 0 5
+
+execute as @e[tag=sor_4,scores={summoner_skill_cnt=4},team=Red] at @s run function pvp_pve:player/skill/sorcerer/mc04_2skill {Team:Red}
+execute as @e[tag=sor_4,scores={summoner_skill_cnt=4},team=Blue] at @s run function pvp_pve:player/skill/sorcerer/mc04_2skill {Team:Blue}
+execute as @e[tag=sor_4,scores={summoner_skill_cnt=4},team=Yellow] at @s run function pvp_pve:player/skill/sorcerer/mc04_2skill {Team:Yellow}
+execute as @e[tag=sor_4,scores={summoner_skill_cnt=4},team=Green] at @s run function pvp_pve:player/skill/sorcerer/mc04_2skill {Team:Green}
+execute as @e[tag=sor_4,scores={summoner_skill_cnt=4},team=Gray] at @s run function pvp_pve:player/skill/sorcerer/mc04_2skill {Team:Gray}
+execute as @e[tag=sor_4,scores={summoner_skill_cnt=4},team=Black] at @s run function pvp_pve:player/skill/sorcerer/mc04_2skill {Team:Black}

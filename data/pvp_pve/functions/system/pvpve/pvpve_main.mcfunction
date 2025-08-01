@@ -43,7 +43,7 @@ execute if score Timer tem matches 0 if score Timer pvpve matches 898 run functi
 #エリトラの一時的削除
 execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=0}] at @s run scoreboard players set @s no_ery 301
 execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=301}] at @s run clear @s elytra
-execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=301}] at @s run attribute @s minecraft:generic.knockback_resistance base set 0.3
+execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=301}] at @s run attribute @s minecraft:generic.knockback_resistance base set 0.4
 execute as @a[scores={no_ery=1}] at @s run item replace entity @s armor.chest with elytra{Unbreakable:1b}
 execute as @a[scores={no_ery=1}] at @s run attribute @s minecraft:generic.knockback_resistance base set 0.0
 execute as @a[scores={no_ery=1..}] at @s run scoreboard players remove @s no_ery 1
