@@ -68,7 +68,6 @@ scoreboard players set @s furioso_cnt 0
 item replace entity @s armor.chest with elytra{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Enchantments:[{id:"minecraft:protection",lvl:4s}],Unbreakable:true}
 give @s potion{display:{Name:'{"text":"回復瓶"}',Lore:['{"text":"5秒後にまた飲めるようになる"}']},Potion:"minecraft:strong_healing"} 1
-effect clear @s
 
 execute if score @s mode_select matches 0 run function pvp_pve:system/possible_book {ss:s}
 

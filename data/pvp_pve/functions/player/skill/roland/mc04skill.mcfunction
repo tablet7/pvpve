@@ -5,12 +5,12 @@ effect give @s absorption 5 5
 effect give @s speed 5 2
 effect give @s resistance 5 2
 
-$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] weakness 5
-$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] mining_fatigue 5 1
-$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] wither 5 1
-$execute positioned ^ ^1 ^3 run effect give @e[distance=..4,team=!$(Team)] slowness 5
+$execute positioned ^ ^1 ^3 run effect give @e[distance=..5,team=!$(Team)] weakness 5
+$execute positioned ^ ^1 ^3 run effect give @e[distance=..5,team=!$(Team)] mining_fatigue 5 1
+$execute positioned ^ ^1 ^3 run effect give @e[distance=..5,team=!$(Team)] wither 5 1
+$execute positioned ^ ^1 ^3 run effect give @e[distance=..5,team=!$(Team)] slowness 5
 
-$execute positioned ^ ^1 ^3 run execute as @e[distance=..4,team=!$(Team)] at @s run damage @s 15
+$execute positioned ^ ^1 ^3 run execute as @e[distance=..5,team=!$(Team)] at @s run damage @s 15
 
 $summon armor_stand ^ ^1 ^3 {Marker:true,Invisible:true,Tags:["furioso_main","skill_e"],Team:"$(Team)"}
 $execute positioned ^ ^1 ^3 run scoreboard players set @e[limit=1,sort=nearest,tag=furioso_main,team=$(Team)] summoner_skill_cnt 60
