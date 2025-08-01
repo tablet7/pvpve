@@ -4,7 +4,7 @@
 execute if score @s skill_log_cnt matches ..19 run tellraw @s "素材が足りません"
 
 #recast設定
-execute if score @s skill_log_cnt matches 20.. run scoreboard players set @s skill4_recast 120
+scoreboard players set @s skill4_recast 120
 
 execute if score @s skill_log_cnt matches 20.. run function pvp_pve:player/skill/alchemist/mc_04skill
 
