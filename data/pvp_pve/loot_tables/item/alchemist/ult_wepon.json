@@ -39,7 +39,7 @@
                 "name": [
                     {
                         "text": "雷帝の矢",
-                        "color": "#eeff00",
+                        "color": "#3f974b",
                         "italic": false
                     }
                 ]
@@ -57,11 +57,11 @@
             },
             {
                 "function": "set_count",
-                "count": 7
+                "count": 1
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:infinity\",lvl:1s}]}"
+              "tag": "{densetu:1,custom_potion_effects:[{id:\"minecraft:slowness\",amplifier:10b,duration:200},{id:\"minecraft:jump_boost\",amplifier:238b,duration:200},{id:\"minecraft:wither\",amplifier:3b,duration:200},{id:\"minecraft:glowing\",amplifier:10b,duration:200},{id:\"minecraft:levitation\",amplifier:100b,duration:20},{id:\"minecraft:darkness\",amplifier:10b,duration:200}],CustomPotionColor:1386010}"
             }
           ]
         },

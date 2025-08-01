@@ -28,4 +28,7 @@ execute as @a[scores={berserker_skill3=1..}] at @s run scoreboard players remove
 #filip_skill1
 execute as @a[scores={filip_skill1_2=1..}] at @s run function pvp_pve:player/skill/filip_fire/mc01skill/mc_13
 
-#filip_skill4
+#alchemist_passive
+execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:chainmail_helmet"}]}] at @s run effect give @s regeneration 3 0 true
+execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:iron_helmet"}]}] at @s run effect give @s regeneration 3 0 true
+execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] at @s run effect give @s regeneration 3 0 true

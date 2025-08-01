@@ -25,7 +25,7 @@ execute as @e[type=arrow,nbt={item:{tag:{densetu:1}}}] at @s run data merge enti
 execute as @e[scores={lit_cnt=1..}] at @s run scoreboard players remove @s lit_cnt 1
 execute as @e[scores={lit_cnt=..0}] at @s run data merge entity @s {item:{tag:{densetu:3}}}
 
-execute as @e[type=arrow,nbt={item:{tag:{densetu:3}}}] at @s run summon lightning_bolt ~ ~ ~ {Silent:true}
+#execute as @e[type=arrow,nbt={item:{tag:{densetu:3}}}] at @s run summon lightning_bolt ~ ~ ~ {Silent:true}
 
 execute as @a[tag=alchemist,scores={berserker_passive=1..},nbt={SelectedItem:{tag:{CustomModelData:1111}}}] at @s run effect give @s instant_health 1 1
 

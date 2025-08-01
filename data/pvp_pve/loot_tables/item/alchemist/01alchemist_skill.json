@@ -34,6 +34,11 @@
                         "italic": false
                     },
                     {
+                        "text": "パッシブ：ヘルメットをかぶっているとき再生能力付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
                         "text": "クールタイム7秒",
                         "color": "green",
                         "italic": false
