@@ -50,3 +50,4 @@ execute as @e[tag=light_sword,team=Green] at @s run function pvp_pve:player/skil
 execute as @e[tag=light_sword,team=Gray] at @s run function pvp_pve:player/skill/alchemist/mc_damage_sword {Team:Gray}
 execute as @e[tag=light_sword,team=Black] at @s run function pvp_pve:player/skill/alchemist/mc_damage_sword {Team:Black}
 
+execute as @a[tag=alchemist,nbt={SelectedItem:{tag:{izisu:1}}},predicate=pvp_pve:flags/sneaking_f] at @s run effect give @s resistance 1 1 false 

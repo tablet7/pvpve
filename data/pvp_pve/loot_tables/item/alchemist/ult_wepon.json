@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:sharpness\",lvl:15s},{id:\"minecraft:unbreaking\",lvl:1s}],Damage:2030}"
+              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:sharpness\",lvl:18s},{id:\"minecraft:unbreaking\",lvl:1s}],Damage:2030}"
             }
           ]
         },
@@ -179,12 +179,17 @@
                         "text": "直接殴っても強い",
                         "color": "white",
                         "italic": false
+                    },
+                    {
+                        "text": "持ってるときにスニークをすると耐性を付与",
+                        "color": "white",
+                        "italic": false
                     }
                 ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{densetu:1,Enchantments:[{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:loyalty\",lvl:1s}]}"
+              "tag": "{izisu:1,densetu:1,Enchantments:[{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:loyalty\",lvl:1s}]}"
             },
             {
               "function": "minecraft:set_damage",
@@ -217,7 +222,7 @@
                 {
                   "attribute": "minecraft:generic.knockback_resistance",
                   "name": "",
-                  "amount": 0.1,
+                  "amount": 10,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
