@@ -21,8 +21,8 @@ execute as @e[type=arrow,nbt={inGround:true},tag=!player_arrow] at @s run kill @
 
 #ボマー
 execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=1..}] at @s run scoreboard players remove @s bommar_cnt 1
-execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..10]
-execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run execute if entity @p[distance=..10] run tp ^ ^ ^0.25
+execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run tp @s ~ ~ ~ facing entity @p[distance=..12]
+execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run execute if entity @p[distance=..12] run tp ^ ^ ^0.25
 execute as @e[type=creeper,tag=bomaaa,scores={bommar_cnt=0}] at @s run execute if entity @p[distance=..0.2] run function pvp_pve:enemy/summon/legendary_e/mc_bomaa
 
 #貪るもの
@@ -102,4 +102,30 @@ execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] 
 execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run execute as @a[distance=..3] at @s run damage @s 4
 execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run execute as @a[distance=..3] at @s run function pvp_pve:player/skill/zauberkugel/fire_inv
 execute as @e[tag=dragon_skill2] at @s run execute if entity @a[distance=..1.5] run kill @s
+
+##sencho
+###enemy_skill_cnt
+execute as @e[tag=senchou,scores={enemy_skill_cnt=2}] at @s run function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/sencho_skill
+
+execute as @e[tag=sencho_skill1,scores={enemy_skill1=1..}] at @s run scoreboard players remove @s enemy_skill1 1
+execute as @e[tag=sencho_skill1,scores={enemy_skill1=..0}] at @s run kill @s 
+
+execute as @e[tag=sencho_skill1] at @s run particle dust 0.0 0.0 0.0 3
+execute as @e[tag=sencho_skill1] at @s run tp ^ ^ ^0.8
+
+execute as @e[tag=sencho_skill1] at @s run execute if entity @a[distance=..2] run scoreboard players set @p sencho_skill1_cnt 60
+execute as @e[tag=sencho_skill1] at @s run execute if entity @a[distance=..2] run damage @p 6
+execute as @e[tag=sencho_skill1] at @s run execute if entity @a[distance=..2] run kill @s
+
+execute as @a[scores={sencho_skill1_cnt=1..}] run scoreboard players remove @s sencho_skill1_cnt 1
+execute as @a[scores={sencho_skill1_cnt=1..}] at @s run execute unless entity @e[tag=senchou,distance=..1] run tp @s ^ ^0.2 ^0.5 facing entity @e[sort=nearest,limit=1,tag=senchou] feet
+execute as @a[scores={sencho_skill1_cnt=1..}] at @s run execute if entity @e[tag=senchou,distance=..1] run scoreboard players set @s sencho_skill1_cnt -1
+
+#skill3
+execute as @e[tag=sencho_skill3] at @s run tp @s ~ ~ ~ facing entity @p[distance=..12] eyes
+execute as @e[tag=sencho_skill3,type=parrot] at @s run execute if entity @p[distance=..12] run tp ^ ^ ^0.25
+execute as @e[tag=sencho_skill3,type=pufferfish] at @s run execute if entity @p[distance=..12] run tp ^ ^ ^0.15
+
+execute as @e[tag=sencho_skill3,type=parrot] at @s run effect clear @s
+execute as @e[tag=sencho_skill3,type=parrot] at @s run effect give @a[distance=..2] slowness 2 1
 
