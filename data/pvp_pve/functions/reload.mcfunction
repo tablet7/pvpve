@@ -203,6 +203,8 @@ scoreboard objectives add enemy_skill_cnt dummy
 scoreboard objectives add enemy_skill1 dummy
 scoreboard objectives add enemy_skill2 dummy
 scoreboard objectives add enemy_skill3 dummy
+###sencho
+scoreboard objectives add sencho_skill1_cnt dummy
 #timer
 kill @e[tag=timer]
 summon minecraft:armor_stand 0.0 0.0 0.0 {CustomName:'"timer"',Marker:true,Invisible:true,Tags:["timer"]}
@@ -262,6 +264,8 @@ scoreboard objectives add hier_2_cnt dummy
 scoreboard players set Timer hier_2_cnt 0
 scoreboard objectives add hier_3_cnt dummy
 scoreboard players set Timer hier_3_cnt 0
+scoreboard objectives add hune_ship dummy
+scoreboard players set Timer hune_ship 0
 
 #game_score
 scoreboard players set 1:Red_team pvpve 0
