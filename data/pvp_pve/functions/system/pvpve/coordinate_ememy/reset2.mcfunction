@@ -31,6 +31,7 @@ summon armor_stand 1083 70 -108 {Marker:true,Invisible:true,Tags:["pvpve2_hune"]
 fill 1304 70 -192 1351 70 -145 grass_block
 place template pvp_pve:event_st/field2_event 1304 71 -192
 
+kill @e[type=item]
 #house
 #1676 104 -109 h1
 #1645 79 -275 h2
