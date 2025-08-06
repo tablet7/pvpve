@@ -28,6 +28,7 @@ summon armor_stand 1538 63 -160 {Marker:true,Invisible:true,Tags:["eg_set","pvpv
 #hune
 summon armor_stand 1083 70 -108 {Marker:true,Invisible:true,Tags:["pvpve2_hune"],CustomName:'"pvpve2_hune"'}
 #event
+fill 1304 70 -192 1351 70 -145 grass_block
 place template pvp_pve:event_st/field2_event 1304 71 -192
 
 #house
