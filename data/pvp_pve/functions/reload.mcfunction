@@ -171,6 +171,8 @@ scoreboard objectives add malchut_skill2_cnt dummy
 scoreboard players set @a malchut_skill2_cnt 0
 scoreboard objectives add defence_5_min dummy
 scoreboard players set @a defence_5_min 0
+scoreboard objectives add malchut_passive_cnt dummy
+scoreboard players set @a malchut_passive_cnt 0
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0
