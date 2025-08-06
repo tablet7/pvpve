@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "ホーネット",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に大ダメージ",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "5秒間当たった敵の防御力を落とす",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム7秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11173}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

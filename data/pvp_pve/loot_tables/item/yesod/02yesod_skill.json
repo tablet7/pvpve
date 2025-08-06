@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "羽ばたき",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:体力を消費し、バフを得る",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "7秒間攻撃力上昇、移動速度上昇、攻撃すると体力回復を得る",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "消費体力6",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム12秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11172}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

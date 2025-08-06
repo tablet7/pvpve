@@ -15,3 +15,4 @@ execute if score @s random_rand matches 13 run function pvp_pve:player/job_item_
 execute if score @s random_rand matches 14 run function pvp_pve:player/job_item_get/reload_job/marl_ice_item_get
 execute if score @s random_rand matches 15 run function pvp_pve:player/job_item_get/reload_job/roland
 execute if score @s random_rand matches 16 run function pvp_pve:player/job_item_get/reload_job/malchut
+execute if score @s random_rand matches 17 run function pvp_pve:player/job_item_get/reload_job/yesod

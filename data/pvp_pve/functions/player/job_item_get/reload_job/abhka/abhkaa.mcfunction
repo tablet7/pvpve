@@ -15,5 +15,6 @@ execute if data entity @s {Tags:["slave"]} run function pvp_pve:player/job_item_
 execute if data entity @s {Tags:["filip_fire"]} run function pvp_pve:player/job_item_get/reload_job/filip_fire
 execute if data entity @s {Tags:["roland"]} run function pvp_pve:player/job_item_get/reload_job/roland
 execute if data entity @s {Tags:["malchut"]} run function pvp_pve:player/job_item_get/reload_job/malchut
+execute if data entity @s {Tags:["yesod"]} run function pvp_pve:player/job_item_get/reload_job/yesod
 
 execute unless score @s mode_select matches 0 run effect clear @s
