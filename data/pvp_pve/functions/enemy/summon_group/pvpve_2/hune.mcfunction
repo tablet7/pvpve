@@ -15,6 +15,7 @@ setblock 1059 58 -70 air
 setblock 1060 58 -70 air
 
 setblock ~9 ~0 ~7 barrel[facing=west]{LootTable:"pvp_pve:chest/rare_chest"}
+summon armor_stand ~9 ~0 ~7 {Tags:["chest_e"],Marker:true,Invisible:true}
 setblock ~3 ~-2 ~-17 barrel[facing=up]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~2 ~-7 ~3 chest[facing=east]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~2 ~-7 ~-3 chest[facing=east]{LootTable:"pvp_pve:chest/rare_chest"}

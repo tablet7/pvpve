@@ -11,3 +11,4 @@ bossbar set pvpve_phase_time_bar max 6000
 scoreboard players set Timer pvpve_phase_time 6000
 bossbar set minecraft:pvpve_phase_time_bar name "Phase3"
 
+#event

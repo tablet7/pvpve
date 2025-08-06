@@ -20,7 +20,8 @@ execute as @e[type=armor_stand,tag=pvpve2_house6] at @s run execute if entity @a
 execute as @e[type=armor_stand,tag=pvpve2_house7] at @s run execute if entity @a[distance=..15,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/house7
 execute as @e[type=armor_stand,tag=pvpve2_house8] at @s run execute if entity @a[distance=..15,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/house8
 #hune
-execute as @e[type=armor_stand,tag=pvpve2_hune] at @s run execute if entity @a[distance=..15,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/hune
+execute as @e[type=armor_stand,tag=pvpve2_hune] at @s run execute if entity @a[distance=..40,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/hune
+execute as @e[type=armor_stand,tag=chest_e] at @s run execute if entity @a[distance=..8,gamemode=adventure] run particle crit ~ ~ ~ 0.5 0.5 0.5 1 5
 ##dungeon
 execute as @e[type=armor_stand,tag=pvpve2_hier_set] at @s run execute if entity @a[distance=..15,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/field2_dungeon/hier_set
 execute as @e[type=armor_stand,tag=pvpve2_hier1] at @s run execute if entity @a[distance=..3,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/field2_dungeon/hier1
