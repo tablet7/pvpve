@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "羽ばたき",
+                        "text": "ハーモニー",
                         "color": "white",
                         "italic": false
                     }
@@ -24,18 +24,18 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:体力を消費し、バフを得る",
+                        "text": "右クリック:敵を殴るとバフをもらえる状態になる",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "7秒間攻撃力上昇、移動速度上昇、攻撃すると体力回復を得る",
+                        "text": "3秒間攻撃力上昇を得る、敵を攻撃する毎に時間を更新する",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "消費体力6",
-                        "color": "red",
+                        "text": "降下中、6回攻撃する毎に攻撃力上昇の効果が強くなる",
+                        "color": "white",
                         "italic": false
                     },
                     {

@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "4本目のマッチの火",
+                        "text": "後悔",
                         "color": "white",
                         "italic": false
                     }
@@ -24,7 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "4回攻撃する毎に周囲に追加攻撃を行う",
+                        "text": "攻撃する毎に周囲に移動速度低下を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "パッシブ：休息",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "スニークしてる間、再生能力付与",
                         "color": "white",
                         "italic": false
                     }
@@ -51,7 +61,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{Unbreakable:true,Enchantments:[{id:\"fire_aspect\",lvl:1s}]}"
+                "tag": "{Unbreakable:true}"
             }
           ]
         }

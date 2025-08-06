@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "真っすぐ立てる意志",
-                        "color": "#ffbb00",
+                        "text": "分別することの出来る理性",
+                        "color": "#6200ff",
                         "italic": false
                     }
                 ]
@@ -24,17 +24,27 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:広範囲に大ダメージを与える",
+                        "text": "右クリック:前方広範囲に3回大ダメージを起こす",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "当たった敵は燃える",
+                        "text": "1度目に触れた敵はジャンプ禁止付与",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム100秒",
+                        "text": "2度目に触れた敵は移動速度低下を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "3度目に触れた敵はスキルクールダウン増加を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム200秒",
                         "color": "green",
                         "italic": false
                     }

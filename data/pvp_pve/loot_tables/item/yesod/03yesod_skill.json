@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "ホーネット",
+                        "text": "厳粛な哀悼",
                         "color": "white",
                         "italic": false
                     }
@@ -24,17 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に大ダメージ",
+                        "text": "右クリック:前方に弾丸を連射する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "5秒間当たった敵の防御力を落とす",
+                        "text": "当たった敵はスキルのクールダウンが増えるか、体力が追加で減る",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム7秒",
+                        "text": "クールタイム14秒",
                         "color": "green",
                         "italic": false
                     }

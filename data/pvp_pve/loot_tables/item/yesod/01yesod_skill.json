@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "抱擁",
+                        "text": "グラインダーMk5-2",
                         "color": "white",
                         "italic": false
                     }
@@ -24,17 +24,12 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方の敵1体に大ダメージ",
+                        "text": "右クリック:周囲の敵にワープし、ダメージを与える（最大5名）",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "当たった敵のスキルクールダウンを増加させる",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム10秒",
+                        "text": "クールタイム20秒",
                         "color": "green",
                         "italic": false
                     }
