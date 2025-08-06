@@ -5,10 +5,10 @@ $give @$(ss) written_book{display:{\
                               Lore:['{"text":"メニューを開けます"}']},\
                               title:"",author:"",pages:['[{"text":"目次\\n\\n","bold":true},\
                               {"text":"・職業選択へ\\n\\n","clickEvent":{"action":"change_page","value":"2"}},\
-                              {"text":"・チーム選択へ\\n\\n","clickEvent":{"action":"change_page","value":"4"}},\
-                              {"text":"・試合選択へ\\n\\n","clickEvent":{"action":"change_page","value":"5"}},\
-                              {"text":"・ワープ選択へ\\n\\n","clickEvent":{"action":"change_page","value":"6"}},\
-                              {"text":"・レベルボーナス選択へ","clickEvent":{"action":"change_page","value":"7"}}]',\
+                              {"text":"・チーム選択へ\\n\\n","clickEvent":{"action":"change_page","value":"5"}},\
+                              {"text":"・試合選択へ\\n\\n","clickEvent":{"action":"change_page","value":"6"}},\
+                              {"text":"・ワープ選択へ\\n\\n","clickEvent":{"action":"change_page","value":"7"}},\
+                              {"text":"・レベルボーナス選択へ","clickEvent":{"action":"change_page","value":"8"}}]',\
                               '[{"text":"職業選択(1/3)\\n\\n","bold":true},\
                               {"text":"・赤い霧\\n","clickEvent":{"action":"run_command","value":"/jobselect 1"}},\
                               {"text":"・フィリップ\\n","clickEvent":{"action":"run_command","value":"/jobselect 2"}},\
