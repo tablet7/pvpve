@@ -273,6 +273,8 @@ scoreboard objectives add hier_3_cnt dummy
 scoreboard players set Timer hier_3_cnt 0
 scoreboard objectives add hune_ship dummy
 scoreboard players set Timer hune_ship 0
+scoreboard objectives add event_1_cnt dummy
+scoreboard players set Timer event_1_cnt 0
 
 #game_score
 scoreboard players set 1:Red_team pvpve 0
