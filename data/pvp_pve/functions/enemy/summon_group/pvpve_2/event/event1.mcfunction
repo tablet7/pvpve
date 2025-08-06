@@ -2,10 +2,6 @@
 
 
 #teki
-function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:2,y:1,z:2}
-function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:44,y:1,z:2}
-function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:44,y:1,z:44}
-function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:2,y:1,z:44}
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:9,y:5,z:9}
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:37,y:5,z:9}
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:37,y:5,z:37}
@@ -19,7 +15,8 @@ function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:23,y:17,z:
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:18,y:17,z:23}
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:23,y:17,z:18}
 
-effect give @e[team=Enemy,distance=..70] glowing infinite
+setblock ~23 ~20 ~23 minecraft:air
+setblock ~23 ~20 ~23 minecraft:chest{LootTable:"pvp_pve:chest/legendary_chest"}
 
 kill @e[type=item,distance=..50]
 

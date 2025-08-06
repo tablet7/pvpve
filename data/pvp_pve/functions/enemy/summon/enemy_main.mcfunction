@@ -53,7 +53,20 @@ execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=30}] at @s run s
 execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=10}] at @s run summon lightning_bolt ~ ~ ~
 execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=1}] at @s run function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier3_e/devour2 {x:0,y:0,z:0}
 execute as @e[tag=devour_summon_f2,scores={devour_summon_cnt_f2=1}] at @s run execute as @a[distance=..20] at @s run playsound entity.wither.death master @s ~ ~ ~ 1 2
+#event1
+execute as @e[nbt={Item:{id:"minecraft:respawn_anchor"}}] at @s run summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["devour_summon_e1"]}
+execute as @e[nbt={Item:{id:"minecraft:respawn_anchor"}}] at @s run scoreboard players set @e[limit=1,sort=nearest,tag=devour_summon_e1] devour_summon_cnt_e1 80
+execute as @e[nbt={Item:{id:"minecraft:respawn_anchor"}}] at @s run kill @s
 
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=1..}] at @s run scoreboard players remove @s devour_summon_cnt_e1 1
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=..0}] at @s run kill @s 
+
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=70}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=50}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=30}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=10}] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=1}] at @s run function pvp_pve:enemy/summon/pvpve_e/field2_dungeon/hier3_e/devour2 {x:0,y:0,z:0}
+execute as @e[tag=devour_summon_e1,scores={devour_summon_cnt_e1=1}] at @s run execute as @a[distance=..20] at @s run playsound entity.wither.death master @s ~ ~ ~ 1 2
 ##devour_skill
 execute as @e[tag=devour2,scores={devour_skill=1..}] at @s run scoreboard players remove @s devour_skill 1
 execute as @e[tag=devour2,scores={devour_skill=..0}] at @s run scoreboard players set @s devour_skill 140

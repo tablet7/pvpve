@@ -201,6 +201,7 @@ scoreboard objectives add bommar_cnt dummy
 ####devour
 scoreboard objectives add devour_summon_cnt dummy
 scoreboard objectives add devour_summon_cnt_f2 dummy
+scoreboard objectives add devour_summon_cnt_e1 dummy
 scoreboard objectives add devour_skill dummy
 scoreboard objectives add devour_skill1 dummy
 scoreboard objectives add devour_skill2 dummy
@@ -275,7 +276,8 @@ scoreboard objectives add hune_ship dummy
 scoreboard players set Timer hune_ship 0
 scoreboard objectives add event_1_cnt dummy
 scoreboard players set Timer event_1_cnt 0
-
+scoreboard objectives add event_1_cnt_fin dummy
+scoreboard players set Timer event_1_cnt_fin 0
 #game_score
 scoreboard players set 1:Red_team pvpve 0
 scoreboard players set 2:Blue_team pvpve 0
