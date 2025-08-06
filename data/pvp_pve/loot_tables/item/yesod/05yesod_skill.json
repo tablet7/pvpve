@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "真っすぐ立てる意志",
+                        "color": "#ffbb00",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:広範囲に大ダメージを与える",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵は燃える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム100秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11175}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

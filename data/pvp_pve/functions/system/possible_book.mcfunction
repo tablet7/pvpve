@@ -26,6 +26,7 @@ $give @$(ss) written_book{display:{\
                               {"text":"・奴隷\\n","clickEvent":{"action":"run_command","value":"/jobselect 13"}},\
                               {"text":"・ローラン\\n","clickEvent":{"action":"run_command","value":"/jobselect 15"}},\
                               {"text":"・マルクト\\n","clickEvent":{"action":"run_command","value":"/jobselect 16"}},\
+                              {"text":"・イェソド\\n","clickEvent":{"action":"run_command","value":"/jobselect 17"}},\
                               {"text":"・マール","clickEvent":{"action":"run_command","value":"/jobselect 14"}}]',\
                               '[{"text":"チーム選択\\n","bold":true},\
                               {"text":"・赤チーム\\n\\n","color":"red","clickEvent":{"action":"run_command","value":"/teamselect 1"}},\

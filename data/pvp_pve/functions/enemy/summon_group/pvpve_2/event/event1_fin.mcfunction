@@ -7,7 +7,7 @@ say 遺跡の扉が開かれた
 fill ~20 ~17 ~23 ~20 ~18 ~23 air
 fill ~23 ~17 ~20 ~23 ~18 ~20 air
 fill ~23 ~17 ~26 ~23 ~18 ~26 air
-fill ~25 ~17 ~23 ~25 ~18 ~23 air
+fill ~24 ~17 ~23 ~24 ~18 ~23 air
 
 summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_event1_fin2"],CustomName:'"pvpve2_event1_fin2"'}
 
