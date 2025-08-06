@@ -27,6 +27,9 @@ execute as @e[type=armor_stand,tag=pvpve2_hier_set] at @s run execute if entity 
 execute as @e[type=armor_stand,tag=pvpve2_hier1] at @s run execute if entity @a[distance=..3,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/field2_dungeon/hier1
 execute as @e[type=armor_stand,tag=pvpve2_hier2] at @s run execute if entity @a[distance=..5,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/field2_dungeon/hier2
 execute as @e[type=armor_stand,tag=pvpve2_hier3] at @s run execute if entity @a[distance=..5,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/field2_dungeon/hier3
+#event1
+execute as @e[type=armor_stand,tag=pvpve2_event1] at @s run execute if entity @a[distance=..45,gamemode=adventure] run function pvp_pve:enemy/summon_group/pvpve_2/event/event1
+
 #1
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"hier_1"'}}}}] at @s run scoreboard players add Timer hier_1_cnt 1
 
