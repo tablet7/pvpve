@@ -1,9 +1,9 @@
 #> pvp_pve:player/skill/adventurer/04adventurer_skill
 
 #passive
-execute as @a[tag=malchut,scores={berserker_passive=1..}] at @s run scoreboard players add @a malchut_passive_cnt 1
+execute as @a[tag=malchut,scores={berserker_passive=1..}] at @s run scoreboard players add @s malchut_passive_cnt 1
 execute as @a[tag=malchut,scores={malchut_passive_cnt=4..}] at @s run function pvp_pve:player/skill/filip_fire/mc01skill/mc_12
-execute as @a[tag=malchut,scores={malchut_passive_cnt=4..}] at @s run scoreboard players set @a malchut_passive_cnt 0
+execute as @a[tag=malchut,scores={malchut_passive_cnt=4..}] at @s run scoreboard players set @s malchut_passive_cnt 0
 
 #skill2
 execute as @a[scores={malchut_skill2_cnt=1..}] at @s run scoreboard players remove @s malchut_skill2_cnt 1
