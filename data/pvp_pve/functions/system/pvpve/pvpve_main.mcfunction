@@ -38,7 +38,7 @@ execute store result bossbar pvpve_phase_time_bar value run scoreboard players g
 execute if score Timer pvpve_circle_cnt matches ..2 run execute if score Timer pvpve_phase_time matches 1.. run scoreboard players remove Timer pvpve_phase_time 1
 
 #スタート時のリセット
-execute if score Timer tem matches 0 if score Timer pvpve matches 899 run function pvp_pve:system/pvpve/pvpve_reset
+execute if score Timer tem matches 0 if score Timer pvpve matches 898 run function pvp_pve:system/pvpve/pvpve_reset
 
 #エリトラの一時的削除
 execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:-18b}]},scores={no_ery=0}] at @s run scoreboard players set @s no_ery 301
