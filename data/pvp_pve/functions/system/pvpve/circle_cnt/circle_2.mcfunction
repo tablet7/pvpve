@@ -12,3 +12,6 @@ scoreboard players set Timer pvpve_phase_time 6000
 bossbar set minecraft:pvpve_phase_time_bar name "Phase3"
 
 #event
+
+execute if score Timer pvpve_field matches 1 run function pvp_pve:system/pvpve/event_500/event_field1
+execute if score Timer pvpve_field matches 2 run function pvp_pve:system/pvpve/event_500/event_field2

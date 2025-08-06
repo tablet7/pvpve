@@ -14,7 +14,7 @@ summon armor_stand 1164 71 -38 {Marker:true,Invisible:true,Tags:["eg_set","pvpve
 summon armor_stand 1211 81 -179 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house7"],CustomName:'"pvpve2_house7"'}
 summon armor_stand 1742 83 -251 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_house8"],CustomName:'"pvpve2_house8"'}
 #random
-summon armor_stand 1318 71 -177 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
+#summon armor_stand 1318 71 -177 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 summon armor_stand 1214 78 -113 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 summon armor_stand 1354 73 -77 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
 summon armor_stand 1495 73 -306 {Marker:true,Invisible:true,Tags:["egc_random"],CustomName:'"egc_random"'}
@@ -27,6 +27,8 @@ summon armor_stand 1120 67 -273 {Marker:true,Invisible:true,Tags:["egc_random"],
 summon armor_stand 1538 63 -160 {Marker:true,Invisible:true,Tags:["eg_set","pvpve2_hier_set"],CustomName:'"pvpve2_hier_set"'}
 #hune
 summon armor_stand 1083 70 -108 {Marker:true,Invisible:true,Tags:["pvpve2_hune"],CustomName:'"pvpve2_hune"'}
+#event
+place template pvp_pve:event_st/field2_event 1304 71 -192
 
 #house
 #1676 104 -109 h1
