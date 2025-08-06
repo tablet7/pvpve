@@ -13,8 +13,8 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "矢の雨",
-                        "color": "white",
+                        "text": "真っすぐ立てる意志",
+                        "color": "#ffbb00",
                         "italic": false
                     }
                 ]
@@ -24,27 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に矢の雨を降らす",
+                        "text": "右クリック:広範囲に大ダメージを与える",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "雨の中では敵が鈍足になる",
+                        "text": "当たった敵は燃える",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "矢はスキル1で出るものと一緒の効果をランダムに持つ",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "敵味方関係なく当たるので注意",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム10秒",
+                        "text": "クールタイム100秒",
                         "color": "green",
                         "italic": false
                     }
@@ -52,7 +42,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:62,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+                "tag": "{CustomModelData:11165}"
             }
           ]
         }

@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "矢の雨",
+                        "text": "羽ばたき",
                         "color": "white",
                         "italic": false
                     }
@@ -24,27 +24,22 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に矢の雨を降らす",
+                        "text": "右クリック:体力を消費し、バフを得る",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "雨の中では敵が鈍足になる",
+                        "text": "7秒間攻撃力上昇、移動速度上昇、攻撃すると体力回復を得る",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "矢はスキル1で出るものと一緒の効果をランダムに持つ",
-                        "color": "white",
+                        "text": "消費体力6",
+                        "color": "red",
                         "italic": false
                     },
                     {
-                        "text": "敵味方関係なく当たるので注意",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム10秒",
+                        "text": "クールタイム12秒",
                         "color": "green",
                         "italic": false
                     }
@@ -52,7 +47,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:62,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+                "tag": "{CustomModelData:11162}"
             }
           ]
         }

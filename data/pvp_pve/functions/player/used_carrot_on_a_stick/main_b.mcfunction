@@ -101,6 +101,12 @@ execute if predicate pvp_pve:selecteditem/roland_skill/02roland_skill run functi
 execute if predicate pvp_pve:selecteditem/roland_skill/03roland_skill run function pvp_pve:player/skill/roland/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/roland_skill/04roland_skill run function pvp_pve:player/skill/roland/skill_check/04skill_check
 
+##malchut
+execute if predicate pvp_pve:selecteditem/malchut_skill/01malchut_skill run function pvp_pve:player/skill/malchut/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/malchut_skill/02malchut_skill run function pvp_pve:player/skill/malchut/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/malchut_skill/03malchut_skill run function pvp_pve:player/skill/malchut/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/malchut_skill/04malchut_skill run function pvp_pve:player/skill/malchut/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/malchut_skill/05malchut_skill run function pvp_pve:player/skill/malchut/skill_check/05skill_check
 
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick
