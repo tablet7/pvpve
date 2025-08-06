@@ -1,5 +1,5 @@
 
 
-worldborder set 125 120
+worldborder set 125 180
 
 

@@ -19,7 +19,7 @@ function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:23,y:17,z:
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:18,y:17,z:23}
 function pvp_pve:enemy/summon/pvpve_e/event1_e/random_event1_enemy {x:23,y:17,z:18}
 
-effect give @e[team=Enemy,distance=..50] glowing infinite
+effect give @e[team=Enemy,distance=..70] glowing infinite
 
 kill @e[type=item,distance=..50]
 

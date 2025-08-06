@@ -12,3 +12,4 @@ $execute if score @s random_rand matches 9..10 run function pvp_pve:enemy/summon
 $execute if score @s random_rand matches 11..12 run function pvp_pve:enemy/summon/pvpve_e/event1_e/stray {x:$(x),y:$(y),z:$(z)}
 
 
+$execute positioned ~$(x) ~$(y) ~$(z) run effect give @e[team=Enemy,distance=..1] glowing infinite
