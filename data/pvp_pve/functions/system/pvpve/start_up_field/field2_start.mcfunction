@@ -28,7 +28,7 @@ forceload add 1538 -160
 #hune
 forceload add 1083 -108
 #event
-forceload add 1304 -192
+forceload add 1304 -192 1351 -145
 
 #house
 #1676 104 -109 h1
