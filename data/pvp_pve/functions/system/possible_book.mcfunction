@@ -9,7 +9,7 @@ $give @$(ss) written_book{display:{\
                               {"text":"・試合選択へ\\n\\n","clickEvent":{"action":"change_page","value":"5"}},\
                               {"text":"・ワープ選択へ\\n\\n","clickEvent":{"action":"change_page","value":"6"}},\
                               {"text":"・レベルボーナス選択へ","clickEvent":{"action":"change_page","value":"7"}}]',\
-                              '[{"text":"職業選択(1/2)\\n\\n","bold":true},\
+                              '[{"text":"職業選択(1/3)\\n\\n","bold":true},\
                               {"text":"・赤い霧\\n","clickEvent":{"action":"run_command","value":"/jobselect 1"}},\
                               {"text":"・フィリップ\\n","clickEvent":{"action":"run_command","value":"/jobselect 2"}},\
                               {"text":"・魔弾の射手\\n","clickEvent":{"action":"run_command","value":"/jobselect 3"}},\
@@ -22,12 +22,26 @@ $give @$(ss) written_book{display:{\
                               {"text":"・魔術師\\n","clickEvent":{"action":"run_command","value":"/jobselect 10"}},\
                               {"text":"・影の騎士\\n","clickEvent":{"action":"run_command","value":"/jobselect 11"}},\
                               {"text":"・錬金術士\\n","clickEvent":{"action":"run_command","value":"/jobselect 12"}}]',\
-                              '[{"text":"職業選択(2/2)\\n\\n","bold":true},\
+                              '[{"text":"職業選択(2/3)\\n\\n","bold":true},\
+                              {"text":"・マール\\n","clickEvent":{"action":"run_command","value":"/jobselect 14"}},\
                               {"text":"・奴隷\\n","clickEvent":{"action":"run_command","value":"/jobselect 13"}},\
                               {"text":"・ローラン\\n","clickEvent":{"action":"run_command","value":"/jobselect 15"}},\
                               {"text":"・マルクト\\n","clickEvent":{"action":"run_command","value":"/jobselect 16"}},\
                               {"text":"・イェソド\\n","clickEvent":{"action":"run_command","value":"/jobselect 17"}},\
-                              {"text":"・マール","clickEvent":{"action":"run_command","value":"/jobselect 14"}}]',\
+                              {"text":"・ホド\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・ネツァク\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・ティファレト\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・言語の階司書補\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・ケセド\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・ビナー\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・哲学の階司書補","clickEvent":{"action":"run_command","value":"/jobselect 99"}}]',\
+                              '[{"text":"職業選択(3/3)\\n\\n","bold":true},\
+                              {"text":"・ホクマー\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・総記の階司書補\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・アンジェラ\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・青い残響\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・紫の涙\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・サンチョ","clickEvent":{"action":"run_command","value":"/jobselect 99"}}]',\
                               '[{"text":"チーム選択\\n","bold":true},\
                               {"text":"・赤チーム\\n\\n","color":"red","clickEvent":{"action":"run_command","value":"/teamselect 1"}},\
                               {"text":"・青チーム\\n\\n","color":"blue","clickEvent":{"action":"run_command","value":"/teamselect 2"}},\
