@@ -32,3 +32,7 @@ execute as @a[scores={filip_skill1_2=1..}] at @s run function pvp_pve:player/ski
 execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:chainmail_helmet"}]}] at @s run effect give @s regeneration 3 0 true
 execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:iron_helmet"}]}] at @s run effect give @s regeneration 3 0 true
 execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] at @s run effect give @s regeneration 3 0 true
+
+#malchut
+execute as @e[tag=malchut_skill4] at @s run particle dust 0.012 0.345 0 5 ~ ~2 ~ 0.0 2.0 0.0 2 10
+execute as @e[tag=malchut_skill4] at @s run particle dust 0.012 0.345 0 2 ~ ~ ~ 1.5 0.2 1.5 2 30

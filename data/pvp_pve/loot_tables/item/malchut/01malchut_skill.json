@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "矢の雨",
+                        "text": "抱擁",
                         "color": "white",
                         "italic": false
                     }
@@ -24,22 +24,12 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:前方に矢の雨を降らす",
+                        "text": "右クリック:前方の敵1体に大ダメージ",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "雨の中では敵が鈍足になる",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "矢はスキル1で出るものと一緒の効果をランダムに持つ",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "敵味方関係なく当たるので注意",
+                        "text": "当たった敵のスキルクールダウンを増加させる",
                         "color": "white",
                         "italic": false
                     },
@@ -52,7 +42,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:62,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+                "tag": "{CustomModelData:11161}"
             }
           ]
         }
