@@ -66,6 +66,7 @@ scoreboard players set @p furioso_cnt 0
 ##malchut
 tag @p remove malchut
 scoreboard players set @p malchut_skill2_cnt 0
+scoreboard players set @p malchut_passive_cnt 0
 
 #共通アイテム
 item replace entity @p armor.chest with elytra{Unbreakable:1b}
