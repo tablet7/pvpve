@@ -15,7 +15,6 @@ setblock 1059 58 -70 air
 setblock 1060 58 -70 air
 
 setblock ~9 ~0 ~7 barrel[facing=west]{LootTable:"pvp_pve:chest/rare_chest"}
-summon armor_stand ~9 ~0 ~7 {Tags:["chest_e"],Marker:true,Invisible:true}
 setblock ~3 ~-2 ~-17 barrel[facing=up]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~2 ~-7 ~3 chest[facing=east]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock ~2 ~-7 ~-3 chest[facing=east]{LootTable:"pvp_pve:chest/rare_chest"}
@@ -27,6 +26,15 @@ setblock ~-26 ~34 ~13 barrel[facing=up]{LootTable:"pvp_pve:chest/legendary_chest
 setblock ~-25 ~34 ~-12 barrel[facing=up]{LootTable:"pvp_pve:chest/rare_chest"}
 setblock 1059 58 -70 chest[facing=north,type=right]{LootTable:"pvp_pve:chest/legendary_chest"}
 setblock 1060 58 -70 chest[facing=north,type=right]{LootTable:"pvp_pve:chest/goddes_chest"}
+
+summon armor_stand ~9 ~0 ~7 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~3 ~-2 ~-17 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~-28 ~0 ~41 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~-12 ~1 ~-35 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~-35 ~1 ~-35 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~16 ~-6 ~10 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~-26 ~34 ~13 {Tags:["chest_e"],Marker:true,Invisible:true}
+summon armor_stand ~-25 ~34 ~-12 {Tags:["chest_e"],Marker:true,Invisible:true}
 
 function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:-14,y:0,z:4}
 function pvp_pve:enemy/summon/rare_e/random_rare_enemy {x:-14,y:0,z:-4}

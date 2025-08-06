@@ -15,7 +15,6 @@ forceload add 1164 -38
 forceload add 1211 -180
 forceload add 1742 -251
 #random
-forceload add 1318 -177
 forceload add 1214 -113
 forceload add 1354 -77
 forceload add 1495 -306
@@ -28,6 +27,8 @@ forceload add 1120 -273
 forceload add 1538 -160
 #hune
 forceload add 1083 -108
+#event
+forceload add 1304 -192
 
 #house
 #1676 104 -109 h1
@@ -52,3 +53,5 @@ forceload add 1083 -108
 #1538 63 -160
 #hune
 #1083 70 -108
+#event
+#1304 71 -192
