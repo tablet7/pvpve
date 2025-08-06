@@ -44,4 +44,9 @@ execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"hune_ship"'}}}}] at @s r
 
 execute if score Timer hune_ship matches 1 run function pvp_pve:enemy/summon_group/pvpve_2/hune_fin
 
+#event1
+execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"event_1"'}}}}] at @s run scoreboard players add Timer event_1_cnt 1
+
+execute if score Timer event_1_cnt matches 16 run execute as @e[type=armor_stand,tag=pvpve2_event1_fin] at @s run function pvp_pve:enemy/summon_group/pvpve_2/event/event1_fin
+
 execute as @e[type=item,nbt={Item:{id:"minecraft:chain"}}] at @s run kill @s

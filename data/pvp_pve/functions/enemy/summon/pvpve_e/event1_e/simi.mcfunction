@@ -1,0 +1,1 @@
+$summon silverfish ~$(x) ~$(y) ~$(z) {DeathLootTable:"pvp_pve:entity/pvpve/event/event1",Team:"Enemy",Tags:["common_e"],CustomName:'{"text":"シミ"}',PersistenceRequired:1b}
