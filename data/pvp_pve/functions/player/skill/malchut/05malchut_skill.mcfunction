@@ -6,6 +6,12 @@ $execute as @e[team=$(Team),tag=malchut_skill5,limit=1,sort=nearest] at @s run s
 
 execute as @a[distance=..10] at @s run playsound entity.player.attack.crit master @s ~ ~ ~
 
+execute as @e[team=Enemy,distance=..7] at @s run damage @s 24
+$execute as @e[team=!$(Team),distance=..7] at @s run damage @s 12
+
+$execute as @e[team=!$(Team),distance=..7,nbt={Fire:-20s}] at @s run function pvp_pve:player/skill/zauberkugel/fire_inv
+$execute as @e[team=!$(Team),distance=..7,nbt={Fire:0s}] at @s run function pvp_pve:player/skill/zauberkugel/fire_inv
+
 #recast設定
 scoreboard players set @s skill5_recast 100
 
