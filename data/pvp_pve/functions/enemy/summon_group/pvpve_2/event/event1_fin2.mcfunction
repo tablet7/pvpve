@@ -1,5 +1,6 @@
 #> pvp_pve:enemy/summon_group/legendary_g/legendary1
 
+scoreboard players set Timer event_1_cnt_fin 0
 
 say イベント「遺跡」がクリアされました
 

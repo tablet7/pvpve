@@ -1,6 +1,7 @@
 #> pvp_pve:enemy/summon_group/legendary_g/legendary1
 
-
+scoreboard players set Timer event_1_cnt 0
+say 111
 #teki
 
 fill 21 17 23 21 18 23 air
