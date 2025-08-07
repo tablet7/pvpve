@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "人生を連ねていくという勇気",
+                        "color": "#3cff00",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:広範囲に3回大ダメージを与える",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "1度目に触れた敵はスキルクールダウン増加付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "2度目に触れた敵は移動禁止を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "3度目に触れた敵は混乱を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "スキル範囲はどんどん大きくなる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム200秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11195}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

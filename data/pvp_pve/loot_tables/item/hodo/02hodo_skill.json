@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "赤目",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:飛び上がった後、前方を切る",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵は移動速度低下、防御力低下、弱体化を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11172}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

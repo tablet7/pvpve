@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "どこかの欠片",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:弾丸を飛ばす",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵はスキルのクールダウンが増える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "3回撃ったらクールダウンに入る",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11191}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

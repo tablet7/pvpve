@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "残香",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:広範囲に大ダメージと混乱を付与",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "混乱：スキルがすべて敵味方に当たるようになる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "敵モブに混乱を与えた場合、ウィザー状態にする",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム200秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11194}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

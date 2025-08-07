@@ -28,12 +28,12 @@ $give @$(ss) written_book{display:{\
                               {"text":"・ローラン\\n","clickEvent":{"action":"run_command","value":"/jobselect 15"}},\
                               {"text":"・マルクト\\n","clickEvent":{"action":"run_command","value":"/jobselect 16"}},\
                               {"text":"・イェソド\\n","clickEvent":{"action":"run_command","value":"/jobselect 17"}},\
-                              {"text":"・ホド\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
-                              {"text":"・ネツァク\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・ホド\\n","clickEvent":{"action":"run_command","value":"/jobselect 18"}},\
+                              {"text":"・ネツァク\\n","clickEvent":{"action":"run_command","value":"/jobselect 19"}},\
                               {"text":"・ティファレト\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
                               {"text":"・言語の階司書補\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
                               {"text":"・ケセド\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
-                              {"text":"・ビナー\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
+                              {"text":"・ビナー\\n","clickEvent":{"action":"run_command","value":"/jobselect 23"}},\
                               {"text":"・哲学の階司書補","clickEvent":{"action":"run_command","value":"/jobselect 99"}}]',\
                               '[{"text":"職業選択(3/3)\\n\\n","bold":true},\
                               {"text":"・ホクマー\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
