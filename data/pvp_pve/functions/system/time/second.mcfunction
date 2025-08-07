@@ -36,3 +36,6 @@ execute as @a[tag=alchemist,nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_hel
 #malchut
 execute as @e[tag=malchut_skill4] at @s run particle dust 0.012 0.345 0 5 ~ ~2 ~ 0.0 2.0 0.0 2 10
 execute as @e[tag=malchut_skill4] at @s run particle dust 0.012 0.345 0 2 ~ ~ ~ 1.5 0.2 1.5 2 30
+
+#yesod_passive
+execute as @a[tag=yesod,predicate=pvp_pve:flags/sneaking_f] at @s run effect give @s regeneration 2 1 true

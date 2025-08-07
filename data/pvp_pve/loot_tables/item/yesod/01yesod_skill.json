@@ -29,6 +29,11 @@
                         "italic": false
                     },
                     {
+                        "text": "1秒毎にまだワープしていない15m以内の敵の座標にワープする",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
                         "text": "クールタイム20秒",
                         "color": "green",
                         "italic": false
