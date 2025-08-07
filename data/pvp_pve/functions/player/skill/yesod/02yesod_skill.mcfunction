@@ -5,5 +5,5 @@ scoreboard players set @s yesod_skill2_cnt 60
 scoreboard players set @s yesod_skill2_cnt_at 0
 
 #recast設定
-scoreboard players set @s skill2_recast 12
+scoreboard players set @s skill2_recast 25
 
