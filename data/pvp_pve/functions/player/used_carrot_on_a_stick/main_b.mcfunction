@@ -108,5 +108,32 @@ execute if predicate pvp_pve:selecteditem/malchut_skill/03malchut_skill run func
 execute if predicate pvp_pve:selecteditem/malchut_skill/04malchut_skill run function pvp_pve:player/skill/malchut/skill_check/04skill_check
 execute if predicate pvp_pve:selecteditem/malchut_skill/05malchut_skill run function pvp_pve:player/skill/malchut/skill_check/05skill_check
 
+##yesod
+execute if predicate pvp_pve:selecteditem/yesod_skill/01yesod_skill run function pvp_pve:player/skill/yesod/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/yesod_skill/02yesod_skill run function pvp_pve:player/skill/yesod/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/yesod_skill/03yesod_skill run function pvp_pve:player/skill/yesod/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/yesod_skill/04yesod_skill run function pvp_pve:player/skill/yesod/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/yesod_skill/05yesod_skill run function pvp_pve:player/skill/yesod/skill_check/05skill_check
+
+##hodo
+execute if predicate pvp_pve:selecteditem/hodo_skill/01hodo_skill run function pvp_pve:player/skill/hodo/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/hodo_skill/02hodo_skill run function pvp_pve:player/skill/hodo/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/hodo_skill/03hodo_skill run function pvp_pve:player/skill/hodo/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/hodo_skill/04hodo_skill run function pvp_pve:player/skill/hodo/skill_check/04skill_check
+
+##netzach
+execute if predicate pvp_pve:selecteditem/netzach_skill/01netzach_skill run function pvp_pve:player/skill/netzach/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/netzach_skill/02netzach_skill run function pvp_pve:player/skill/netzach/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/netzach_skill/03netzach_skill run function pvp_pve:player/skill/netzach/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/netzach_skill/04netzach_skill run function pvp_pve:player/skill/netzach/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/netzach_skill/05netzach_skill run function pvp_pve:player/skill/netzach/skill_check/05skill_check
+
+##binar
+execute if predicate pvp_pve:selecteditem/binar_skill/01binar_skill run function pvp_pve:player/skill/binar/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/binar_skill/02binar_skill run function pvp_pve:player/skill/binar/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/binar_skill/03binar_skill run function pvp_pve:player/skill/binar/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/binar_skill/04binar_skill run function pvp_pve:player/skill/binar/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/binar_skill/05binar_skill run function pvp_pve:player/skill/binar/skill_check/05skill_check
+
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick
