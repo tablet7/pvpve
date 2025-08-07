@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "Laetitia",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:広範囲に小ダメージ",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵プレイヤーは「プレゼント」を獲得",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "5秒後まで「プレゼント」を使用しなかった場合、",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "爆発して大ダメージを与えて、移動速度低下、出血を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム14秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11173}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

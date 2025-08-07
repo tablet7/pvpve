@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "劣化した柱",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に柱を射出",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "触れた敵を吹き飛ばし、妖精で追撃",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵は妖精状態になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム15秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11203}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

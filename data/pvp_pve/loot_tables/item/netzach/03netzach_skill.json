@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "快楽",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:小範囲に出血を付与",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "さらに、5秒間攻撃を受けるたび体力が回復する状態になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "出血：スキルを使用するとダメージを受ける",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "敵モブに出血を与えた場合、ウィザー状態にする",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11193}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

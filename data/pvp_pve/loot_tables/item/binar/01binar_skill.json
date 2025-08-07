@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "劣化した妖精",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方を切り裂く",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵に妖精を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "妖精：移動するたびにダメージを受ける",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "使用時回復",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム2秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11201,Enchantments:[{id:\"minecraft:knockback\",lvl:2s}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

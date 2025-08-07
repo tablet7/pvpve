@@ -69,6 +69,12 @@ scoreboard players set @s malchut_skill2_cnt 0
 scoreboard players set @s malchut_passive_cnt 0
 ##yesod
 tag @s remove yesod
+##hodo
+tag @s remove hodo
+##netzach
+tag @s remove netzach
+##binar
+tag @s remove binar
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}
