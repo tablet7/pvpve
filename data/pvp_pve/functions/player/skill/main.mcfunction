@@ -87,6 +87,33 @@ execute as @a[tag=malchut] at @s run title @s actionbar [\
 {"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"},\
 {"text":"　スキル5　"},{"score":{"name":"@s","objective":"skill5_recast"},"color":"green"}]
 
+execute as @a[tag=yesod] at @s run title @s actionbar [\
+{"text":"スキル1　"},{"score":{"name":"@s","objective":"skill1_recast"},"color":"green"},\
+{"text":"　スキル2　"},{"score":{"name":"@s","objective":"skill2_recast"},"color":"green"},\
+{"text":"　スキル3　"},{"score":{"name":"@s","objective":"skill3_recast"},"color":"green"},\
+{"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"},\
+{"text":"　スキル5　"},{"score":{"name":"@s","objective":"skill5_recast"},"color":"green"}]
+
+execute as @a[tag=hodo] at @s run title @s actionbar [\
+{"text":"スキル1　"},{"score":{"name":"@s","objective":"skill1_recast"},"color":"green"},\
+{"text":"　スキル2　"},{"score":{"name":"@s","objective":"skill2_recast"},"color":"green"},\
+{"text":"　スキル3　"},{"score":{"name":"@s","objective":"skill3_recast"},"color":"green"},\
+{"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"}]
+
+execute as @a[tag=netzach] at @s run title @s actionbar [\
+{"text":"スキル1　"},{"score":{"name":"@s","objective":"skill1_recast"},"color":"green"},\
+{"text":"　スキル2　"},{"score":{"name":"@s","objective":"skill2_recast"},"color":"green"},\
+{"text":"　スキル3　"},{"score":{"name":"@s","objective":"skill3_recast"},"color":"green"},\
+{"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"},\
+{"text":"　スキル5　"},{"score":{"name":"@s","objective":"skill5_recast"},"color":"green"}]
+
+execute as @a[tag=binar] at @s run title @s actionbar [\
+{"text":"スキル1　"},{"score":{"name":"@s","objective":"skill1_recast"},"color":"green"},\
+{"text":"　スキル2　"},{"score":{"name":"@s","objective":"skill2_recast"},"color":"green"},\
+{"text":"　スキル3　"},{"score":{"name":"@s","objective":"skill3_recast"},"color":"green"},\
+{"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"},\
+{"text":"　スキル5　"},{"score":{"name":"@s","objective":"skill5_recast"},"color":"green"}]
+
 
 #red_mist_skill2
 function pvp_pve:player/skill/red_mist/02red_mist_skill_main
@@ -135,6 +162,18 @@ function pvp_pve:player/skill/roland/roland_main
 
 #malchut
 function pvp_pve:player/skill/malchut/malchut_main
+
+#yesod
+function pvp_pve:player/skill/yesod/yesod_main
+
+#hodo
+function pvp_pve:player/skill/hodo/hodo_main
+
+#netzach
+function pvp_pve:player/skill/netzach/netzach_main
+
+#binar
+function pvp_pve:player/skill/binar/binar_main
 
 #ガチャ
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/common_item

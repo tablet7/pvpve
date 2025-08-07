@@ -42,7 +42,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:11172}"
+                "tag": "{CustomModelData:11182}"
             }
           ]
         }
