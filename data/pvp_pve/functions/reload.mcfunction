@@ -173,6 +173,19 @@ scoreboard objectives add defence_5_min dummy
 scoreboard players set @a defence_5_min 0
 scoreboard objectives add malchut_passive_cnt dummy
 scoreboard players set @a malchut_passive_cnt 0
+#yesod
+scoreboard objectives add yesod_skill1_cnt dummy
+scoreboard players set @a yesod_skill1_cnt 0
+scoreboard objectives add yesod_skill2_cnt dummy
+scoreboard players set @a yesod_skill2_cnt 0
+scoreboard objectives add yesod_skill2_cnt_at dummy
+scoreboard players set @a yesod_skill2_cnt_at 0
+scoreboard objectives add yesod_skill3_cnt dummy
+scoreboard players set @a yesod_skill3_cnt 0
+scoreboard objectives add yesod_skill4_cnt dummy
+scoreboard players set @a yesod_skill4_cnt 0
+scoreboard objectives add yesod_skill5_cnt dummy
+scoreboard players set @a yesod_skill5_cnt 0
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

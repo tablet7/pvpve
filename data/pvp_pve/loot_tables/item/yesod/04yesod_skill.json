@@ -29,7 +29,12 @@
                         "italic": false
                     },
                     {
-                        "text": "7発毎に強力な弾丸になる",
+                        "text": "7発毎に強力な弾丸になるが、",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "体力を消費し、味方にも当たる",
                         "color": "white",
                         "italic": false
                     },

@@ -69,6 +69,7 @@ scoreboard players set @p malchut_skill2_cnt 0
 scoreboard players set @p malchut_passive_cnt 0
 ##yesod
 tag @p remove yesod
+scoreboard players set @p yesod_skill4_cnt 0
 ##hodo
 tag @p remove hodo
 ##netzach

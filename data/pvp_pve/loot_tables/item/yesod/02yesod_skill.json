@@ -39,6 +39,11 @@
                         "italic": false
                     },
                     {
+                        "text": "上限は攻撃力上昇3まで",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
                         "text": "クールタイム12秒",
                         "color": "green",
                         "italic": false
