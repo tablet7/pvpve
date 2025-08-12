@@ -13,7 +13,7 @@ loot give @s loot pvp_pve:item/sancho/05sancho_skill
 loot give @p loot pvp_pve:item/sancho/06sancho_skill
 
 #tag
-function pvp_pve:player/job_item_get/tag_remove
+function pvp_pve:player/job_item_get/reload_job/tag_remove
 tag @s add sancho
 
 
