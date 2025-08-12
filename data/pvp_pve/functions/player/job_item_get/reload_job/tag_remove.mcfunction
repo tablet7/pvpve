@@ -78,6 +78,7 @@ tag @s remove netzach
 tag @s remove binar
 ##sancho
 tag @s remove sancho
+scoreboard players set @s blood_armor 0
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}

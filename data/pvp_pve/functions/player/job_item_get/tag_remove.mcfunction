@@ -78,6 +78,7 @@ tag @p remove netzach
 tag @p remove binar
 ##sancho
 tag @p remove sancho
+scoreboard players set @p blood_armor 0
 
 
 #共通アイテム
