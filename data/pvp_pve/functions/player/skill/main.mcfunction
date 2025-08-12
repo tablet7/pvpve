@@ -114,6 +114,14 @@ execute as @a[tag=binar] at @s run title @s actionbar [\
 {"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"},\
 {"text":"　スキル5　"},{"score":{"name":"@s","objective":"skill5_recast"},"color":"green"}]
 
+execute as @a[tag=sancho] at @s run title @s actionbar [\
+{"text":"スキル1　"},{"score":{"name":"@s","objective":"skill1_recast"},"color":"green"},\
+{"text":"　スキル2　"},{"score":{"name":"@s","objective":"skill2_recast"},"color":"green"},\
+{"text":"　スキル3　"},{"score":{"name":"@s","objective":"skill3_recast"},"color":"green"},\
+{"text":"　スキル4　"},{"score":{"name":"@s","objective":"skill4_recast"},"color":"green"},\
+{"text":"　スキル5　"},{"score":{"name":"@s","objective":"skill5_recast"},"color":"green"},\
+{"text":"　血甲　"},{"score":{"name":"@s","objective":"blood_armor"},"color":"red"}]
+
 
 #red_mist_skill2
 function pvp_pve:player/skill/red_mist/02red_mist_skill_main
@@ -174,6 +182,9 @@ function pvp_pve:player/skill/netzach/netzach_main
 
 #binar
 function pvp_pve:player/skill/binar/binar_main
+
+#sancho
+function pvp_pve:player/skill/sancho/sancho_main
 
 #ガチャ
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:'"ガチャ券[コモン]"',Lore:['"投げて使用できる"']}}}}] at @s run loot give @p loot pvp_pve:item/level_select/gacha_nakami/common_item

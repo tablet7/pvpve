@@ -76,6 +76,8 @@ tag @s remove hodo
 tag @s remove netzach
 ##binar
 tag @s remove binar
+##sancho
+tag @s remove sancho
 
 #共通アイテム
 item replace entity @s armor.chest with elytra{Unbreakable:1b}

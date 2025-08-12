@@ -8,6 +8,8 @@ execute as @a[tag=yesod,scores={berserker_passive=1..},nbt={SelectedItem:{id:"mi
 execute as @a[tag=yesod,scores={berserker_passive=1..},nbt={SelectedItem:{id:"minecraft:iron_shovel"}},team=Gray] at @s run effect give @e[distance=..3,team=!Gray] slowness 3
 execute as @a[tag=yesod,scores={berserker_passive=1..},nbt={SelectedItem:{id:"minecraft:iron_shovel"}},team=Black] at @s run effect give @e[distance=..3,team=!Black] slowness 3
 
+execute as @a[tag=yesod,scores={berserker_passive=1..}] at @s run scoreboard players set @s berserker_passive 0
+
 #skill1
 execute as @a[tag=yesod,scores={yesod_skill1_cnt=1..}] at @s run scoreboard players remove @s yesod_skill1_cnt 1
 
@@ -33,10 +35,10 @@ execute as @a[tag=yesod,scores={yesod_skill1_cnt=1},team=Black] at @s run functi
 execute as @a[tag=yesod,scores={yesod_skill2_cnt=1..}] at @s run scoreboard players remove @s yesod_skill2_cnt 1
 
 execute as @a[tag=yesod,scores={berserker_passive=1..}] at @s run scoreboard players add @s yesod_skill2_cnt_at 1
-execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..}] at @s run scoreboard players set @s yesod_skill2_cnt 60
-execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..,yesod_skill2_cnt_at=1..6}] at @s run effect give @s strength 3
-execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..,yesod_skill2_cnt_at=7..12}] at @s run effect give @s strength 3 1
-execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..,yesod_skill2_cnt_at=13..18}] at @s run effect give @s strength 3 2
+execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..}] at @s run scoreboard players set @s yesod_skill2_cnt 40
+execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..,yesod_skill2_cnt_at=1..6}] at @s run effect give @s strength 2
+execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..,yesod_skill2_cnt_at=7..12}] at @s run effect give @s strength 2 1
+execute as @a[tag=yesod,scores={berserker_passive=1..,yesod_skill2_cnt=1..,yesod_skill2_cnt_at=13..18}] at @s run effect give @s strength 2 2
 
 execute as @a[tag=yesod,scores={berserker_passive=1..}] at @s run scoreboard players set @s berserker_passive 0
 

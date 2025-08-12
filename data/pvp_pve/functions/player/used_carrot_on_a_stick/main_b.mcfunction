@@ -1,5 +1,8 @@
 #> pvp_pve:player/used_carrot_on_a_stick/main_b
 
+#出血
+execute if score @s[tag=!zauberkugel] bleeding_time matches 1.. run function pvp_pve:player/skill/sancho/hemorrhage_da
+
 #ニンジン棒の判別
 ##tester
 execute if predicate pvp_pve:selecteditem/tester_skill/01test_skill run function pvp_pve:player/skill/tester/skill_check/01skill_check
@@ -134,6 +137,15 @@ execute if predicate pvp_pve:selecteditem/binar_skill/02binar_skill run function
 execute if predicate pvp_pve:selecteditem/binar_skill/03binar_skill run function pvp_pve:player/skill/binar/skill_check/03skill_check
 execute if predicate pvp_pve:selecteditem/binar_skill/04binar_skill run function pvp_pve:player/skill/binar/skill_check/04skill_check
 execute if predicate pvp_pve:selecteditem/binar_skill/05binar_skill run function pvp_pve:player/skill/binar/skill_check/05skill_check
+
+##sancho
+execute if predicate pvp_pve:selecteditem/sancho_skill/01sancho_skill run function pvp_pve:player/skill/sancho/skill_check/01skill_check
+execute if predicate pvp_pve:selecteditem/sancho_skill/02sancho_skill run function pvp_pve:player/skill/sancho/skill_check/02skill_check
+execute if predicate pvp_pve:selecteditem/sancho_skill/03sancho_skill run function pvp_pve:player/skill/sancho/skill_check/03skill_check
+execute if predicate pvp_pve:selecteditem/sancho_skill/04sancho_skill run function pvp_pve:player/skill/sancho/skill_check/04skill_check
+execute if predicate pvp_pve:selecteditem/sancho_skill/05sancho_skill run function pvp_pve:player/skill/sancho/skill_check/05skill_check
+execute if predicate pvp_pve:selecteditem/sancho_skill/06sancho_skill run function pvp_pve:player/skill/sancho/skill_check/06skill_check
+
 
 #スコアボードリセット
 scoreboard players reset @s used_carrot_on_a_stick

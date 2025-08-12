@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "「SUPERBIA」",
+                        "color": "#747a14",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:スキル5を変化",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "試合中1度だけ使用可能",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "スキル5のクールタイムをリセットし、1度だけ",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「ラ・サングレ・デ・サンチョ」として発動できる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「ラ・サングレ・デ・サンチョ」",
+                        "color": "#ff0000",
+                        "italic": false
+                    },
+                    {
+                        "text": "前方に突進し特大ダメージを与える",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "付近の血餐をすべて消費し、体力を全回復",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "血甲を最大値まで貯める",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "10秒間スキルで血甲を消費せずに効果を発動できる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "あの星が...もっと明るく輝くことを..."
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11216,Enchantments:[{id:\"infinity\",lvl:1s}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
