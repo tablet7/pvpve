@@ -41,7 +41,7 @@ $give @$(ss) written_book{display:{\
                               {"text":"・アンジェラ\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
                               {"text":"・青い残響\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
                               {"text":"・紫の涙\\n","clickEvent":{"action":"run_command","value":"/jobselect 99"}},\
-                              {"text":"・サンチョ","clickEvent":{"action":"run_command","value":"/jobselect 99"}}]',\
+                              {"text":"・サンチョ","clickEvent":{"action":"run_command","value":"/function pvp_pve:player/job_item_get/reload_job/sancho"}}]',\
                               '[{"text":"チーム選択\\n","bold":true},\
                               {"text":"・赤チーム\\n\\n","color":"red","clickEvent":{"action":"run_command","value":"/teamselect 1"}},\
                               {"text":"・青チーム\\n\\n","color":"blue","clickEvent":{"action":"run_command","value":"/teamselect 2"}},\

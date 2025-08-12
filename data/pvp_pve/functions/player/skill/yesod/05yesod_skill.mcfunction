@@ -7,5 +7,5 @@ effect give @s resistance 5 10
 effect give @s slowness 5 10
 
 #recast設定
-scoreboard players set @s skill5_recast 100
+scoreboard players set @s skill5_recast 200
 

@@ -3,5 +3,5 @@
 say 2222
 
 #recast設定
-scoreboard players set @s skill2_recast 12
+scoreboard players set @s skill2_recast 10
 

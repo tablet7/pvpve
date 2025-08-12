@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "ハーモニー",
+                        "text": "ドンキホーテ流硬血2式-血甲",
                         "color": "white",
                         "italic": false
                     }
@@ -24,27 +24,17 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:敵を殴るとバフをもらえる状態になる",
+                        "text": "右クリック:衝撃吸収を獲得し、近くの敵に出血を5秒付与する",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "2秒間攻撃力上昇を得る、敵を攻撃する毎に時間を更新する",
+                        "text": "付近の血餐を3つまで消費し回復する",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "効果中、6回攻撃する毎に攻撃力上昇の効果が強くなる",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "上限は攻撃力上昇3まで",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "クールタイム25秒",
+                        "text": "クールタイム12秒",
                         "color": "green",
                         "italic": false
                     }
@@ -52,7 +42,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:11172}"
+                "tag": "{CustomModelData:11211}"
             }
           ]
         }

@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:command", 
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                    {
+                        "text": "ドンキホーテ亜流サンチョ2式-ラ・サングレ",
+                        "color": "#ff0000",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                    {
+                        "text": "右クリック:前方に突進し、大ダメージを与える",
+                        "color": "yellow",
+                        "italic": false
+                    },
+                    {
+                        "text": "付近の血餐を5つまで消費し、消費した数だけ前方の敵に移動速度低下を付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "血甲を4消費し、5秒間無敵を獲得",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵は10秒間出血状態になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "体力が15以下の時、「ラ・アベントゥラ・ア・テルミナード」として発動",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "「ラ・アベントゥラ・ア・テルミナード」",
+                        "color": "#ff0000",
+                        "italic": false
+                    },
+                    {
+                        "text": "飛び上がった後、前方に血の槍を突き刺す",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "付近の血餐をすべて消費し、消費した数だけ体力を回復",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "血甲をすべて消費し、消費した数だけスキルのクールダウンを進める",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "当たった敵は20秒間出血状態になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "槍は10秒間持続し、付近の敵を2秒毎に強制的に出血させる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム200秒",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            {
+                "function": "set_nbt",
+                "tag": "{CustomModelData:11215}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

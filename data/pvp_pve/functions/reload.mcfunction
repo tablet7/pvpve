@@ -31,6 +31,9 @@ scoreboard objectives add ender_cnt dummy
 scoreboard players set @a ender_cnt 0
 scoreboard objectives add no_ery dummy
 scoreboard players set @a no_ery 0
+scoreboard objectives add bleeding_time dummy
+scoreboard players set @a bleeding_time 0
+scoreboard objectives add blood_meal_cnt dummy
 ###skill_recast
 scoreboard objectives add skill1_recast dummy
 scoreboard objectives add skill2_recast dummy
@@ -186,6 +189,13 @@ scoreboard objectives add yesod_skill4_cnt dummy
 scoreboard players set @a yesod_skill4_cnt 0
 scoreboard objectives add yesod_skill5_cnt dummy
 scoreboard players set @a yesod_skill5_cnt 0
+#sancho
+scoreboard objectives add blood_armor dummy
+scoreboard players set @a blood_armor 0
+scoreboard objectives add 01bm_cnt dummy
+scoreboard players set @a 01bm_cnt 0
+scoreboard objectives add sancho_06ult_cnt dummy
+scoreboard players set @a sancho_06ult_cnt 0
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

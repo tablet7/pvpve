@@ -19,5 +19,6 @@ execute if score @s random_rand matches 17 run function pvp_pve:player/job_item_
 execute if score @s random_rand matches 18 run function pvp_pve:player/job_item_get/reload_job/hodo
 execute if score @s random_rand matches 19 run function pvp_pve:player/job_item_get/reload_job/netzach
 execute if score @s random_rand matches 23 run function pvp_pve:player/job_item_get/reload_job/binar
+execute if score @s random_rand matches 30 run function pvp_pve:player/job_item_get/reload_job/sancho
 
 execute if score @s random_rand matches 99 run say まだこの可能性を得られていない

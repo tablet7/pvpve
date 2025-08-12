@@ -13,7 +13,7 @@
                 "entity": "this",
                 "name": [
                     {
-                        "text": "ハーモニー",
+                        "text": "ドンキホーテ亜流サンチョ4式-追跡",
                         "color": "white",
                         "italic": false
                     }
@@ -24,27 +24,32 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:敵を殴るとバフをもらえる状態になる",
+                        "text": "右クリック:血の矢を前方に放つ",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "2秒間攻撃力上昇を得る、敵を攻撃する毎に時間を更新する",
+                        "text": "付近の血餐を3つまで消費し、追加の矢を放つ",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "効果中、6回攻撃する毎に攻撃力上昇の効果が強くなる",
+                        "text": "血甲を2消費し、衝撃吸収を獲得",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "上限は攻撃力上昇3まで",
+                        "text": "血甲を消費できなかった場合、自身に出血ダメージを与える",
                         "color": "white",
                         "italic": false
                     },
                     {
-                        "text": "クールタイム25秒",
+                        "text": "血の矢が当たった敵は5秒間出血状態になる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "クールタイム10秒",
                         "color": "green",
                         "italic": false
                     }
@@ -52,7 +57,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{CustomModelData:11172}"
+                "tag": "{CustomModelData:11214}"
             }
           ]
         }

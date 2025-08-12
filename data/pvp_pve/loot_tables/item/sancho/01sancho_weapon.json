@@ -6,14 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name":"minecraft:iron_axe",
+          "name":"minecraft:trident",
           "functions": [
             {
                 "function": "minecraft:set_name",
                 "entity": "this",
                 "name": [
                     {
-                        "text": "血色の欲望",
+                        "text": "サンチョの槍",
                         "color": "white",
                         "italic": false
                     }
@@ -24,7 +24,37 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "攻撃する毎に周囲に出血を2秒付与",
+                        "text": "攻撃する毎に周囲に出血を3秒間付与",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "パッシブ：第2眷属",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "スキルがすべて出血ダメージとして扱われる",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "近くで出血ダメージが起きた時に回復する",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "また、血餐を出血した敵の座標に生成する(持続時間40秒)",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "さらに、血餐を消費するときに血甲を獲得する(最大20)",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "血甲が5,10,15以上の時バフを得る",
                         "color": "white",
                         "italic": false
                     },
@@ -61,7 +91,7 @@
             },
             {
                 "function": "set_nbt",
-                "tag": "{Unbreakable:true}"
+                "tag": "{Unbreakable:true,Enchantments:[{id:\"minecraft:riptide\",lvl:1s}]}"
             }
           ]
         }

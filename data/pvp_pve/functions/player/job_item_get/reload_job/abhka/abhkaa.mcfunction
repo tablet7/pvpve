@@ -19,5 +19,6 @@ execute if data entity @s {Tags:["yesod"]} run function pvp_pve:player/job_item_
 execute if data entity @s {Tags:["hodo"]} run function pvp_pve:player/job_item_get/reload_job/hodo
 execute if data entity @s {Tags:["netzach"]} run function pvp_pve:player/job_item_get/reload_job/netzach
 execute if data entity @s {Tags:["binar"]} run function pvp_pve:player/job_item_get/reload_job/binar
+execute if data entity @s {Tags:["sancho"]} run function pvp_pve:player/job_item_get/reload_job/sancho
 
 execute unless score @s mode_select matches 0 run effect clear @s
