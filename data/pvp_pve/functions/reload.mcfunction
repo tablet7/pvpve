@@ -299,6 +299,9 @@ scoreboard players set Timer pvpve_phase_time 0
 bossbar remove pvpve_phase_time_bar
 bossbar add pvpve_phase_time_bar "Phase1"
 bossbar set pvpve_phase_time_bar max 2000
+bossbar remove bleeding_time_bar
+bossbar add bleeding_time_bar "出血"
+bossbar set bleeding_time_bar max 400
 #1:舞倉市,2:島
 scoreboard objectives add pvpve_field dummy
 ##field2_dungeon
