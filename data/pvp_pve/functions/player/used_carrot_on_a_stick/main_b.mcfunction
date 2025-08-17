@@ -3,6 +3,7 @@
 #出血
 execute if score @s[tag=!zauberkugel] bleeding_time matches 1.. run function pvp_pve:player/skill/sancho/hemorrhage_da
 
+
 #ニンジン棒の判別
 ##tester
 execute if predicate pvp_pve:selecteditem/tester_skill/01test_skill run function pvp_pve:player/skill/tester/skill_check/01skill_check
