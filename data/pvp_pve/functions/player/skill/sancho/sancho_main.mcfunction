@@ -2,6 +2,8 @@
 
 #出血管理
 execute as @a[scores={bleeding_time=1..}] at @s run scoreboard players remove @s bleeding_time 1
+execute as @a[scores={bleeding_time=1..}] at @s run particle dust 0.4 0 0 1 ~ ~1 ~ 0.4 1.0 0.4 1 1
+execute as @a at @s run execute store result bossbar bleeding_time_bar value run scoreboard players get @s bleeding_time
 
 #血餐管理
 execute as @e[tag=blood_meal] at @s run scoreboard players add @s blood_meal_cnt 1

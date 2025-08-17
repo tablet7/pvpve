@@ -2,7 +2,7 @@
 
 scoreboard players set @s sancho_03warp_cnt 4
 
-$execute as @e[distance=..10,team=!$(Team),sort=nearest,limit=1,type=!armor_stand] at @s run tp @p[tag=sancho,team=$(Team),scores={sancho_03warp_cnt=4}] ^ ^ ^2 ~180 0
+$execute as @e[distance=..10,team=!$(Team),sort=nearest,limit=1,type=!armor_stand] at @s run tp @p[tag=sancho,team=$(Team),scores={sancho_03warp_cnt=4}] ^ ^ ^1 ~180 0
 
 execute as @a[distance=..10] at @s run playsound entity.enderman.teleport master @s ~ ~ ~
 
