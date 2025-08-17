@@ -64,7 +64,7 @@
                         "italic": false
                     },
                     {
-                        "text": "敵モブに出血を与えた場合、ウィザー状態にする",
+                        "text": "プレイヤー以外に出血を与えた場合、ウィザー状態にする",
                         "color": "white",
                         "italic": false
                     }

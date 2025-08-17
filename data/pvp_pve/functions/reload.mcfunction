@@ -34,6 +34,7 @@ scoreboard players set @a no_ery 0
 scoreboard objectives add bleeding_time dummy
 scoreboard players set @a bleeding_time 0
 scoreboard objectives add blood_meal_cnt dummy
+scoreboard objectives add health_cnt health
 ###skill_recast
 scoreboard objectives add skill1_recast dummy
 scoreboard objectives add skill2_recast dummy
@@ -194,8 +195,20 @@ scoreboard objectives add blood_armor dummy
 scoreboard players set @a blood_armor 0
 scoreboard objectives add 01bm_cnt dummy
 scoreboard players set @a 01bm_cnt 0
+scoreboard objectives add 02bm_cnt dummy
+scoreboard players set @a 02bm_cnt 0
+scoreboard objectives add 03bm_cnt dummy
+scoreboard players set @a 03bm_cnt 0
+scoreboard objectives add 05bm_cnt dummy
+scoreboard players set @a 05bm_cnt 0
+scoreboard objectives add sancho_03warp_cnt dummy
+scoreboard players set @a sancho_03warp_cnt 0
+scoreboard objectives add sancho_05_2_cnt dummy
+scoreboard players set @a sancho_05_2_cnt 0
 scoreboard objectives add sancho_06ult_cnt dummy
 scoreboard players set @a sancho_06ult_cnt 0
+scoreboard objectives add sancho_06ult_cod dummy
+scoreboard players set @a sancho_06ult_cod 0
 ###passive
 scoreboard objectives add kill_count totalKillCount
 scoreboard players set @a kill_count 0

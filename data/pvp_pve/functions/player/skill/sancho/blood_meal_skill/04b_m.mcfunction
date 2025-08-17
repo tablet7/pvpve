@@ -1,8 +1,5 @@
 #> pvp_pve:player/skill/adventurer/01adventurer_skill
 
-#スキルのカウント
-$scoreboard players add @p[tag=sancho,team=$(Team)] 01bm_cnt 2
-
 #血甲の増加
 $scoreboard players add @p[tag=sancho,team=$(Team)] blood_armor 1
 
