@@ -29,7 +29,12 @@
                         "italic": false
                     },
                     {
-                        "text": "付近の血餐を3つまで消費し、追加の矢を放つ",
+                        "text": "付近の血餐を3つまで消費し、血餐から槍を生成する",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "槍に当たった敵は移動速度低下を付与",
                         "color": "white",
                         "italic": false
                     },

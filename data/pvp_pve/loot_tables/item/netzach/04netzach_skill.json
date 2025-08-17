@@ -24,12 +24,12 @@
                 "entity": "this",
                 "lore": [
                     {
-                        "text": "右クリック:広範囲に大ダメージと混乱を付与",
+                        "text": "右クリック:広範囲に大ダメージと沈潜を付与",
                         "color": "yellow",
                         "italic": false
                     },
                     {
-                        "text": "混乱：スキルがすべて敵味方に当たるようになる",
+                        "text": "沈潜：ダメージを受けるとスキルのクールダウンが増える",
                         "color": "white",
                         "italic": false
                     },
